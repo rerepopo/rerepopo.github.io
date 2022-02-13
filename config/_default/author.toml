@@ -1,0 +1,19 @@
+name = "匿名作家"
+avatar = "https://img.icons8.com/ios/100/000000/backspace.png" # "images/profile.png" # Avatar image. Default to "images/profile.webp".
+bio = "記錄我的學習與心得，包含但不限於Android, Java, python, Html, Javascript, CSS, C/C++, Qt, LineBot, 日本語。 希望透過多寫心得筆記，把學習紀錄留下來，未來就可以快速翻閱後就立刻上手"
+# company = 'Company'
+company = '<a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>'
+# location = "Earth"
+# alternatives:
+# location = "<a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>"
+location = "<a href='https://www.google.com/maps/search/Earth'>Earth</a>"
+# about = "https://domain.tld" # The external about page. The internal about page will be used if not set.
+
+[params]
+  #layout = "compact"
+
+[social]
+  email = "example@email.com"
+  facebook = ""  
+  youtube = ""
+  github = "rerepopo"
