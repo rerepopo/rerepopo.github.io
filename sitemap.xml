@@ -31,10 +31,10 @@
     <loc>/docs/layouts/</loc>
     <lastmod>2022-01-12T10:56:34-08:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>/tags/%E4%B8%BB%E8%8F%9C%E5%96%AE/</loc>
     <lastmod>2021-12-16T17:25:20+08:00</lastmod>
   </url><url>
-    <loc>/tags/%E4%B8%BB%E8%8F%9C%E5%96%AE/</loc>
+    <loc>/categories/</loc>
     <lastmod>2021-12-16T17:25:20+08:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
@@ -280,8 +280,6 @@
     <loc>/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/contact/</loc>
-  </url><url>
     <loc>/docs/level-1/level-2/</loc>
   </url><url>
     <loc>/docs/level-1/level-2/level-3/</loc>
@@ -295,5 +293,7 @@
     <loc>/search/</loc>
   </url><url>
     <loc>/archives/</loc>
+  </url><url>
+    <loc>/contact/</loc>
   </url>
 </urlset>

@@ -44,15 +44,6 @@
     </item>
     
     <item>
-      <title>Catégories</title>
-      <link>/categories/</link>
-      <pubDate>Thu, 16 Dec 2021 17:25:20 +0800</pubDate>
-      
-      <guid>/categories/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>菜單</title>
       <link>/docs/menu/</link>
       <pubDate>Thu, 16 Dec 2021 17:25:20 +0800</pubDate>
@@ -285,15 +276,6 @@
     </item>
     
     <item>
-      <title>Contact Us</title>
-      <link>/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Level 4</title>
       <link>/docs/level-1/level-2/level-3/level-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -317,6 +299,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/faq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>聯繫我們</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
       <description></description>
     </item>
     
