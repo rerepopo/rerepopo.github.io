@@ -1,0 +1,1884 @@
+<!doctype html><html lang="zh-tw" data-palette="teal"
+   data-mode="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Python App regCodecDone 20200607 - 程式X語言X筆記X心得 - Find a way, Make a day </title><link rel="apple-touch-icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="180x180">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="keywords" content="" />
+<meta name="description" content="PycharmProjects\regDecoder 20200607
+pip install pyinstaller
+pyinstaller -Fw regCodec.py
+
+
+
+https://github.com/rerepopo/regCodecDone" /><meta name="robots" content="index, follow" /><meta itemprop="name" content="Python App regCodecDone 20200607">
+<meta itemprop="description" content="PycharmProjects\regDecoder 20200607
+pip install pyinstaller
+pyinstaller -Fw regCodec.py
+
+
+
+https://github.com/rerepopo/regCodecDone"><meta itemprop="datePublished" content="2020-06-07T19:47:31+08:00" />
+<meta itemprop="dateModified" content="2020-06-07T19:47:31+08:00" />
+<meta itemprop="wordCount" content="3777">
+<meta itemprop="keywords" content="," /><meta property="og:title" content="Python App regCodecDone 20200607" />
+<meta property="og:description" content="PycharmProjects\regDecoder 20200607
+pip install pyinstaller
+pyinstaller -Fw regCodec.py
+
+
+
+https://github.com/rerepopo/regCodecDone" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/python-app-regcodecdone/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-06-07T19:47:31+08:00" />
+<meta property="article:modified_time" content="2020-06-07T19:47:31+08:00" /><meta property="og:site_name" content="程式X語言X筆記X心得 - Find a way, Make a day " />
+<meta property="og:see_also" content="/docs/layouts/docs/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python App regCodecDone 20200607"/>
+<meta name="twitter:description" content="PycharmProjects\regDecoder 20200607
+pip install pyinstaller
+pyinstaller -Fw regCodec.py
+
+
+
+https://github.com/rerepopo/regCodecDone"/>
+<meta property="og:image" content="https://img.icons8.com/stickers/100/000000/arrow.png"/>
+  <meta name="twitter:image" content="https://img.icons8.com/stickers/100/000000/arrow.png"/><link rel="stylesheet" href="/css/main.min.507afbe6e4670fa3e961a0b35816b5daeb36029866fd6bd7b9d7871fcf88faa5.css" integrity="sha256-UHr75uRnD6PpYaCzWBa12us2Aphm/WvXudeHH8&#43;I&#43;qU=" crossorigin="anonymous"><link rel="stylesheet" href="/css/viewer.min.3d228794bcedbbfa0412beb8fbc1ec6973202945e42af7004f742a4d7bd620ab.css" integrity="sha256-PSKHlLztu/oEEr64&#43;8HsaXMgKUXkKvcAT3QqTXvWIKs=" crossorigin="anonymous"></head>
+  <body><script>const items=['mode','palette'];items.forEach(function(a){const b=localStorage.getItem('hbs-'+a);b&&document.body.parentElement.setAttribute('data-'+a,b)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="/"><img class="logo" alt="Logo" src="https://img.icons8.com/stickers/100/000000/arrow.png" loading="lazy"
+  
+   />
+ 程式X語言X筆記X心得
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=Python%20App%20regCodecDone%2020200607&url=%2fposts%2fpython-app-regcodecdone%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=%2fposts%2fpython-app-regcodecdone%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">設置</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+
+
+
+<section class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> 字體大小</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</section>
+
+
+<section class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> 配色</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <a id="btnPalette" class="btn btn-sm btn-outline-primary" role="button" aria-label="palettePicker">
+        <i class="fas fa-eye-dropper"></i>
+      </a>
+    </div>
+  </form>
+  <div class="mt-2 d-flex justify-content-between visually-hidden" id="palettePicker"><button type="button" id="palette-blue" aria-label="藍色"
+        class="btn btn-sm w-100 palette" data-palette="blue">
+      </button><button type="button" id="palette-blue-gray" aria-label="藍灰色"
+        class="btn btn-sm w-100 palette" data-palette="blue-gray">
+      </button><button type="button" id="palette-brown" aria-label="棕色"
+        class="btn btn-sm w-100 palette" data-palette="brown">
+      </button><button type="button" id="palette-cyan" aria-label="青色"
+        class="btn btn-sm w-100 palette" data-palette="cyan">
+      </button><button type="button" id="palette-green" aria-label="綠色"
+        class="btn btn-sm w-100 palette" data-palette="green">
+      </button><button type="button" id="palette-indigo" aria-label="靛青色"
+        class="btn btn-sm w-100 palette" data-palette="indigo">
+      </button><button type="button" id="palette-orange" aria-label="橙色"
+        class="btn btn-sm w-100 palette" data-palette="orange">
+      </button><button type="button" id="palette-pink" aria-label="粉色"
+        class="btn btn-sm w-100 palette" data-palette="pink">
+      </button><button type="button" id="palette-purple" aria-label="紫色"
+        class="btn btn-sm w-100 palette" data-palette="purple">
+      </button><button type="button" id="palette-red" aria-label="紅色"
+        class="btn btn-sm w-100 palette" data-palette="red">
+      </button><button type="button" id="palette-teal" aria-label="藍綠色"
+        class="btn btn-sm w-100 palette" data-palette="teal">
+      </button><button type="button" id="palette-yellow" aria-label="黃色"
+        class="btn btn-sm w-100 palette" data-palette="yellow">
+      </button></div>
+</section>
+<section class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-go-back" href="javascript: window.history.back();">
+    <span class="action-icon"><i class="fas fa-2x fa-arrow-left"></i></span> 返回
+  </a>
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> 刷新
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> 複製連結
+  </a><a class="action action-social-share" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> 分享
+  </a></section>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
+      <form class="search-bar my-1" action="/search">
+  <div class="input-group input-group-sm">
+    <span class="btn btn-search disabled position-absolute left-0"><i class="fas fa-fw fa-search"></i></span>
+    <input class="form-control rounded-pill" name="q" type="search" aria-label="Search">
+  </div>
+</form>
+      <ul class="navbar-nav ms-auto"><li class="nav-item">
+          <a class="nav-link" href="/series/">
+            <i class="fas fa-fw fa-columns"></i>專欄
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>文章總覽
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/categories/">
+            <i class="fas fa-fw fa-folder"></i>分類
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/tags/">
+            <i class="fas fa-fw fa-tags"></i>標籤
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link" id="navbarDropdownSupport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-fw fa-chevron-circle-down"></i>更多
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownSupport"><li>
+              <a class="dropdown-item"
+                href="https://github.com/rerepopo/" target="_blank" rel="noopener noreferrer">
+                Repository
+              </a>
+            </li><li><hr class="dropdown-divider"></li><li>
+              <a class="dropdown-item"
+                href="/docs/get-involved/">
+                參與我們
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="/faq/">
+                常見問題
+              </a>
+            </li></ul>
+        </li></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active">Python App RegCodecDone 20200607</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper">
+  <div class="d-flex flex-column component rounded post-panel">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+
+    <a class="action btn-reward" role="button" data-bs-toggle="modal" data-bs-target="#rewardModal" title="打賞">
+  <i class="fas fa-fw fa-coffee"></i>
+</a>
+    <a class="action" href="#post-copyright" role="button" aria-label="Copyright" title="Copyright">
+  <i class="fas fa-fw fa-copyright"></i>
+</a>
+    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title">Python App RegCodecDone 20200607
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="創建於 2020-06-07 19:47:31 &#43;0800 CST。">
+    2020-06-07
+  </span><span class="post-reading-time">
+    18 分鐘閱讀
+  </span><span class="post-taxonomies"><a href="/categories/python/" class="badge post-taxonomy">python</a></span>
+</div>
+<div class="post-content mb-3"><h2 id="pycharmprojectsregdecoder-20200607">PycharmProjects\regDecoder 20200607<a class="anchor ms-1" href="#pycharmprojectsregdecoder-20200607"><i class="fas fa-link"></i></a></h2>
+<p>pip install pyinstaller
+pyinstaller -Fw regCodec.py
+<img class="img-fluid" alt="" src="https://i.imgur.com/ytT279x.png" loading="lazy"
+  
+   />
+
+</p>
+<p><a href="https://github.com/rerepopo/regCodecDone" target="_blank" rel="noopener noreferrer">https://github.com/rerepopo/regCodecDone</a></p>
+<h3 id="regcodecpy">regCodec.py<a class="anchor ms-1" href="#regcodecpy"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">  1</span># -*- coding: utf-8 -*-
+<span class="ln">  2</span>from PyQt5 import QtWidgets, QtGui, QtCore
+<span class="ln">  3</span>from regDecoder import Ui_Form
+<span class="ln">  4</span>import sys
+<span class="ln">  5</span>
+<span class="ln">  6</span>#ref: https://doc.qt.io/qt-5/qtablewidgetitem.html
+<span class="ln">  7</span>#ref: https://www.regexpal.com/93640
+<span class="ln">  8</span>
+<span class="ln">  9</span>def set_bit(value, bit):
+<span class="ln"> 10</span>    return value | (1 &lt;&lt; bit)
+<span class="ln"> 11</span>
+<span class="ln"> 12</span>def clear_bit(value, bit):
+<span class="ln"> 13</span>    return value &amp; ~(1 &lt;&lt; bit)
+<span class="ln"> 14</span>
+<span class="ln"> 15</span>class MainWindow(QtWidgets.QMainWindow):
+<span class="ln"> 16</span>    def __init__(self):
+<span class="ln"> 17</span>        super(MainWindow, self).__init__()
+<span class="ln"> 18</span>        self.ui = Ui_Form()
+<span class="ln"> 19</span>        self.ui.setupUi(self)
+<span class="ln"> 20</span>        self.ui.pushButton.clicked.connect(self.buttonClicked)
+<span class="ln"> 21</span>        self.ui.pushButtonCleanSelection.clicked.connect(self.buttonCleanSelection)
+<span class="ln"> 22</span>        self.ui.tableWidget.itemDoubleClicked.connect(self.itemDoubleClickedToInverse)
+<span class="ln"> 23</span>        self.ui.tableWidget.itemSelectionChanged.connect(self.itemSelectionChangedSlot)
+<span class="ln"> 24</span>        self.ui.tableWidget.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.Stretch)
+<span class="ln"> 25</span>        self.inputIntValue = 0xFF
+<span class="ln"> 26</span>
+<span class="ln"> 27</span>    def itemSelectionChangedSlot(self):
+<span class="ln"> 28</span>        # print(&#39;itemSelectionChangedSlot is &#39;)
+<span class="ln"> 29</span>        indexList = []
+<span class="ln"> 30</span>        for item in self.ui.tableWidget.selectedItems():
+<span class="ln"> 31</span>            indexList.append([31 - item.column(), item.text()])
+<span class="ln"> 32</span>        if indexList == []:  # select nothing, take it as select all
+<span class="ln"> 33</span>            for columnIndex in range(0, 32):
+<span class="ln"> 34</span>                indexList.append([31 - columnIndex, self.ui.tableWidget.item(0, columnIndex).text()])
+<span class="ln"> 35</span>        indexList.sort()  # indexList.sort(reverse=True)
+<span class="ln"> 36</span>        # print(indexList)
+<span class="ln"> 37</span>
+<span class="ln"> 38</span>        selectedValueText = &#34;&#34;
+<span class="ln"> 39</span>        for list in indexList:
+<span class="ln"> 40</span>            selectedValueText = list[1] + selectedValueText
+<span class="ln"> 41</span>        # print(selectedValueText)
+<span class="ln"> 42</span>        # show lineEditOutXXX
+<span class="ln"> 43</span>        self.ui.lineEditOutBin.setText(&#34;0b&#34; + selectedValueText)
+<span class="ln"> 44</span>        self.ui.lineEditOutDec.setText(str(int(selectedValueText, base=2)))
+<span class="ln"> 45</span>        self.ui.lineEditOutHex.setText(hex(int(selectedValueText, base=2)).upper().replace(&#34;0X&#34;, &#34;0x&#34;))
+<span class="ln"> 46</span>        # show labelOutputResult
+<span class="ln"> 47</span>        indexList.sort(reverse=True)
+<span class="ln"> 48</span>        selectedIndexText = []
+<span class="ln"> 49</span>        for list in indexList:
+<span class="ln"> 50</span>            # print(str(list[0]))
+<span class="ln"> 51</span>            selectedIndexText.append(str(list[0]))
+<span class="ln"> 52</span>        if len(selectedIndexText) == 32:
+<span class="ln"> 53</span>            self.ui.labelOutputResult.setText(&#34;Output Result: &#34;)
+<span class="ln"> 54</span>        else:
+<span class="ln"> 55</span>            self.ui.labelOutputResult.setText(&#34;partial Selection: [&#34; + &#39;, &#39;.join(selectedIndexText) + &#34;]&#34;)
+<span class="ln"> 56</span>
+<span class="ln"> 57</span>    def itemDoubleClickedToInverse(self, item):
+<span class="ln"> 58</span>        print(&#39;item double click. item index is &#39; + str(31 - item.column()))
+<span class="ln"> 59</span>        itemIndex = 31 - item.column()
+<span class="ln"> 60</span>        if item.text() == &#34;0&#34;:
+<span class="ln"> 61</span>            item.setText(&#34;1&#34;)
+<span class="ln"> 62</span>            self.inputIntValue = set_bit(self.inputIntValue, itemIndex)
+<span class="ln"> 63</span>        else:
+<span class="ln"> 64</span>            item.setText(&#34;0&#34;)
+<span class="ln"> 65</span>            self.inputIntValue = clear_bit(self.inputIntValue, itemIndex)
+<span class="ln"> 66</span>        self.buttonCleanSelection()
+<span class="ln"> 67</span>
+<span class="ln"> 68</span>    def buttonCleanSelection(self):
+<span class="ln"> 69</span>        print(&#39;buttonCleanSelection: &#39;)
+<span class="ln"> 70</span>        for item in self.ui.tableWidget.selectedItems():
+<span class="ln"> 71</span>            item.setSelected(False)
+<span class="ln"> 72</span>
+<span class="ln"> 73</span>    def buttonClicked(self):
+<span class="ln"> 74</span>        text = self.ui.lineEdit.text()
+<span class="ln"> 75</span>        # ref https://vimsky.com/zh-tw/examples/detail/python-method-PyQt4.QtGui.QFont.html
+<span class="ln"> 76</span>        palettePass = QtGui.QPalette()
+<span class="ln"> 77</span>        palettePass.setColor(QtGui.QPalette.Text, QtCore.Qt.black)
+<span class="ln"> 78</span>        fontPass = QtGui.QFont()
+<span class="ln"> 79</span>        fontPass.setPointSize(12)
+<span class="ln"> 80</span>        fontPass.setBold(False)
+<span class="ln"> 81</span>        paletteFail = QtGui.QPalette()
+<span class="ln"> 82</span>        paletteFail.setColor(QtGui.QPalette.Text, QtCore.Qt.red)
+<span class="ln"> 83</span>        fontFail = QtGui.QFont()
+<span class="ln"> 84</span>        fontFail.setPointSize(16)
+<span class="ln"> 85</span>        fontFail.setBold(True)
+<span class="ln"> 86</span>        print(&#34;buttonClicked: text is &#34; + str(text))
+<span class="ln"> 87</span>        try:
+<span class="ln"> 88</span>            if text[0:2] == &#34;0x&#34;:  # if hex
+<span class="ln"> 89</span>                intVal = int(text[2:], 16)
+<span class="ln"> 90</span>                binVal = bin(intVal)
+<span class="ln"> 91</span>            elif text[0:2] == &#34;0b&#34;:  # if bin
+<span class="ln"> 92</span>                intVal = int(text[2:], 2)
+<span class="ln"> 93</span>                binVal = bin(intVal)
+<span class="ln"> 94</span>            else:  # if dec
+<span class="ln"> 95</span>                intVal = int(text, 10)
+<span class="ln"> 96</span>                binVal = bin(intVal)
+<span class="ln"> 97</span>            #print(&#34; binVal is &#34; + binVal)
+<span class="ln"> 98</span>            #print(&#34; intVal is &#34; + str(intVal))
+<span class="ln"> 99</span>            if intVal &gt; (pow(2,32)-1):
+<span class="ln">100</span>                intVal = (pow(2,32)-1)
+<span class="ln">101</span>                binVal = bin(intVal)
+<span class="ln">102</span>                self.ui.lineEdit.setPalette(paletteFail)
+<span class="ln">103</span>                self.ui.lineEdit.setFont(fontFail)
+<span class="ln">104</span>                self.ui.labelInputCheckResult.setText(str(text) + &#39; is invalid input. Take it as 0xFFFFFFFF.  \nNOTE: Only Support 0~2^32-1.&#39;)
+<span class="ln">105</span>            elif intVal &lt; 0:
+<span class="ln">106</span>                intVal = 0
+<span class="ln">107</span>                binVal = bin(intVal)
+<span class="ln">108</span>                self.ui.lineEdit.setPalette(paletteFail)
+<span class="ln">109</span>                self.ui.lineEdit.setFont(fontFail)
+<span class="ln">110</span>                self.ui.labelInputCheckResult.setText(str(text)+&#39; is invalid input. Take it as 0. \nNOTE: Only Support 0~2^32-1.&#39;)
+<span class="ln">111</span>            else:
+<span class="ln">112</span>                self.ui.lineEdit.setPalette(palettePass)
+<span class="ln">113</span>                self.ui.lineEdit.setFont(fontPass)
+<span class="ln">114</span>                self.ui.labelInputCheckResult.setText(&#34;Input Check Result: PASS.&#34;)
+<span class="ln">115</span>                print(&#34;Input Check Result: PASS.&#34;)
+<span class="ln">116</span>            self.inputIntValue = intVal
+<span class="ln">117</span>        except:
+<span class="ln">118</span>            intVal = self.inputIntValue
+<span class="ln">119</span>            binVal = bin(intVal)
+<span class="ln">120</span>            self.inputIntValue = self.inputIntValue
+<span class="ln">121</span>            self.ui.lineEdit.setPalette(paletteFail)
+<span class="ln">122</span>            self.ui.lineEdit.setFont(fontFail)
+<span class="ln">123</span>            self.ui.labelInputCheckResult.setText(str(text)+&#39; is invalid input. \nNOTE: &#34;^0x[0-9A-Fa-f]+$&#34; for hex. &#34;^0b[0-1]+$&#34; for binary. &#34;^[0-9]+$&#34; for decimal.&#39;)
+<span class="ln">124</span>                 #    /^       # start of string
+<span class="ln">125</span>                 #    0x       # 0x prefix
+<span class="ln">126</span>                 #    [0-9A-F] # a hex digit
+<span class="ln">127</span>                 #    $        # end of string
+<span class="ln">128</span>        # for used:
+<span class="ln">129</span>        index = -1
+<span class="ln">130</span>        while binVal[index] in [&#34;1&#34;, &#34;0&#34;]:
+<span class="ln">131</span>            item = self.ui.tableWidget.item(0, 32 + index)
+<span class="ln">132</span>            item.setText(binVal[index])
+<span class="ln">133</span>            index = index - 1
+<span class="ln">134</span>        # for not used: make all zero
+<span class="ln">135</span>        while 32 + index &gt;= 0:
+<span class="ln">136</span>            item = self.ui.tableWidget.item(0, 32 + index)
+<span class="ln">137</span>            item.setText(&#34;0&#34;)
+<span class="ln">138</span>            index = index - 1
+<span class="ln">139</span>        self.buttonCleanSelection()
+<span class="ln">140</span>        self.itemSelectionChangedSlot()
+<span class="ln">141</span>
+<span class="ln">142</span>    def keyPressEvent(self, qKeyEvent):
+<span class="ln">143</span>        #print(qKeyEvent.key())
+<span class="ln">144</span>        if qKeyEvent.key() == QtCore.Qt.Key_Return or qKeyEvent.key() == QtCore.Qt.Key_Enter:
+<span class="ln">145</span>            self.buttonClicked()
+<span class="ln">146</span>            print(&#39;Enter pressed: &#39;)
+<span class="ln">147</span>        else:
+<span class="ln">148</span>            super().keyPressEvent(qKeyEvent)
+<span class="ln">149</span>
+<span class="ln">150</span>
+<span class="ln">151</span>if __name__ == &#39;__main__&#39;:
+<span class="ln">152</span>    app = QtWidgets.QApplication([])
+<span class="ln">153</span>    window = MainWindow()
+<span class="ln">154</span>    window.setWindowTitle(&#34;regDecodec ver.20200607&#34;)
+<span class="ln">155</span>
+<span class="ln">156</span>    brush = QtGui.QBrush(QtGui.QColor(245, 245, 245))
+<span class="ln">157</span>    brush.setStyle(QtCore.Qt.SolidPattern)
+<span class="ln">158</span>    for i in [0,16] :
+<span class="ln">159</span>        for j in range(0,8) :
+<span class="ln">160</span>            print(i+j)
+<span class="ln">161</span>            window.ui.tableWidget.item(0, i+j).setBackground(brush)
+<span class="ln">162</span>
+<span class="ln">163</span>
+<span class="ln">164</span>    window.show()
+<span class="ln">165</span>    sys.exit(app.exec_())
+<span class="ln">166</span>
+<span class="ln">167</span>
+<span class="ln">168</span>
+</code></pre></div><h3 id="regdecoderpy">regDecoder.py<a class="anchor ms-1" href="#regdecoderpy"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">  1</span># -*- coding: utf-8 -*-
+<span class="ln">  2</span>
+<span class="ln">  3</span># Form implementation generated from reading ui file &#39;regDecoder.ui&#39;
+<span class="ln">  4</span>#
+<span class="ln">  5</span># Created by: PyQt5 UI code generator 5.15.0
+<span class="ln">  6</span>#
+<span class="ln">  7</span># WARNING: Any manual changes made to this file will be lost when pyuic5 is
+<span class="ln">  8</span># run again.  Do not edit this file unless you know what you are doing.
+<span class="ln">  9</span>
+<span class="ln"> 10</span>
+<span class="ln"> 11</span>from PyQt5 import QtCore, QtGui, QtWidgets
+<span class="ln"> 12</span>
+<span class="ln"> 13</span>
+<span class="ln"> 14</span>class Ui_Form(object):
+<span class="ln"> 15</span>    def setupUi(self, Form):
+<span class="ln"> 16</span>        Form.setObjectName(&#34;Form&#34;)
+<span class="ln"> 17</span>        Form.resize(1043, 275)
+<span class="ln"> 18</span>        Form.setMinimumSize(QtCore.QSize(1043, 275))
+<span class="ln"> 19</span>        Form.setMaximumSize(QtCore.QSize(1043, 275))
+<span class="ln"> 20</span>        self.tableWidget = QtWidgets.QTableWidget(Form)
+<span class="ln"> 21</span>        self.tableWidget.setGeometry(QtCore.QRect(10, 100, 1021, 61))
+<span class="ln"> 22</span>        self.tableWidget.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+<span class="ln"> 23</span>        self.tableWidget.setObjectName(&#34;tableWidget&#34;)
+<span class="ln"> 24</span>        self.tableWidget.setColumnCount(32)
+<span class="ln"> 25</span>        self.tableWidget.setRowCount(1)
+<span class="ln"> 26</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 27</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln"> 28</span>        self.tableWidget.setVerticalHeaderItem(0, item)
+<span class="ln"> 29</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 30</span>        self.tableWidget.setHorizontalHeaderItem(0, item)
+<span class="ln"> 31</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 32</span>        self.tableWidget.setHorizontalHeaderItem(1, item)
+<span class="ln"> 33</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 34</span>        self.tableWidget.setHorizontalHeaderItem(2, item)
+<span class="ln"> 35</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 36</span>        self.tableWidget.setHorizontalHeaderItem(3, item)
+<span class="ln"> 37</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 38</span>        self.tableWidget.setHorizontalHeaderItem(4, item)
+<span class="ln"> 39</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 40</span>        self.tableWidget.setHorizontalHeaderItem(5, item)
+<span class="ln"> 41</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 42</span>        self.tableWidget.setHorizontalHeaderItem(6, item)
+<span class="ln"> 43</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 44</span>        self.tableWidget.setHorizontalHeaderItem(7, item)
+<span class="ln"> 45</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 46</span>        self.tableWidget.setHorizontalHeaderItem(8, item)
+<span class="ln"> 47</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 48</span>        self.tableWidget.setHorizontalHeaderItem(9, item)
+<span class="ln"> 49</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 50</span>        self.tableWidget.setHorizontalHeaderItem(10, item)
+<span class="ln"> 51</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 52</span>        self.tableWidget.setHorizontalHeaderItem(11, item)
+<span class="ln"> 53</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 54</span>        self.tableWidget.setHorizontalHeaderItem(12, item)
+<span class="ln"> 55</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 56</span>        self.tableWidget.setHorizontalHeaderItem(13, item)
+<span class="ln"> 57</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 58</span>        self.tableWidget.setHorizontalHeaderItem(14, item)
+<span class="ln"> 59</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 60</span>        self.tableWidget.setHorizontalHeaderItem(15, item)
+<span class="ln"> 61</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 62</span>        self.tableWidget.setHorizontalHeaderItem(16, item)
+<span class="ln"> 63</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 64</span>        self.tableWidget.setHorizontalHeaderItem(17, item)
+<span class="ln"> 65</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 66</span>        self.tableWidget.setHorizontalHeaderItem(18, item)
+<span class="ln"> 67</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 68</span>        self.tableWidget.setHorizontalHeaderItem(19, item)
+<span class="ln"> 69</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 70</span>        self.tableWidget.setHorizontalHeaderItem(20, item)
+<span class="ln"> 71</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 72</span>        self.tableWidget.setHorizontalHeaderItem(21, item)
+<span class="ln"> 73</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 74</span>        self.tableWidget.setHorizontalHeaderItem(22, item)
+<span class="ln"> 75</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 76</span>        self.tableWidget.setHorizontalHeaderItem(23, item)
+<span class="ln"> 77</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 78</span>        self.tableWidget.setHorizontalHeaderItem(24, item)
+<span class="ln"> 79</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 80</span>        self.tableWidget.setHorizontalHeaderItem(25, item)
+<span class="ln"> 81</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 82</span>        self.tableWidget.setHorizontalHeaderItem(26, item)
+<span class="ln"> 83</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 84</span>        self.tableWidget.setHorizontalHeaderItem(27, item)
+<span class="ln"> 85</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 86</span>        self.tableWidget.setHorizontalHeaderItem(28, item)
+<span class="ln"> 87</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 88</span>        self.tableWidget.setHorizontalHeaderItem(29, item)
+<span class="ln"> 89</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 90</span>        self.tableWidget.setHorizontalHeaderItem(30, item)
+<span class="ln"> 91</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 92</span>        self.tableWidget.setHorizontalHeaderItem(31, item)
+<span class="ln"> 93</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln"> 94</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln"> 95</span>        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+<span class="ln"> 96</span>        brush.setStyle(QtCore.Qt.NoBrush)
+<span class="ln"> 97</span>        item.setBackground(brush)
+<span class="ln"> 98</span>        self.tableWidget.setItem(0, 0, item)
+<span class="ln"> 99</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">100</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">101</span>        brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
+<span class="ln">102</span>        brush.setStyle(QtCore.Qt.NoBrush)
+<span class="ln">103</span>        item.setBackground(brush)
+<span class="ln">104</span>        self.tableWidget.setItem(0, 1, item)
+<span class="ln">105</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">106</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">107</span>        brush = QtGui.QBrush(QtGui.QColor(211, 211, 211))
+<span class="ln">108</span>        brush.setStyle(QtCore.Qt.NoBrush)
+<span class="ln">109</span>        item.setBackground(brush)
+<span class="ln">110</span>        self.tableWidget.setItem(0, 2, item)
+<span class="ln">111</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">112</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">113</span>        brush = QtGui.QBrush(QtGui.QColor(211, 211, 211))
+<span class="ln">114</span>        brush.setStyle(QtCore.Qt.NoBrush)
+<span class="ln">115</span>        item.setBackground(brush)
+<span class="ln">116</span>        self.tableWidget.setItem(0, 3, item)
+<span class="ln">117</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">118</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">119</span>        brush = QtGui.QBrush(QtGui.QColor(0, 0, 0))
+<span class="ln">120</span>        brush.setStyle(QtCore.Qt.NoBrush)
+<span class="ln">121</span>        item.setForeground(brush)
+<span class="ln">122</span>        self.tableWidget.setItem(0, 4, item)
+<span class="ln">123</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">124</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">125</span>        self.tableWidget.setItem(0, 5, item)
+<span class="ln">126</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">127</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">128</span>        self.tableWidget.setItem(0, 6, item)
+<span class="ln">129</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">130</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">131</span>        self.tableWidget.setItem(0, 7, item)
+<span class="ln">132</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">133</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">134</span>        self.tableWidget.setItem(0, 8, item)
+<span class="ln">135</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">136</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">137</span>        self.tableWidget.setItem(0, 9, item)
+<span class="ln">138</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">139</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">140</span>        self.tableWidget.setItem(0, 10, item)
+<span class="ln">141</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">142</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">143</span>        self.tableWidget.setItem(0, 11, item)
+<span class="ln">144</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">145</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">146</span>        self.tableWidget.setItem(0, 12, item)
+<span class="ln">147</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">148</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">149</span>        self.tableWidget.setItem(0, 13, item)
+<span class="ln">150</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">151</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">152</span>        self.tableWidget.setItem(0, 14, item)
+<span class="ln">153</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">154</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">155</span>        self.tableWidget.setItem(0, 15, item)
+<span class="ln">156</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">157</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">158</span>        self.tableWidget.setItem(0, 16, item)
+<span class="ln">159</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">160</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">161</span>        self.tableWidget.setItem(0, 17, item)
+<span class="ln">162</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">163</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">164</span>        self.tableWidget.setItem(0, 18, item)
+<span class="ln">165</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">166</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">167</span>        self.tableWidget.setItem(0, 19, item)
+<span class="ln">168</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">169</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">170</span>        self.tableWidget.setItem(0, 20, item)
+<span class="ln">171</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">172</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">173</span>        self.tableWidget.setItem(0, 21, item)
+<span class="ln">174</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">175</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">176</span>        self.tableWidget.setItem(0, 22, item)
+<span class="ln">177</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">178</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">179</span>        self.tableWidget.setItem(0, 23, item)
+<span class="ln">180</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">181</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">182</span>        self.tableWidget.setItem(0, 24, item)
+<span class="ln">183</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">184</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">185</span>        self.tableWidget.setItem(0, 25, item)
+<span class="ln">186</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">187</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">188</span>        self.tableWidget.setItem(0, 26, item)
+<span class="ln">189</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">190</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">191</span>        self.tableWidget.setItem(0, 27, item)
+<span class="ln">192</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">193</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">194</span>        self.tableWidget.setItem(0, 28, item)
+<span class="ln">195</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">196</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">197</span>        self.tableWidget.setItem(0, 29, item)
+<span class="ln">198</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">199</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">200</span>        self.tableWidget.setItem(0, 30, item)
+<span class="ln">201</span>        item = QtWidgets.QTableWidgetItem()
+<span class="ln">202</span>        item.setTextAlignment(QtCore.Qt.AlignCenter)
+<span class="ln">203</span>        self.tableWidget.setItem(0, 31, item)
+<span class="ln">204</span>        self.tableWidget.verticalHeader().setVisible(True)
+<span class="ln">205</span>        self.tableWidget.verticalHeader().setCascadingSectionResizes(True)
+<span class="ln">206</span>        self.tableWidget.verticalHeader().setStretchLastSection(True)
+<span class="ln">207</span>        self.lineEdit = QtWidgets.QLineEdit(Form)
+<span class="ln">208</span>        self.lineEdit.setGeometry(QtCore.QRect(30, 20, 301, 41))
+<span class="ln">209</span>        font = QtGui.QFont()
+<span class="ln">210</span>        font.setPointSize(12)
+<span class="ln">211</span>        self.lineEdit.setFont(font)
+<span class="ln">212</span>        self.lineEdit.setObjectName(&#34;lineEdit&#34;)
+<span class="ln">213</span>        self.pushButton = QtWidgets.QPushButton(Form)
+<span class="ln">214</span>        self.pushButton.setGeometry(QtCore.QRect(340, 20, 131, 41))
+<span class="ln">215</span>        font = QtGui.QFont()
+<span class="ln">216</span>        font.setPointSize(12)
+<span class="ln">217</span>        font.setBold(False)
+<span class="ln">218</span>        font.setWeight(50)
+<span class="ln">219</span>        self.pushButton.setFont(font)
+<span class="ln">220</span>        self.pushButton.setObjectName(&#34;pushButton&#34;)
+<span class="ln">221</span>        self.labelInputCheckResult = QtWidgets.QLabel(Form)
+<span class="ln">222</span>        self.labelInputCheckResult.setGeometry(QtCore.QRect(480, 20, 551, 41))
+<span class="ln">223</span>        font = QtGui.QFont()
+<span class="ln">224</span>        font.setPointSize(12)
+<span class="ln">225</span>        self.labelInputCheckResult.setFont(font)
+<span class="ln">226</span>        self.labelInputCheckResult.setObjectName(&#34;labelInputCheckResult&#34;)
+<span class="ln">227</span>        self.labelOutputResult = QtWidgets.QLabel(Form)
+<span class="ln">228</span>        self.labelOutputResult.setEnabled(True)
+<span class="ln">229</span>        self.labelOutputResult.setGeometry(QtCore.QRect(70, 180, 961, 31))
+<span class="ln">230</span>        font = QtGui.QFont()
+<span class="ln">231</span>        font.setPointSize(12)
+<span class="ln">232</span>        self.labelOutputResult.setFont(font)
+<span class="ln">233</span>        self.labelOutputResult.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+<span class="ln">234</span>        self.labelOutputResult.setObjectName(&#34;labelOutputResult&#34;)
+<span class="ln">235</span>        self.pushButtonCleanSelection = QtWidgets.QPushButton(Form)
+<span class="ln">236</span>        self.pushButtonCleanSelection.setGeometry(QtCore.QRect(930, 70, 101, 23))
+<span class="ln">237</span>        self.pushButtonCleanSelection.setObjectName(&#34;pushButtonCleanSelection&#34;)
+<span class="ln">238</span>        self.widget = QtWidgets.QWidget(Form)
+<span class="ln">239</span>        self.widget.setGeometry(QtCore.QRect(480, 210, 551, 51))
+<span class="ln">240</span>        self.widget.setObjectName(&#34;widget&#34;)
+<span class="ln">241</span>        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget)
+<span class="ln">242</span>        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+<span class="ln">243</span>        self.horizontalLayout.setObjectName(&#34;horizontalLayout&#34;)
+<span class="ln">244</span>        self.lineEditOutBin = QtWidgets.QLineEdit(self.widget)
+<span class="ln">245</span>        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+<span class="ln">246</span>        sizePolicy.setHorizontalStretch(3)
+<span class="ln">247</span>        sizePolicy.setVerticalStretch(0)
+<span class="ln">248</span>        sizePolicy.setHeightForWidth(self.lineEditOutBin.sizePolicy().hasHeightForWidth())
+<span class="ln">249</span>        self.lineEditOutBin.setSizePolicy(sizePolicy)
+<span class="ln">250</span>        font = QtGui.QFont()
+<span class="ln">251</span>        font.setPointSize(12)
+<span class="ln">252</span>        self.lineEditOutBin.setFont(font)
+<span class="ln">253</span>        self.lineEditOutBin.setReadOnly(True)
+<span class="ln">254</span>        self.lineEditOutBin.setObjectName(&#34;lineEditOutBin&#34;)
+<span class="ln">255</span>        self.horizontalLayout.addWidget(self.lineEditOutBin)
+<span class="ln">256</span>        self.lineEditOutDec = QtWidgets.QLineEdit(self.widget)
+<span class="ln">257</span>        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+<span class="ln">258</span>        sizePolicy.setHorizontalStretch(1)
+<span class="ln">259</span>        sizePolicy.setVerticalStretch(0)
+<span class="ln">260</span>        sizePolicy.setHeightForWidth(self.lineEditOutDec.sizePolicy().hasHeightForWidth())
+<span class="ln">261</span>        self.lineEditOutDec.setSizePolicy(sizePolicy)
+<span class="ln">262</span>        font = QtGui.QFont()
+<span class="ln">263</span>        font.setPointSize(12)
+<span class="ln">264</span>        self.lineEditOutDec.setFont(font)
+<span class="ln">265</span>        self.lineEditOutDec.setReadOnly(True)
+<span class="ln">266</span>        self.lineEditOutDec.setObjectName(&#34;lineEditOutDec&#34;)
+<span class="ln">267</span>        self.horizontalLayout.addWidget(self.lineEditOutDec)
+<span class="ln">268</span>        self.lineEditOutHex = QtWidgets.QLineEdit(self.widget)
+<span class="ln">269</span>        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+<span class="ln">270</span>        sizePolicy.setHorizontalStretch(1)
+<span class="ln">271</span>        sizePolicy.setVerticalStretch(0)
+<span class="ln">272</span>        sizePolicy.setHeightForWidth(self.lineEditOutHex.sizePolicy().hasHeightForWidth())
+<span class="ln">273</span>        self.lineEditOutHex.setSizePolicy(sizePolicy)
+<span class="ln">274</span>        font = QtGui.QFont()
+<span class="ln">275</span>        font.setPointSize(12)
+<span class="ln">276</span>        self.lineEditOutHex.setFont(font)
+<span class="ln">277</span>        self.lineEditOutHex.setReadOnly(True)
+<span class="ln">278</span>        self.lineEditOutHex.setObjectName(&#34;lineEditOutHex&#34;)
+<span class="ln">279</span>        self.horizontalLayout.addWidget(self.lineEditOutHex)
+<span class="ln">280</span>
+<span class="ln">281</span>        self.retranslateUi(Form)
+<span class="ln">282</span>        QtCore.QMetaObject.connectSlotsByName(Form)
+<span class="ln">283</span>
+<span class="ln">284</span>    def retranslateUi(self, Form):
+<span class="ln">285</span>        _translate = QtCore.QCoreApplication.translate
+<span class="ln">286</span>        Form.setWindowTitle(_translate(&#34;Form&#34;, &#34;Form&#34;))
+<span class="ln">287</span>        item = self.tableWidget.verticalHeaderItem(0)
+<span class="ln">288</span>        item.setText(_translate(&#34;Form&#34;, &#34;value&#34;))
+<span class="ln">289</span>        item = self.tableWidget.horizontalHeaderItem(0)
+<span class="ln">290</span>        item.setText(_translate(&#34;Form&#34;, &#34;31&#34;))
+<span class="ln">291</span>        item = self.tableWidget.horizontalHeaderItem(1)
+<span class="ln">292</span>        item.setText(_translate(&#34;Form&#34;, &#34;30&#34;))
+<span class="ln">293</span>        item = self.tableWidget.horizontalHeaderItem(2)
+<span class="ln">294</span>        item.setText(_translate(&#34;Form&#34;, &#34;29&#34;))
+<span class="ln">295</span>        item = self.tableWidget.horizontalHeaderItem(3)
+<span class="ln">296</span>        item.setText(_translate(&#34;Form&#34;, &#34;28&#34;))
+<span class="ln">297</span>        item = self.tableWidget.horizontalHeaderItem(4)
+<span class="ln">298</span>        item.setText(_translate(&#34;Form&#34;, &#34;27&#34;))
+<span class="ln">299</span>        item = self.tableWidget.horizontalHeaderItem(5)
+<span class="ln">300</span>        item.setText(_translate(&#34;Form&#34;, &#34;26&#34;))
+<span class="ln">301</span>        item = self.tableWidget.horizontalHeaderItem(6)
+<span class="ln">302</span>        item.setText(_translate(&#34;Form&#34;, &#34;25&#34;))
+<span class="ln">303</span>        item = self.tableWidget.horizontalHeaderItem(7)
+<span class="ln">304</span>        item.setText(_translate(&#34;Form&#34;, &#34;24&#34;))
+<span class="ln">305</span>        item = self.tableWidget.horizontalHeaderItem(8)
+<span class="ln">306</span>        item.setText(_translate(&#34;Form&#34;, &#34;23&#34;))
+<span class="ln">307</span>        item = self.tableWidget.horizontalHeaderItem(9)
+<span class="ln">308</span>        item.setText(_translate(&#34;Form&#34;, &#34;22&#34;))
+<span class="ln">309</span>        item = self.tableWidget.horizontalHeaderItem(10)
+<span class="ln">310</span>        item.setText(_translate(&#34;Form&#34;, &#34;21&#34;))
+<span class="ln">311</span>        item = self.tableWidget.horizontalHeaderItem(11)
+<span class="ln">312</span>        item.setText(_translate(&#34;Form&#34;, &#34;20&#34;))
+<span class="ln">313</span>        item = self.tableWidget.horizontalHeaderItem(12)
+<span class="ln">314</span>        item.setText(_translate(&#34;Form&#34;, &#34;19&#34;))
+<span class="ln">315</span>        item = self.tableWidget.horizontalHeaderItem(13)
+<span class="ln">316</span>        item.setText(_translate(&#34;Form&#34;, &#34;18&#34;))
+<span class="ln">317</span>        item = self.tableWidget.horizontalHeaderItem(14)
+<span class="ln">318</span>        item.setText(_translate(&#34;Form&#34;, &#34;17&#34;))
+<span class="ln">319</span>        item = self.tableWidget.horizontalHeaderItem(15)
+<span class="ln">320</span>        item.setText(_translate(&#34;Form&#34;, &#34;16&#34;))
+<span class="ln">321</span>        item = self.tableWidget.horizontalHeaderItem(16)
+<span class="ln">322</span>        item.setText(_translate(&#34;Form&#34;, &#34;15&#34;))
+<span class="ln">323</span>        item = self.tableWidget.horizontalHeaderItem(17)
+<span class="ln">324</span>        item.setText(_translate(&#34;Form&#34;, &#34;14&#34;))
+<span class="ln">325</span>        item = self.tableWidget.horizontalHeaderItem(18)
+<span class="ln">326</span>        item.setText(_translate(&#34;Form&#34;, &#34;13&#34;))
+<span class="ln">327</span>        item = self.tableWidget.horizontalHeaderItem(19)
+<span class="ln">328</span>        item.setText(_translate(&#34;Form&#34;, &#34;12&#34;))
+<span class="ln">329</span>        item = self.tableWidget.horizontalHeaderItem(20)
+<span class="ln">330</span>        item.setText(_translate(&#34;Form&#34;, &#34;11&#34;))
+<span class="ln">331</span>        item = self.tableWidget.horizontalHeaderItem(21)
+<span class="ln">332</span>        item.setText(_translate(&#34;Form&#34;, &#34;10&#34;))
+<span class="ln">333</span>        item = self.tableWidget.horizontalHeaderItem(22)
+<span class="ln">334</span>        item.setText(_translate(&#34;Form&#34;, &#34;9&#34;))
+<span class="ln">335</span>        item = self.tableWidget.horizontalHeaderItem(23)
+<span class="ln">336</span>        item.setText(_translate(&#34;Form&#34;, &#34;8&#34;))
+<span class="ln">337</span>        item = self.tableWidget.horizontalHeaderItem(24)
+<span class="ln">338</span>        item.setText(_translate(&#34;Form&#34;, &#34;7&#34;))
+<span class="ln">339</span>        item = self.tableWidget.horizontalHeaderItem(25)
+<span class="ln">340</span>        item.setText(_translate(&#34;Form&#34;, &#34;6&#34;))
+<span class="ln">341</span>        item = self.tableWidget.horizontalHeaderItem(26)
+<span class="ln">342</span>        item.setText(_translate(&#34;Form&#34;, &#34;5&#34;))
+<span class="ln">343</span>        item = self.tableWidget.horizontalHeaderItem(27)
+<span class="ln">344</span>        item.setText(_translate(&#34;Form&#34;, &#34;4&#34;))
+<span class="ln">345</span>        item = self.tableWidget.horizontalHeaderItem(28)
+<span class="ln">346</span>        item.setText(_translate(&#34;Form&#34;, &#34;3&#34;))
+<span class="ln">347</span>        item = self.tableWidget.horizontalHeaderItem(29)
+<span class="ln">348</span>        item.setText(_translate(&#34;Form&#34;, &#34;2&#34;))
+<span class="ln">349</span>        item = self.tableWidget.horizontalHeaderItem(30)
+<span class="ln">350</span>        item.setText(_translate(&#34;Form&#34;, &#34;1&#34;))
+<span class="ln">351</span>        item = self.tableWidget.horizontalHeaderItem(31)
+<span class="ln">352</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">353</span>        __sortingEnabled = self.tableWidget.isSortingEnabled()
+<span class="ln">354</span>        self.tableWidget.setSortingEnabled(False)
+<span class="ln">355</span>        item = self.tableWidget.item(0, 0)
+<span class="ln">356</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">357</span>        item = self.tableWidget.item(0, 1)
+<span class="ln">358</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">359</span>        item = self.tableWidget.item(0, 2)
+<span class="ln">360</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">361</span>        item = self.tableWidget.item(0, 3)
+<span class="ln">362</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">363</span>        item = self.tableWidget.item(0, 4)
+<span class="ln">364</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">365</span>        item = self.tableWidget.item(0, 5)
+<span class="ln">366</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">367</span>        item = self.tableWidget.item(0, 6)
+<span class="ln">368</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">369</span>        item = self.tableWidget.item(0, 7)
+<span class="ln">370</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">371</span>        item = self.tableWidget.item(0, 8)
+<span class="ln">372</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">373</span>        item = self.tableWidget.item(0, 9)
+<span class="ln">374</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">375</span>        item = self.tableWidget.item(0, 10)
+<span class="ln">376</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">377</span>        item = self.tableWidget.item(0, 11)
+<span class="ln">378</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">379</span>        item = self.tableWidget.item(0, 12)
+<span class="ln">380</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">381</span>        item = self.tableWidget.item(0, 13)
+<span class="ln">382</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">383</span>        item = self.tableWidget.item(0, 14)
+<span class="ln">384</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">385</span>        item = self.tableWidget.item(0, 15)
+<span class="ln">386</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">387</span>        item = self.tableWidget.item(0, 16)
+<span class="ln">388</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">389</span>        item = self.tableWidget.item(0, 17)
+<span class="ln">390</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">391</span>        item = self.tableWidget.item(0, 18)
+<span class="ln">392</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">393</span>        item = self.tableWidget.item(0, 19)
+<span class="ln">394</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">395</span>        item = self.tableWidget.item(0, 20)
+<span class="ln">396</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">397</span>        item = self.tableWidget.item(0, 21)
+<span class="ln">398</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">399</span>        item = self.tableWidget.item(0, 22)
+<span class="ln">400</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">401</span>        item = self.tableWidget.item(0, 23)
+<span class="ln">402</span>        item.setText(_translate(&#34;Form&#34;, &#34;0&#34;))
+<span class="ln">403</span>        item = self.tableWidget.item(0, 24)
+<span class="ln">404</span>        item.setText(_translate(&#34;Form&#34;, &#34;1&#34;))
+<span class="ln">405</span>        item = self.tableWidget.item(0, 25)
+<span class="ln">406</span>        item.setText(_translate(&#34;Form&#34;, &#34;1&#34;))
+<span class="ln">407</span>        item = self.tableWidget.item(0, 26)
+<span class="ln">408</span>        item.setText(_translate(&#34;Form&#34;, &#34;1&#34;))
+<span class="ln">409</span>        item = self.tableWidget.item(0, 27)
+<span class="ln">410</span>        item.setText(_translate(&#34;Form&#34;, &#34;1&#34;))
+<span class="ln">411</span>        item = self.tableWidget.item(0, 28)
+<span class="ln">412</span>        item.setText(_translate(&#34;Form&#34;, &#34;1&#34;))
+<span class="ln">413</span>        item = self.tableWidget.item(0, 29)
+<span class="ln">414</span>        item.setText(_translate(&#34;Form&#34;, &#34;1&#34;))
+<span class="ln">415</span>        item = self.tableWidget.item(0, 30)
+<span class="ln">416</span>        item.setText(_translate(&#34;Form&#34;, &#34;1&#34;))
+<span class="ln">417</span>        item = self.tableWidget.item(0, 31)
+<span class="ln">418</span>        item.setText(_translate(&#34;Form&#34;, &#34;1&#34;))
+<span class="ln">419</span>        self.tableWidget.setSortingEnabled(__sortingEnabled)
+<span class="ln">420</span>        self.lineEdit.setText(_translate(&#34;Form&#34;, &#34;0xFF&#34;))
+<span class="ln">421</span>        self.pushButton.setText(_translate(&#34;Form&#34;, &#34;Show it&#34;))
+<span class="ln">422</span>        self.labelInputCheckResult.setText(_translate(&#34;Form&#34;, &#34;Only Support 0~2^32-1. NOTE: \&#34;^0x[0-9A-Fa-f]+$\&#34; for hex. \&#34;^0b[0-1]+$\&#34; for binary.&#34;))
+<span class="ln">423</span>        self.labelOutputResult.setText(_translate(&#34;Form&#34;, &#34;Output Result: &#34;))
+<span class="ln">424</span>        self.pushButtonCleanSelection.setText(_translate(&#34;Form&#34;, &#34;clean selection&#34;))
+<span class="ln">425</span>        self.lineEditOutBin.setText(_translate(&#34;Form&#34;, &#34;0b11111111&#34;))
+<span class="ln">426</span>        self.lineEditOutDec.setText(_translate(&#34;Form&#34;, &#34;255&#34;))
+<span class="ln">427</span>        self.lineEditOutHex.setText(_translate(&#34;Form&#34;, &#34;0xFF&#34;))
+<span class="ln">428</span>
+</code></pre></div><h3 id="regdecoderui">regDecoder.ui<a class="anchor ms-1" href="#regdecoderui"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">  1</span>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+<span class="ln">  2</span>&lt;ui version=&#34;4.0&#34;&gt;
+<span class="ln">  3</span> &lt;class&gt;Form&lt;/class&gt;
+<span class="ln">  4</span> &lt;widget class=&#34;QWidget&#34; name=&#34;Form&#34;&gt;
+<span class="ln">  5</span>  &lt;property name=&#34;geometry&#34;&gt;
+<span class="ln">  6</span>   &lt;rect&gt;
+<span class="ln">  7</span>    &lt;x&gt;0&lt;/x&gt;
+<span class="ln">  8</span>    &lt;y&gt;0&lt;/y&gt;
+<span class="ln">  9</span>    &lt;width&gt;1043&lt;/width&gt;
+<span class="ln"> 10</span>    &lt;height&gt;275&lt;/height&gt;
+<span class="ln"> 11</span>   &lt;/rect&gt;
+<span class="ln"> 12</span>  &lt;/property&gt;
+<span class="ln"> 13</span>  &lt;property name=&#34;minimumSize&#34;&gt;
+<span class="ln"> 14</span>   &lt;size&gt;
+<span class="ln"> 15</span>    &lt;width&gt;1043&lt;/width&gt;
+<span class="ln"> 16</span>    &lt;height&gt;275&lt;/height&gt;
+<span class="ln"> 17</span>   &lt;/size&gt;
+<span class="ln"> 18</span>  &lt;/property&gt;
+<span class="ln"> 19</span>  &lt;property name=&#34;maximumSize&#34;&gt;
+<span class="ln"> 20</span>   &lt;size&gt;
+<span class="ln"> 21</span>    &lt;width&gt;1043&lt;/width&gt;
+<span class="ln"> 22</span>    &lt;height&gt;275&lt;/height&gt;
+<span class="ln"> 23</span>   &lt;/size&gt;
+<span class="ln"> 24</span>  &lt;/property&gt;
+<span class="ln"> 25</span>  &lt;property name=&#34;windowTitle&#34;&gt;
+<span class="ln"> 26</span>   &lt;string&gt;Form&lt;/string&gt;
+<span class="ln"> 27</span>  &lt;/property&gt;
+<span class="ln"> 28</span>  &lt;widget class=&#34;QTableWidget&#34; name=&#34;tableWidget&#34;&gt;
+<span class="ln"> 29</span>   &lt;property name=&#34;geometry&#34;&gt;
+<span class="ln"> 30</span>    &lt;rect&gt;
+<span class="ln"> 31</span>     &lt;x&gt;10&lt;/x&gt;
+<span class="ln"> 32</span>     &lt;y&gt;100&lt;/y&gt;
+<span class="ln"> 33</span>     &lt;width&gt;1021&lt;/width&gt;
+<span class="ln"> 34</span>     &lt;height&gt;61&lt;/height&gt;
+<span class="ln"> 35</span>    &lt;/rect&gt;
+<span class="ln"> 36</span>   &lt;/property&gt;
+<span class="ln"> 37</span>   &lt;property name=&#34;editTriggers&#34;&gt;
+<span class="ln"> 38</span>    &lt;set&gt;QAbstractItemView::NoEditTriggers&lt;/set&gt;
+<span class="ln"> 39</span>   &lt;/property&gt;
+<span class="ln"> 40</span>   &lt;attribute name=&#34;verticalHeaderVisible&#34;&gt;
+<span class="ln"> 41</span>    &lt;bool&gt;true&lt;/bool&gt;
+<span class="ln"> 42</span>   &lt;/attribute&gt;
+<span class="ln"> 43</span>   &lt;attribute name=&#34;verticalHeaderCascadingSectionResizes&#34;&gt;
+<span class="ln"> 44</span>    &lt;bool&gt;true&lt;/bool&gt;
+<span class="ln"> 45</span>   &lt;/attribute&gt;
+<span class="ln"> 46</span>   &lt;attribute name=&#34;verticalHeaderStretchLastSection&#34;&gt;
+<span class="ln"> 47</span>    &lt;bool&gt;true&lt;/bool&gt;
+<span class="ln"> 48</span>   &lt;/attribute&gt;
+<span class="ln"> 49</span>   &lt;row&gt;
+<span class="ln"> 50</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln"> 51</span>     &lt;string&gt;value&lt;/string&gt;
+<span class="ln"> 52</span>    &lt;/property&gt;
+<span class="ln"> 53</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln"> 54</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln"> 55</span>    &lt;/property&gt;
+<span class="ln"> 56</span>   &lt;/row&gt;
+<span class="ln"> 57</span>   &lt;column&gt;
+<span class="ln"> 58</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln"> 59</span>     &lt;string&gt;31&lt;/string&gt;
+<span class="ln"> 60</span>    &lt;/property&gt;
+<span class="ln"> 61</span>   &lt;/column&gt;
+<span class="ln"> 62</span>   &lt;column&gt;
+<span class="ln"> 63</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln"> 64</span>     &lt;string&gt;30&lt;/string&gt;
+<span class="ln"> 65</span>    &lt;/property&gt;
+<span class="ln"> 66</span>   &lt;/column&gt;
+<span class="ln"> 67</span>   &lt;column&gt;
+<span class="ln"> 68</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln"> 69</span>     &lt;string&gt;29&lt;/string&gt;
+<span class="ln"> 70</span>    &lt;/property&gt;
+<span class="ln"> 71</span>   &lt;/column&gt;
+<span class="ln"> 72</span>   &lt;column&gt;
+<span class="ln"> 73</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln"> 74</span>     &lt;string&gt;28&lt;/string&gt;
+<span class="ln"> 75</span>    &lt;/property&gt;
+<span class="ln"> 76</span>   &lt;/column&gt;
+<span class="ln"> 77</span>   &lt;column&gt;
+<span class="ln"> 78</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln"> 79</span>     &lt;string&gt;27&lt;/string&gt;
+<span class="ln"> 80</span>    &lt;/property&gt;
+<span class="ln"> 81</span>   &lt;/column&gt;
+<span class="ln"> 82</span>   &lt;column&gt;
+<span class="ln"> 83</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln"> 84</span>     &lt;string&gt;26&lt;/string&gt;
+<span class="ln"> 85</span>    &lt;/property&gt;
+<span class="ln"> 86</span>   &lt;/column&gt;
+<span class="ln"> 87</span>   &lt;column&gt;
+<span class="ln"> 88</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln"> 89</span>     &lt;string&gt;25&lt;/string&gt;
+<span class="ln"> 90</span>    &lt;/property&gt;
+<span class="ln"> 91</span>   &lt;/column&gt;
+<span class="ln"> 92</span>   &lt;column&gt;
+<span class="ln"> 93</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln"> 94</span>     &lt;string&gt;24&lt;/string&gt;
+<span class="ln"> 95</span>    &lt;/property&gt;
+<span class="ln"> 96</span>   &lt;/column&gt;
+<span class="ln"> 97</span>   &lt;column&gt;
+<span class="ln"> 98</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln"> 99</span>     &lt;string&gt;23&lt;/string&gt;
+<span class="ln">100</span>    &lt;/property&gt;
+<span class="ln">101</span>   &lt;/column&gt;
+<span class="ln">102</span>   &lt;column&gt;
+<span class="ln">103</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">104</span>     &lt;string&gt;22&lt;/string&gt;
+<span class="ln">105</span>    &lt;/property&gt;
+<span class="ln">106</span>   &lt;/column&gt;
+<span class="ln">107</span>   &lt;column&gt;
+<span class="ln">108</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">109</span>     &lt;string&gt;21&lt;/string&gt;
+<span class="ln">110</span>    &lt;/property&gt;
+<span class="ln">111</span>   &lt;/column&gt;
+<span class="ln">112</span>   &lt;column&gt;
+<span class="ln">113</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">114</span>     &lt;string&gt;20&lt;/string&gt;
+<span class="ln">115</span>    &lt;/property&gt;
+<span class="ln">116</span>   &lt;/column&gt;
+<span class="ln">117</span>   &lt;column&gt;
+<span class="ln">118</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">119</span>     &lt;string&gt;19&lt;/string&gt;
+<span class="ln">120</span>    &lt;/property&gt;
+<span class="ln">121</span>   &lt;/column&gt;
+<span class="ln">122</span>   &lt;column&gt;
+<span class="ln">123</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">124</span>     &lt;string&gt;18&lt;/string&gt;
+<span class="ln">125</span>    &lt;/property&gt;
+<span class="ln">126</span>   &lt;/column&gt;
+<span class="ln">127</span>   &lt;column&gt;
+<span class="ln">128</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">129</span>     &lt;string&gt;17&lt;/string&gt;
+<span class="ln">130</span>    &lt;/property&gt;
+<span class="ln">131</span>   &lt;/column&gt;
+<span class="ln">132</span>   &lt;column&gt;
+<span class="ln">133</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">134</span>     &lt;string&gt;16&lt;/string&gt;
+<span class="ln">135</span>    &lt;/property&gt;
+<span class="ln">136</span>   &lt;/column&gt;
+<span class="ln">137</span>   &lt;column&gt;
+<span class="ln">138</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">139</span>     &lt;string&gt;15&lt;/string&gt;
+<span class="ln">140</span>    &lt;/property&gt;
+<span class="ln">141</span>   &lt;/column&gt;
+<span class="ln">142</span>   &lt;column&gt;
+<span class="ln">143</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">144</span>     &lt;string&gt;14&lt;/string&gt;
+<span class="ln">145</span>    &lt;/property&gt;
+<span class="ln">146</span>   &lt;/column&gt;
+<span class="ln">147</span>   &lt;column&gt;
+<span class="ln">148</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">149</span>     &lt;string&gt;13&lt;/string&gt;
+<span class="ln">150</span>    &lt;/property&gt;
+<span class="ln">151</span>   &lt;/column&gt;
+<span class="ln">152</span>   &lt;column&gt;
+<span class="ln">153</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">154</span>     &lt;string&gt;12&lt;/string&gt;
+<span class="ln">155</span>    &lt;/property&gt;
+<span class="ln">156</span>   &lt;/column&gt;
+<span class="ln">157</span>   &lt;column&gt;
+<span class="ln">158</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">159</span>     &lt;string&gt;11&lt;/string&gt;
+<span class="ln">160</span>    &lt;/property&gt;
+<span class="ln">161</span>   &lt;/column&gt;
+<span class="ln">162</span>   &lt;column&gt;
+<span class="ln">163</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">164</span>     &lt;string&gt;10&lt;/string&gt;
+<span class="ln">165</span>    &lt;/property&gt;
+<span class="ln">166</span>   &lt;/column&gt;
+<span class="ln">167</span>   &lt;column&gt;
+<span class="ln">168</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">169</span>     &lt;string&gt;9&lt;/string&gt;
+<span class="ln">170</span>    &lt;/property&gt;
+<span class="ln">171</span>   &lt;/column&gt;
+<span class="ln">172</span>   &lt;column&gt;
+<span class="ln">173</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">174</span>     &lt;string&gt;8&lt;/string&gt;
+<span class="ln">175</span>    &lt;/property&gt;
+<span class="ln">176</span>   &lt;/column&gt;
+<span class="ln">177</span>   &lt;column&gt;
+<span class="ln">178</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">179</span>     &lt;string&gt;7&lt;/string&gt;
+<span class="ln">180</span>    &lt;/property&gt;
+<span class="ln">181</span>   &lt;/column&gt;
+<span class="ln">182</span>   &lt;column&gt;
+<span class="ln">183</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">184</span>     &lt;string&gt;6&lt;/string&gt;
+<span class="ln">185</span>    &lt;/property&gt;
+<span class="ln">186</span>   &lt;/column&gt;
+<span class="ln">187</span>   &lt;column&gt;
+<span class="ln">188</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">189</span>     &lt;string&gt;5&lt;/string&gt;
+<span class="ln">190</span>    &lt;/property&gt;
+<span class="ln">191</span>   &lt;/column&gt;
+<span class="ln">192</span>   &lt;column&gt;
+<span class="ln">193</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">194</span>     &lt;string&gt;4&lt;/string&gt;
+<span class="ln">195</span>    &lt;/property&gt;
+<span class="ln">196</span>   &lt;/column&gt;
+<span class="ln">197</span>   &lt;column&gt;
+<span class="ln">198</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">199</span>     &lt;string&gt;3&lt;/string&gt;
+<span class="ln">200</span>    &lt;/property&gt;
+<span class="ln">201</span>   &lt;/column&gt;
+<span class="ln">202</span>   &lt;column&gt;
+<span class="ln">203</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">204</span>     &lt;string&gt;2&lt;/string&gt;
+<span class="ln">205</span>    &lt;/property&gt;
+<span class="ln">206</span>   &lt;/column&gt;
+<span class="ln">207</span>   &lt;column&gt;
+<span class="ln">208</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">209</span>     &lt;string&gt;1&lt;/string&gt;
+<span class="ln">210</span>    &lt;/property&gt;
+<span class="ln">211</span>   &lt;/column&gt;
+<span class="ln">212</span>   &lt;column&gt;
+<span class="ln">213</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">214</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">215</span>    &lt;/property&gt;
+<span class="ln">216</span>   &lt;/column&gt;
+<span class="ln">217</span>   &lt;item row=&#34;0&#34; column=&#34;0&#34;&gt;
+<span class="ln">218</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">219</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">220</span>    &lt;/property&gt;
+<span class="ln">221</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">222</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">223</span>    &lt;/property&gt;
+<span class="ln">224</span>    &lt;property name=&#34;background&#34;&gt;
+<span class="ln">225</span>     &lt;brush brushstyle=&#34;NoBrush&#34;&gt;
+<span class="ln">226</span>      &lt;color alpha=&#34;255&#34;&gt;
+<span class="ln">227</span>       &lt;red&gt;255&lt;/red&gt;
+<span class="ln">228</span>       &lt;green&gt;255&lt;/green&gt;
+<span class="ln">229</span>       &lt;blue&gt;255&lt;/blue&gt;
+<span class="ln">230</span>      &lt;/color&gt;
+<span class="ln">231</span>     &lt;/brush&gt;
+<span class="ln">232</span>    &lt;/property&gt;
+<span class="ln">233</span>   &lt;/item&gt;
+<span class="ln">234</span>   &lt;item row=&#34;0&#34; column=&#34;1&#34;&gt;
+<span class="ln">235</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">236</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">237</span>    &lt;/property&gt;
+<span class="ln">238</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">239</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">240</span>    &lt;/property&gt;
+<span class="ln">241</span>    &lt;property name=&#34;background&#34;&gt;
+<span class="ln">242</span>     &lt;brush brushstyle=&#34;NoBrush&#34;&gt;
+<span class="ln">243</span>      &lt;color alpha=&#34;255&#34;&gt;
+<span class="ln">244</span>       &lt;red&gt;255&lt;/red&gt;
+<span class="ln">245</span>       &lt;green&gt;255&lt;/green&gt;
+<span class="ln">246</span>       &lt;blue&gt;255&lt;/blue&gt;
+<span class="ln">247</span>      &lt;/color&gt;
+<span class="ln">248</span>     &lt;/brush&gt;
+<span class="ln">249</span>    &lt;/property&gt;
+<span class="ln">250</span>   &lt;/item&gt;
+<span class="ln">251</span>   &lt;item row=&#34;0&#34; column=&#34;2&#34;&gt;
+<span class="ln">252</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">253</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">254</span>    &lt;/property&gt;
+<span class="ln">255</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">256</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">257</span>    &lt;/property&gt;
+<span class="ln">258</span>    &lt;property name=&#34;background&#34;&gt;
+<span class="ln">259</span>     &lt;brush brushstyle=&#34;NoBrush&#34;&gt;
+<span class="ln">260</span>      &lt;color alpha=&#34;255&#34;&gt;
+<span class="ln">261</span>       &lt;red&gt;211&lt;/red&gt;
+<span class="ln">262</span>       &lt;green&gt;211&lt;/green&gt;
+<span class="ln">263</span>       &lt;blue&gt;211&lt;/blue&gt;
+<span class="ln">264</span>      &lt;/color&gt;
+<span class="ln">265</span>     &lt;/brush&gt;
+<span class="ln">266</span>    &lt;/property&gt;
+<span class="ln">267</span>   &lt;/item&gt;
+<span class="ln">268</span>   &lt;item row=&#34;0&#34; column=&#34;3&#34;&gt;
+<span class="ln">269</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">270</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">271</span>    &lt;/property&gt;
+<span class="ln">272</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">273</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">274</span>    &lt;/property&gt;
+<span class="ln">275</span>    &lt;property name=&#34;background&#34;&gt;
+<span class="ln">276</span>     &lt;brush brushstyle=&#34;NoBrush&#34;&gt;
+<span class="ln">277</span>      &lt;color alpha=&#34;255&#34;&gt;
+<span class="ln">278</span>       &lt;red&gt;211&lt;/red&gt;
+<span class="ln">279</span>       &lt;green&gt;211&lt;/green&gt;
+<span class="ln">280</span>       &lt;blue&gt;211&lt;/blue&gt;
+<span class="ln">281</span>      &lt;/color&gt;
+<span class="ln">282</span>     &lt;/brush&gt;
+<span class="ln">283</span>    &lt;/property&gt;
+<span class="ln">284</span>   &lt;/item&gt;
+<span class="ln">285</span>   &lt;item row=&#34;0&#34; column=&#34;4&#34;&gt;
+<span class="ln">286</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">287</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">288</span>    &lt;/property&gt;
+<span class="ln">289</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">290</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">291</span>    &lt;/property&gt;
+<span class="ln">292</span>    &lt;property name=&#34;foreground&#34;&gt;
+<span class="ln">293</span>     &lt;brush brushstyle=&#34;NoBrush&#34;&gt;
+<span class="ln">294</span>      &lt;color alpha=&#34;255&#34;&gt;
+<span class="ln">295</span>       &lt;red&gt;0&lt;/red&gt;
+<span class="ln">296</span>       &lt;green&gt;0&lt;/green&gt;
+<span class="ln">297</span>       &lt;blue&gt;0&lt;/blue&gt;
+<span class="ln">298</span>      &lt;/color&gt;
+<span class="ln">299</span>     &lt;/brush&gt;
+<span class="ln">300</span>    &lt;/property&gt;
+<span class="ln">301</span>   &lt;/item&gt;
+<span class="ln">302</span>   &lt;item row=&#34;0&#34; column=&#34;5&#34;&gt;
+<span class="ln">303</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">304</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">305</span>    &lt;/property&gt;
+<span class="ln">306</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">307</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">308</span>    &lt;/property&gt;
+<span class="ln">309</span>   &lt;/item&gt;
+<span class="ln">310</span>   &lt;item row=&#34;0&#34; column=&#34;6&#34;&gt;
+<span class="ln">311</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">312</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">313</span>    &lt;/property&gt;
+<span class="ln">314</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">315</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">316</span>    &lt;/property&gt;
+<span class="ln">317</span>   &lt;/item&gt;
+<span class="ln">318</span>   &lt;item row=&#34;0&#34; column=&#34;7&#34;&gt;
+<span class="ln">319</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">320</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">321</span>    &lt;/property&gt;
+<span class="ln">322</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">323</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">324</span>    &lt;/property&gt;
+<span class="ln">325</span>   &lt;/item&gt;
+<span class="ln">326</span>   &lt;item row=&#34;0&#34; column=&#34;8&#34;&gt;
+<span class="ln">327</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">328</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">329</span>    &lt;/property&gt;
+<span class="ln">330</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">331</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">332</span>    &lt;/property&gt;
+<span class="ln">333</span>   &lt;/item&gt;
+<span class="ln">334</span>   &lt;item row=&#34;0&#34; column=&#34;9&#34;&gt;
+<span class="ln">335</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">336</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">337</span>    &lt;/property&gt;
+<span class="ln">338</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">339</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">340</span>    &lt;/property&gt;
+<span class="ln">341</span>   &lt;/item&gt;
+<span class="ln">342</span>   &lt;item row=&#34;0&#34; column=&#34;10&#34;&gt;
+<span class="ln">343</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">344</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">345</span>    &lt;/property&gt;
+<span class="ln">346</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">347</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">348</span>    &lt;/property&gt;
+<span class="ln">349</span>   &lt;/item&gt;
+<span class="ln">350</span>   &lt;item row=&#34;0&#34; column=&#34;11&#34;&gt;
+<span class="ln">351</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">352</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">353</span>    &lt;/property&gt;
+<span class="ln">354</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">355</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">356</span>    &lt;/property&gt;
+<span class="ln">357</span>   &lt;/item&gt;
+<span class="ln">358</span>   &lt;item row=&#34;0&#34; column=&#34;12&#34;&gt;
+<span class="ln">359</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">360</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">361</span>    &lt;/property&gt;
+<span class="ln">362</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">363</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">364</span>    &lt;/property&gt;
+<span class="ln">365</span>   &lt;/item&gt;
+<span class="ln">366</span>   &lt;item row=&#34;0&#34; column=&#34;13&#34;&gt;
+<span class="ln">367</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">368</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">369</span>    &lt;/property&gt;
+<span class="ln">370</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">371</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">372</span>    &lt;/property&gt;
+<span class="ln">373</span>   &lt;/item&gt;
+<span class="ln">374</span>   &lt;item row=&#34;0&#34; column=&#34;14&#34;&gt;
+<span class="ln">375</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">376</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">377</span>    &lt;/property&gt;
+<span class="ln">378</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">379</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">380</span>    &lt;/property&gt;
+<span class="ln">381</span>   &lt;/item&gt;
+<span class="ln">382</span>   &lt;item row=&#34;0&#34; column=&#34;15&#34;&gt;
+<span class="ln">383</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">384</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">385</span>    &lt;/property&gt;
+<span class="ln">386</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">387</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">388</span>    &lt;/property&gt;
+<span class="ln">389</span>   &lt;/item&gt;
+<span class="ln">390</span>   &lt;item row=&#34;0&#34; column=&#34;16&#34;&gt;
+<span class="ln">391</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">392</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">393</span>    &lt;/property&gt;
+<span class="ln">394</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">395</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">396</span>    &lt;/property&gt;
+<span class="ln">397</span>   &lt;/item&gt;
+<span class="ln">398</span>   &lt;item row=&#34;0&#34; column=&#34;17&#34;&gt;
+<span class="ln">399</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">400</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">401</span>    &lt;/property&gt;
+<span class="ln">402</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">403</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">404</span>    &lt;/property&gt;
+<span class="ln">405</span>   &lt;/item&gt;
+<span class="ln">406</span>   &lt;item row=&#34;0&#34; column=&#34;18&#34;&gt;
+<span class="ln">407</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">408</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">409</span>    &lt;/property&gt;
+<span class="ln">410</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">411</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">412</span>    &lt;/property&gt;
+<span class="ln">413</span>   &lt;/item&gt;
+<span class="ln">414</span>   &lt;item row=&#34;0&#34; column=&#34;19&#34;&gt;
+<span class="ln">415</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">416</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">417</span>    &lt;/property&gt;
+<span class="ln">418</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">419</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">420</span>    &lt;/property&gt;
+<span class="ln">421</span>   &lt;/item&gt;
+<span class="ln">422</span>   &lt;item row=&#34;0&#34; column=&#34;20&#34;&gt;
+<span class="ln">423</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">424</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">425</span>    &lt;/property&gt;
+<span class="ln">426</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">427</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">428</span>    &lt;/property&gt;
+<span class="ln">429</span>   &lt;/item&gt;
+<span class="ln">430</span>   &lt;item row=&#34;0&#34; column=&#34;21&#34;&gt;
+<span class="ln">431</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">432</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">433</span>    &lt;/property&gt;
+<span class="ln">434</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">435</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">436</span>    &lt;/property&gt;
+<span class="ln">437</span>   &lt;/item&gt;
+<span class="ln">438</span>   &lt;item row=&#34;0&#34; column=&#34;22&#34;&gt;
+<span class="ln">439</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">440</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">441</span>    &lt;/property&gt;
+<span class="ln">442</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">443</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">444</span>    &lt;/property&gt;
+<span class="ln">445</span>   &lt;/item&gt;
+<span class="ln">446</span>   &lt;item row=&#34;0&#34; column=&#34;23&#34;&gt;
+<span class="ln">447</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">448</span>     &lt;string&gt;0&lt;/string&gt;
+<span class="ln">449</span>    &lt;/property&gt;
+<span class="ln">450</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">451</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">452</span>    &lt;/property&gt;
+<span class="ln">453</span>   &lt;/item&gt;
+<span class="ln">454</span>   &lt;item row=&#34;0&#34; column=&#34;24&#34;&gt;
+<span class="ln">455</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">456</span>     &lt;string&gt;1&lt;/string&gt;
+<span class="ln">457</span>    &lt;/property&gt;
+<span class="ln">458</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">459</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">460</span>    &lt;/property&gt;
+<span class="ln">461</span>   &lt;/item&gt;
+<span class="ln">462</span>   &lt;item row=&#34;0&#34; column=&#34;25&#34;&gt;
+<span class="ln">463</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">464</span>     &lt;string&gt;1&lt;/string&gt;
+<span class="ln">465</span>    &lt;/property&gt;
+<span class="ln">466</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">467</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">468</span>    &lt;/property&gt;
+<span class="ln">469</span>   &lt;/item&gt;
+<span class="ln">470</span>   &lt;item row=&#34;0&#34; column=&#34;26&#34;&gt;
+<span class="ln">471</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">472</span>     &lt;string&gt;1&lt;/string&gt;
+<span class="ln">473</span>    &lt;/property&gt;
+<span class="ln">474</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">475</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">476</span>    &lt;/property&gt;
+<span class="ln">477</span>   &lt;/item&gt;
+<span class="ln">478</span>   &lt;item row=&#34;0&#34; column=&#34;27&#34;&gt;
+<span class="ln">479</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">480</span>     &lt;string&gt;1&lt;/string&gt;
+<span class="ln">481</span>    &lt;/property&gt;
+<span class="ln">482</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">483</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">484</span>    &lt;/property&gt;
+<span class="ln">485</span>   &lt;/item&gt;
+<span class="ln">486</span>   &lt;item row=&#34;0&#34; column=&#34;28&#34;&gt;
+<span class="ln">487</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">488</span>     &lt;string&gt;1&lt;/string&gt;
+<span class="ln">489</span>    &lt;/property&gt;
+<span class="ln">490</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">491</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">492</span>    &lt;/property&gt;
+<span class="ln">493</span>   &lt;/item&gt;
+<span class="ln">494</span>   &lt;item row=&#34;0&#34; column=&#34;29&#34;&gt;
+<span class="ln">495</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">496</span>     &lt;string&gt;1&lt;/string&gt;
+<span class="ln">497</span>    &lt;/property&gt;
+<span class="ln">498</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">499</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">500</span>    &lt;/property&gt;
+<span class="ln">501</span>   &lt;/item&gt;
+<span class="ln">502</span>   &lt;item row=&#34;0&#34; column=&#34;30&#34;&gt;
+<span class="ln">503</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">504</span>     &lt;string&gt;1&lt;/string&gt;
+<span class="ln">505</span>    &lt;/property&gt;
+<span class="ln">506</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">507</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">508</span>    &lt;/property&gt;
+<span class="ln">509</span>   &lt;/item&gt;
+<span class="ln">510</span>   &lt;item row=&#34;0&#34; column=&#34;31&#34;&gt;
+<span class="ln">511</span>    &lt;property name=&#34;text&#34;&gt;
+<span class="ln">512</span>     &lt;string&gt;1&lt;/string&gt;
+<span class="ln">513</span>    &lt;/property&gt;
+<span class="ln">514</span>    &lt;property name=&#34;textAlignment&#34;&gt;
+<span class="ln">515</span>     &lt;set&gt;AlignCenter&lt;/set&gt;
+<span class="ln">516</span>    &lt;/property&gt;
+<span class="ln">517</span>   &lt;/item&gt;
+<span class="ln">518</span>  &lt;/widget&gt;
+<span class="ln">519</span>  &lt;widget class=&#34;QLineEdit&#34; name=&#34;lineEdit&#34;&gt;
+<span class="ln">520</span>   &lt;property name=&#34;geometry&#34;&gt;
+<span class="ln">521</span>    &lt;rect&gt;
+<span class="ln">522</span>     &lt;x&gt;30&lt;/x&gt;
+<span class="ln">523</span>     &lt;y&gt;20&lt;/y&gt;
+<span class="ln">524</span>     &lt;width&gt;301&lt;/width&gt;
+<span class="ln">525</span>     &lt;height&gt;41&lt;/height&gt;
+<span class="ln">526</span>    &lt;/rect&gt;
+<span class="ln">527</span>   &lt;/property&gt;
+<span class="ln">528</span>   &lt;property name=&#34;font&#34;&gt;
+<span class="ln">529</span>    &lt;font&gt;
+<span class="ln">530</span>     &lt;pointsize&gt;12&lt;/pointsize&gt;
+<span class="ln">531</span>    &lt;/font&gt;
+<span class="ln">532</span>   &lt;/property&gt;
+<span class="ln">533</span>   &lt;property name=&#34;text&#34;&gt;
+<span class="ln">534</span>    &lt;string&gt;0xFF&lt;/string&gt;
+<span class="ln">535</span>   &lt;/property&gt;
+<span class="ln">536</span>  &lt;/widget&gt;
+<span class="ln">537</span>  &lt;widget class=&#34;QPushButton&#34; name=&#34;pushButton&#34;&gt;
+<span class="ln">538</span>   &lt;property name=&#34;geometry&#34;&gt;
+<span class="ln">539</span>    &lt;rect&gt;
+<span class="ln">540</span>     &lt;x&gt;340&lt;/x&gt;
+<span class="ln">541</span>     &lt;y&gt;20&lt;/y&gt;
+<span class="ln">542</span>     &lt;width&gt;131&lt;/width&gt;
+<span class="ln">543</span>     &lt;height&gt;41&lt;/height&gt;
+<span class="ln">544</span>    &lt;/rect&gt;
+<span class="ln">545</span>   &lt;/property&gt;
+<span class="ln">546</span>   &lt;property name=&#34;font&#34;&gt;
+<span class="ln">547</span>    &lt;font&gt;
+<span class="ln">548</span>     &lt;pointsize&gt;12&lt;/pointsize&gt;
+<span class="ln">549</span>     &lt;weight&gt;50&lt;/weight&gt;
+<span class="ln">550</span>     &lt;bold&gt;false&lt;/bold&gt;
+<span class="ln">551</span>    &lt;/font&gt;
+<span class="ln">552</span>   &lt;/property&gt;
+<span class="ln">553</span>   &lt;property name=&#34;text&#34;&gt;
+<span class="ln">554</span>    &lt;string&gt;Show it&lt;/string&gt;
+<span class="ln">555</span>   &lt;/property&gt;
+<span class="ln">556</span>  &lt;/widget&gt;
+<span class="ln">557</span>  &lt;widget class=&#34;QLabel&#34; name=&#34;labelInputCheckResult&#34;&gt;
+<span class="ln">558</span>   &lt;property name=&#34;geometry&#34;&gt;
+<span class="ln">559</span>    &lt;rect&gt;
+<span class="ln">560</span>     &lt;x&gt;480&lt;/x&gt;
+<span class="ln">561</span>     &lt;y&gt;20&lt;/y&gt;
+<span class="ln">562</span>     &lt;width&gt;551&lt;/width&gt;
+<span class="ln">563</span>     &lt;height&gt;41&lt;/height&gt;
+<span class="ln">564</span>    &lt;/rect&gt;
+<span class="ln">565</span>   &lt;/property&gt;
+<span class="ln">566</span>   &lt;property name=&#34;font&#34;&gt;
+<span class="ln">567</span>    &lt;font&gt;
+<span class="ln">568</span>     &lt;pointsize&gt;12&lt;/pointsize&gt;
+<span class="ln">569</span>    &lt;/font&gt;
+<span class="ln">570</span>   &lt;/property&gt;
+<span class="ln">571</span>   &lt;property name=&#34;text&#34;&gt;
+<span class="ln">572</span>    &lt;string&gt;Only Support 0~2^32-1. NOTE: &amp;quot;^0x[0-9A-Fa-f]+$&amp;quot; for hex. &amp;quot;^0b[0-1]+$&amp;quot; for binary.&lt;/string&gt;
+<span class="ln">573</span>   &lt;/property&gt;
+<span class="ln">574</span>  &lt;/widget&gt;
+<span class="ln">575</span>  &lt;widget class=&#34;QLabel&#34; name=&#34;labelOutputResult&#34;&gt;
+<span class="ln">576</span>   &lt;property name=&#34;enabled&#34;&gt;
+<span class="ln">577</span>    &lt;bool&gt;true&lt;/bool&gt;
+<span class="ln">578</span>   &lt;/property&gt;
+<span class="ln">579</span>   &lt;property name=&#34;geometry&#34;&gt;
+<span class="ln">580</span>    &lt;rect&gt;
+<span class="ln">581</span>     &lt;x&gt;70&lt;/x&gt;
+<span class="ln">582</span>     &lt;y&gt;180&lt;/y&gt;
+<span class="ln">583</span>     &lt;width&gt;961&lt;/width&gt;
+<span class="ln">584</span>     &lt;height&gt;31&lt;/height&gt;
+<span class="ln">585</span>    &lt;/rect&gt;
+<span class="ln">586</span>   &lt;/property&gt;
+<span class="ln">587</span>   &lt;property name=&#34;font&#34;&gt;
+<span class="ln">588</span>    &lt;font&gt;
+<span class="ln">589</span>     &lt;pointsize&gt;12&lt;/pointsize&gt;
+<span class="ln">590</span>    &lt;/font&gt;
+<span class="ln">591</span>   &lt;/property&gt;
+<span class="ln">592</span>   &lt;property name=&#34;text&#34;&gt;
+<span class="ln">593</span>    &lt;string&gt;Output Result: &lt;/string&gt;
+<span class="ln">594</span>   &lt;/property&gt;
+<span class="ln">595</span>   &lt;property name=&#34;alignment&#34;&gt;
+<span class="ln">596</span>    &lt;set&gt;Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter&lt;/set&gt;
+<span class="ln">597</span>   &lt;/property&gt;
+<span class="ln">598</span>  &lt;/widget&gt;
+<span class="ln">599</span>  &lt;widget class=&#34;QPushButton&#34; name=&#34;pushButtonCleanSelection&#34;&gt;
+<span class="ln">600</span>   &lt;property name=&#34;geometry&#34;&gt;
+<span class="ln">601</span>    &lt;rect&gt;
+<span class="ln">602</span>     &lt;x&gt;930&lt;/x&gt;
+<span class="ln">603</span>     &lt;y&gt;70&lt;/y&gt;
+<span class="ln">604</span>     &lt;width&gt;101&lt;/width&gt;
+<span class="ln">605</span>     &lt;height&gt;23&lt;/height&gt;
+<span class="ln">606</span>    &lt;/rect&gt;
+<span class="ln">607</span>   &lt;/property&gt;
+<span class="ln">608</span>   &lt;property name=&#34;text&#34;&gt;
+<span class="ln">609</span>    &lt;string&gt;clean selection&lt;/string&gt;
+<span class="ln">610</span>   &lt;/property&gt;
+<span class="ln">611</span>  &lt;/widget&gt;
+<span class="ln">612</span>  &lt;widget class=&#34;QWidget&#34; name=&#34;&#34;&gt;
+<span class="ln">613</span>   &lt;property name=&#34;geometry&#34;&gt;
+<span class="ln">614</span>    &lt;rect&gt;
+<span class="ln">615</span>     &lt;x&gt;480&lt;/x&gt;
+<span class="ln">616</span>     &lt;y&gt;210&lt;/y&gt;
+<span class="ln">617</span>     &lt;width&gt;551&lt;/width&gt;
+<span class="ln">618</span>     &lt;height&gt;51&lt;/height&gt;
+<span class="ln">619</span>    &lt;/rect&gt;
+<span class="ln">620</span>   &lt;/property&gt;
+<span class="ln">621</span>   &lt;layout class=&#34;QHBoxLayout&#34; name=&#34;horizontalLayout&#34;&gt;
+<span class="ln">622</span>    &lt;item&gt;
+<span class="ln">623</span>     &lt;widget class=&#34;QLineEdit&#34; name=&#34;lineEditOutBin&#34;&gt;
+<span class="ln">624</span>      &lt;property name=&#34;sizePolicy&#34;&gt;
+<span class="ln">625</span>       &lt;sizepolicy hsizetype=&#34;Expanding&#34; vsizetype=&#34;Expanding&#34;&gt;
+<span class="ln">626</span>        &lt;horstretch&gt;3&lt;/horstretch&gt;
+<span class="ln">627</span>        &lt;verstretch&gt;0&lt;/verstretch&gt;
+<span class="ln">628</span>       &lt;/sizepolicy&gt;
+<span class="ln">629</span>      &lt;/property&gt;
+<span class="ln">630</span>      &lt;property name=&#34;font&#34;&gt;
+<span class="ln">631</span>       &lt;font&gt;
+<span class="ln">632</span>        &lt;pointsize&gt;12&lt;/pointsize&gt;
+<span class="ln">633</span>       &lt;/font&gt;
+<span class="ln">634</span>      &lt;/property&gt;
+<span class="ln">635</span>      &lt;property name=&#34;text&#34;&gt;
+<span class="ln">636</span>       &lt;string&gt;0b11111111&lt;/string&gt;
+<span class="ln">637</span>      &lt;/property&gt;
+<span class="ln">638</span>      &lt;property name=&#34;readOnly&#34;&gt;
+<span class="ln">639</span>       &lt;bool&gt;true&lt;/bool&gt;
+<span class="ln">640</span>      &lt;/property&gt;
+<span class="ln">641</span>     &lt;/widget&gt;
+<span class="ln">642</span>    &lt;/item&gt;
+<span class="ln">643</span>    &lt;item&gt;
+<span class="ln">644</span>     &lt;widget class=&#34;QLineEdit&#34; name=&#34;lineEditOutDec&#34;&gt;
+<span class="ln">645</span>      &lt;property name=&#34;sizePolicy&#34;&gt;
+<span class="ln">646</span>       &lt;sizepolicy hsizetype=&#34;Expanding&#34; vsizetype=&#34;Expanding&#34;&gt;
+<span class="ln">647</span>        &lt;horstretch&gt;1&lt;/horstretch&gt;
+<span class="ln">648</span>        &lt;verstretch&gt;0&lt;/verstretch&gt;
+<span class="ln">649</span>       &lt;/sizepolicy&gt;
+<span class="ln">650</span>      &lt;/property&gt;
+<span class="ln">651</span>      &lt;property name=&#34;font&#34;&gt;
+<span class="ln">652</span>       &lt;font&gt;
+<span class="ln">653</span>        &lt;pointsize&gt;12&lt;/pointsize&gt;
+<span class="ln">654</span>       &lt;/font&gt;
+<span class="ln">655</span>      &lt;/property&gt;
+<span class="ln">656</span>      &lt;property name=&#34;text&#34;&gt;
+<span class="ln">657</span>       &lt;string&gt;255&lt;/string&gt;
+<span class="ln">658</span>      &lt;/property&gt;
+<span class="ln">659</span>      &lt;property name=&#34;readOnly&#34;&gt;
+<span class="ln">660</span>       &lt;bool&gt;true&lt;/bool&gt;
+<span class="ln">661</span>      &lt;/property&gt;
+<span class="ln">662</span>     &lt;/widget&gt;
+<span class="ln">663</span>    &lt;/item&gt;
+<span class="ln">664</span>    &lt;item&gt;
+<span class="ln">665</span>     &lt;widget class=&#34;QLineEdit&#34; name=&#34;lineEditOutHex&#34;&gt;
+<span class="ln">666</span>      &lt;property name=&#34;sizePolicy&#34;&gt;
+<span class="ln">667</span>       &lt;sizepolicy hsizetype=&#34;Expanding&#34; vsizetype=&#34;Expanding&#34;&gt;
+<span class="ln">668</span>        &lt;horstretch&gt;1&lt;/horstretch&gt;
+<span class="ln">669</span>        &lt;verstretch&gt;0&lt;/verstretch&gt;
+<span class="ln">670</span>       &lt;/sizepolicy&gt;
+<span class="ln">671</span>      &lt;/property&gt;
+<span class="ln">672</span>      &lt;property name=&#34;font&#34;&gt;
+<span class="ln">673</span>       &lt;font&gt;
+<span class="ln">674</span>        &lt;pointsize&gt;12&lt;/pointsize&gt;
+<span class="ln">675</span>       &lt;/font&gt;
+<span class="ln">676</span>      &lt;/property&gt;
+<span class="ln">677</span>      &lt;property name=&#34;text&#34;&gt;
+<span class="ln">678</span>       &lt;string&gt;0xFF&lt;/string&gt;
+<span class="ln">679</span>      &lt;/property&gt;
+<span class="ln">680</span>      &lt;property name=&#34;readOnly&#34;&gt;
+<span class="ln">681</span>       &lt;bool&gt;true&lt;/bool&gt;
+<span class="ln">682</span>      &lt;/property&gt;
+<span class="ln">683</span>     &lt;/widget&gt;
+<span class="ln">684</span>    &lt;/item&gt;
+<span class="ln">685</span>   &lt;/layout&gt;
+<span class="ln">686</span>  &lt;/widget&gt;
+<span class="ln">687</span> &lt;/widget&gt;
+<span class="ln">688</span> &lt;resources/&gt;
+<span class="ln">689</span> &lt;connections/&gt;
+<span class="ln">690</span>&lt;/ui&gt;
+<span class="ln">691</span>
+</code></pre></div></div><div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content surface">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rewardModalLabel"><i class="fas fa-fw fa-coffee"></i>打賞</h5>
+        <a href="#" data-bs-dismiss="modal" class="btn btn-sm btn-outline-primary" aria-label="Close"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs mb-3" role="tablist"><li class="nav-item text-nowrap" role="presentation">
+            <a class="nav-link active" id="reward-alipay-tab" data-bs-toggle="tab" href="#reward-alipay" role="tab" aria-controls="reward-alipay" aria-selected="true">
+              <i class="fab fa-fw fa-alipay"></i>支付寶
+            </a>
+          </li><li class="nav-item text-nowrap" role="presentation">
+            <a class="nav-link" id="reward-wechat-tab" data-bs-toggle="tab" href="#reward-wechat" role="tab" aria-controls="reward-wechat" aria-selected="true">
+              <i class="fab fa-fw fa-weixin"></i>微信
+            </a>
+          </li></ul>
+        <div class="tab-content" id="rewardTabContent"><div class="tab-pane fade post-reward-content show active" id="reward-alipay" role="tabpanel" aria-labelledby="reward-alipay-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/alipay.png" loading="lazy" />
+          </div><div class="tab-pane fade post-reward-content show" id="reward-wechat" role="tabpanel" aria-labelledby="reward-wechat-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/wechat.png" loading="lazy" />
+          </div></div>
+      </div>
+    </div>
+  </div>
+</div></div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-prev">
+    <i class="fas fa-fw fa-chevron-left"></i>
+    <a href="/posts/android-app-try-sqlite-database/">如何改在Andriod Studio 編輯 Sqlite Database
+</a>
+  </div><div class="post-nav post-next">
+    <a href="/posts/markdown-syntax/">Markdown Syntax Guide
+</a>
+    <i class="fas fa-fw fa-chevron-right"></i>
+  </div></div></div>
+</article><div class="post-copyright mb-3 row card component" id="post-copyright">
+    <div class="card-header">
+        <h2 class="card-title">版權</h2>
+    </div>
+    <div class="card-body"><a class="d-flex align-items-center flex-column" target="_blank" rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW">
+  <span><i class="fab fa-fw fa-2x fa-creative-commons"></i><i class="fab fa-fw fa-2x fa-creative-commons-by"></i><i class="fab fa-fw fa-2x fa-creative-commons-nc"></i><i class="fab fa-fw fa-2x fa-creative-commons-nd"></i></span>
+  CC BY-NC-ND 4.0 
+</a>
+
+
+    </div>
+</div><section class="related-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">相關文章</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="/posts/android-app-try-sqlite-database/">如何改在Andriod Studio 編輯 Sqlite Database
+</a>
+          <span class="float-end post-date">2019-05-04
+</span>
+        </li><li>
+          <a href="/posts/android-app-note20190228/">Android App Note 20190228 與要學的 20190403
+</a>
+          <span class="float-end post-date">2019-03-07
+</span>
+        </li><li>
+          <a href="/posts/android-app-qrcodec/">Android App QRcodec
+</a>
+          <span class="float-end post-date">2019-03-02
+</span>
+        </li><li>
+          <a href="/posts/android-app-travelerassistant201902/">TravelerAssistant201902
+</a>
+          <span class="float-end post-date">2019-02-27
+</span>
+        </li><li>
+          <a href="/posts/my-first-markdown/">我的第一篇用Mark Down
+</a>
+          <span class="float-end post-date">2017-02-27
+</span>
+        </li></ul>
+    </div>
+  </section></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    <section class="card row text-center profile component">
+  <div class="card-body">
+    <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar" alt="匿名作家" src="https://img.icons8.com/ios/100/000000/backspace.png" loading="lazy"
+  
+   />
+</div>
+    <div class="col-12 profile-meta"><div class="profile-name">匿名作家</div><div class="profile-bio">記錄我的學習與心得，包含但不限於Android, Java, python, Html, Javascript, CSS, C/C&#43;&#43;, Qt, LineBot, 日本語。 希望透過多寫心得筆記，把學習紀錄留下來，未來就可以快速翻閱後就立刻上手</div><div class="profile-company"><i class="fas fa-fw fa-building"></i><a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a></div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i><a href='https://www.google.com/maps/search/Earth'>Earth</a></div><div class="profile-about"><i class="fas fa-fw fa-user"></i><a href="/about/">About</a></div><div class="profile-contact"><i class="fas fa-fw fa-question-circle"></i><a href="/contact/">聯繫我們</a></div><nav class="social-links nav justify-content-center"><a class="nav-link social-link" href="mailto:example@email.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://facebook.com/" title="Facebook" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-facebook-f"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://github.com/rerepopo" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/" title="Youtube" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a></nav>
+</div>
+  </div>
+</section>
+  <div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">目錄</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#pycharmprojectsregdecoder-20200607">PycharmProjects\regDecoder 20200607</a>
+      <ul>
+        <li><a href="#regcodecpy">regCodec.py</a></li>
+        <li><a href="#regdecoderpy">regDecoder.py</a></li>
+        <li><a href="#regdecoderui">regDecoder.ui</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div><section class="featured-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">精選文章</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="/docs/look-and-feel/">觀感
+</a>
+        </li><li>
+          <a href="/docs/configuration/">配置
+</a>
+        </li><li>
+          <a href="/docs/getting-started/">快速入門
+</a>
+        </li><li>
+          <a href="/posts/reading-note-20220213/">2022/2 經紀人雜誌  筆記與反思
+</a>
+        </li><li>
+          <a href="/docs/custom-assets/">自定義資源
+</a>
+        </li></ul>
+    </div>
+  </section><section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">最近文章</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="/posts/reading-note-20220213/">2022/2 經紀人雜誌  筆記與反思
+</a>
+      </li><li>
+        <a href="/posts/diagram/">Diagram Guide
+</a>
+      </li><li>
+        <a href="/posts/markdown-syntax/">Markdown Syntax Guide
+</a>
+      </li><li>
+        <a href="/posts/python-app-regcodecdone/">Python App RegCodecDone 20200607
+</a>
+      </li><li>
+        <a href="/posts/android-app-try-sqlite-database/">如何改在Andriod Studio 編輯 Sqlite Database
+</a>
+      </li></ul>
+  </div>
+</section><section class="series-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/series">專欄</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/series/%E6%AA%94%E6%A1%88/" class="badge rounded post-taxonomy" title="檔案">
+            檔案<span class="badge badge-sm text-white bg-accent ms-1">18</span></a><a href="/series/docs/" class="badge rounded post-taxonomy" title="Docs">
+            Docs<span class="badge badge-sm text-white bg-accent ms-1">5</span></a><a href="/series/docs/" class="badge rounded post-taxonomy" title="Docs">
+            Docs<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section><section class="categories-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/categories">分類</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/categories/android/" class="badge rounded post-taxonomy" title="Android">
+            Android<span class="badge badge-sm text-white bg-accent ms-1">5</span></a><a href="/categories/shortcode/" class="badge rounded post-taxonomy" title="Shortcode">
+            Shortcode<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="/categories/%E5%B0%8F%E9%83%A8%E4%BB%B6/" class="badge rounded post-taxonomy" title="小部件">
+            小部件<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="/categories/markdown/" class="badge rounded post-taxonomy" title="Markdown">
+            Markdown<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/categories/faq/" class="badge rounded post-taxonomy" title="FAQ">
+            FAQ<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/mark-down/" class="badge rounded post-taxonomy" title="Mark Down">
+            Mark Down<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/pwa/" class="badge rounded post-taxonomy" title="PWA">
+            PWA<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/python/" class="badge rounded post-taxonomy" title="python">
+            python<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/%E5%BF%83%E5%BE%97%E7%AD%86%E8%A8%98/" class="badge rounded post-taxonomy" title="心得筆記">
+            心得筆記<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/%E6%90%9C%E7%B4%A2/" class="badge rounded post-taxonomy" title="搜索">
+            搜索<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section><section class="tags-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/tags">標籤</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/tags/css/" class="badge rounded post-taxonomy" title="CSS">
+            CSS<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/markdown/" class="badge rounded post-taxonomy" title="Markdown">
+            Markdown<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/alert/" class="badge rounded post-taxonomy" title="Alert">
+            Alert<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/bilibili/" class="badge rounded post-taxonomy" title="Bilibili">
+            Bilibili<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/codepen/" class="badge rounded post-taxonomy" title="CodePen">
+            CodePen<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/diagram/" class="badge rounded post-taxonomy" title="Diagram">
+            Diagram<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/disqus/" class="badge rounded post-taxonomy" title="Disqus">
+            Disqus<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/emoji/" class="badge rounded post-taxonomy" title="Emoji">
+            Emoji<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/getform/" class="badge rounded post-taxonomy" title="Getform">
+            Getform<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/html/" class="badge rounded post-taxonomy" title="HTML">
+            HTML<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><ul class="nav justify-content-between footer-memu mb-3"><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Support
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="https://github.com/rerepopo/" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github"></i>Repository
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/get-involved/">參與我們
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/faq/"><i class="fas fa-fw fa-question-circle"></i>常見問題
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/contact/"><i class="fas fa-fw fa-info-circle"></i>聯繫我們
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Docs
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="/docs/getting-started/">快速入門
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/configuration/">配置
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/look-and-feel/"><i class="fas fa-fw fa-palette"></i>觀感
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/posts/markdown-syntax/">Markdown Syntax Guide
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/custom-assets/">自定義資源
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/hooks/">鉤子
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/archives/"><i class="fas fa-fw fa-file-archive"></i>歸檔頁面
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Features
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/search/"><i class="fas fa-fw fa-search"></i>搜索頁面
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/image-processing/">圖像處理
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/pwa/">漸進式 web 應用程序
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/image-viewer/">圖片查看器
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/contact-form/"><i class="fas fa-fw fa-question-circle"></i>聯繫表單
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/widgets/reward/"><i class="fas fa-fw fa-coffee"></i>打賞小部件
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/widgets/comments/"><i class="fas fa-fw fa-comments"></i>評論小部件
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Demo
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="https://hbs.razonyang.com" target="_blank" rel="noopener noreferrer">Netlify
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="https://hbs-cn.razonyang.com" target="_blank" rel="noopener noreferrer">China
+</a>
+        </li></ul></li></ul><nav class="social-links nav justify-content-center mb-2"><a class="nav-link social-link" href="mailto:example@email.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://facebook.com/" title="Facebook" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-facebook-f"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://github.com/rerepopo" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.instagram.com/" title="Instagram" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-instagram"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://linkedin.com/" title="LinkedIn" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-linkedin-in"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/" title="Youtube" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a></nav>
+<div class="copyright mb-2">
+  Copyright © 2016-2022. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">Bootstrap</a> theme.
+</div><p>
+    <a href="https://icons8.com/icon/kq6DjqoInvPI/arrow">Arrow icon </a> and 
+    <a href="https://icons8.com/icon/20115/backspace">Backspace icon</a> by Icons8
+</p>
+<b>This blog records my life by diverse languages.  </b>
+</footer>
+<script src="/js/main.09726d71b0b09ee0cb06f5a4a858e99260a5a5d8894a5e306b6545fe1d68fb89.js" integrity="sha256-CXJtcbCwnuDLBvWkqFjpkmClpdiJSl4wa2VF/h1o&#43;4k=" crossorigin="anonymous" defer></script><script src="/js/icons.min.8ddcaafc364ff0296c2209c5495287f0de039b852da9b24847f94c198b7639b6.js" integrity="sha256-jdyq/DZP8ClsIgnFSVKH8N4Dm4UtqbJIR/lMGYt2ObY=" crossorigin="anonymous" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('\/service-worker.js').then(function(reg) {
+      console.log('Successfully registered service worker', reg);
+    }).catch(function(err) {
+      console.warn('Error whilst registering service worker', err);
+    });
+  });
+}
+</script><script src="/js/viewer.min.652118a9fbf3403cdfde4026209f97ace22f9e334f0b45a33431a221b3db46a8.js" integrity="sha256-ZSEYqfvzQDzf3kAmIJ&#43;XrOIvnjNPC0WjNDGiIbPbRqg=" crossorigin="anonymous" defer></script><script defer src="/js/mermaid.min.f7f85f37aecd926c1536d7d7a068bda61384696972268ebd5624343dc57768e1.js" integrity="sha256-9/hfN67NkmwVNtfXoGi9phOEaWlyJo69ViQ0PcV3aOE=" crossorigin="anonymous"></script>
+
+</body>
+</html>

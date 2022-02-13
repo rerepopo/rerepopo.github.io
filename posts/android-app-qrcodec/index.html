@@ -1,0 +1,836 @@
+<!doctype html><html lang="zh-tw" data-palette="teal"
+   data-mode="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Android App QRcodec - 程式X語言X筆記X心得 - Find a way, Make a day </title><link rel="apple-touch-icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="180x180">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="keywords" content="" />
+<meta name="description" content="
+偽目標：
+
+製作QR code
+解析QR code
+(1). 來自相機
+(2). 來自網路
+
+" /><meta name="robots" content="index, follow" /><meta itemprop="name" content="Android App QRcodec">
+<meta itemprop="description" content="
+偽目標：
+
+製作QR code
+解析QR code
+(1). 來自相機
+(2). 來自網路
+
+"><meta itemprop="datePublished" content="2019-03-02T10:06:25+08:00" />
+<meta itemprop="dateModified" content="2019-03-02T10:06:25+08:00" />
+<meta itemprop="wordCount" content="1630">
+<meta itemprop="keywords" content="," /><meta property="og:title" content="Android App QRcodec" />
+<meta property="og:description" content="
+偽目標：
+
+製作QR code
+解析QR code
+(1). 來自相機
+(2). 來自網路
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/android-app-qrcodec/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-03-02T10:06:25+08:00" />
+<meta property="article:modified_time" content="2019-03-02T10:06:25+08:00" /><meta property="og:site_name" content="程式X語言X筆記X心得 - Find a way, Make a day " />
+<meta property="og:see_also" content="/docs/layouts/docs/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Android App QRcodec"/>
+<meta name="twitter:description" content="
+偽目標：
+
+製作QR code
+解析QR code
+(1). 來自相機
+(2). 來自網路
+
+"/>
+<meta property="og:image" content="https://img.icons8.com/stickers/100/000000/arrow.png"/>
+  <meta name="twitter:image" content="https://img.icons8.com/stickers/100/000000/arrow.png"/><link rel="stylesheet" href="/css/main.min.507afbe6e4670fa3e961a0b35816b5daeb36029866fd6bd7b9d7871fcf88faa5.css" integrity="sha256-UHr75uRnD6PpYaCzWBa12us2Aphm/WvXudeHH8&#43;I&#43;qU=" crossorigin="anonymous"><link rel="stylesheet" href="/css/viewer.min.3d228794bcedbbfa0412beb8fbc1ec6973202945e42af7004f742a4d7bd620ab.css" integrity="sha256-PSKHlLztu/oEEr64&#43;8HsaXMgKUXkKvcAT3QqTXvWIKs=" crossorigin="anonymous"></head>
+  <body><script>const items=['mode','palette'];items.forEach(function(a){const b=localStorage.getItem('hbs-'+a);b&&document.body.parentElement.setAttribute('data-'+a,b)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="/"><img class="logo" alt="Logo" src="https://img.icons8.com/stickers/100/000000/arrow.png" loading="lazy"
+  
+   />
+ 程式X語言X筆記X心得
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=Android%20App%20QRcodec&url=%2fposts%2fandroid-app-qrcodec%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=%2fposts%2fandroid-app-qrcodec%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">設置</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+
+
+
+<section class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> 字體大小</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</section>
+
+
+<section class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> 配色</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <a id="btnPalette" class="btn btn-sm btn-outline-primary" role="button" aria-label="palettePicker">
+        <i class="fas fa-eye-dropper"></i>
+      </a>
+    </div>
+  </form>
+  <div class="mt-2 d-flex justify-content-between visually-hidden" id="palettePicker"><button type="button" id="palette-blue" aria-label="藍色"
+        class="btn btn-sm w-100 palette" data-palette="blue">
+      </button><button type="button" id="palette-blue-gray" aria-label="藍灰色"
+        class="btn btn-sm w-100 palette" data-palette="blue-gray">
+      </button><button type="button" id="palette-brown" aria-label="棕色"
+        class="btn btn-sm w-100 palette" data-palette="brown">
+      </button><button type="button" id="palette-cyan" aria-label="青色"
+        class="btn btn-sm w-100 palette" data-palette="cyan">
+      </button><button type="button" id="palette-green" aria-label="綠色"
+        class="btn btn-sm w-100 palette" data-palette="green">
+      </button><button type="button" id="palette-indigo" aria-label="靛青色"
+        class="btn btn-sm w-100 palette" data-palette="indigo">
+      </button><button type="button" id="palette-orange" aria-label="橙色"
+        class="btn btn-sm w-100 palette" data-palette="orange">
+      </button><button type="button" id="palette-pink" aria-label="粉色"
+        class="btn btn-sm w-100 palette" data-palette="pink">
+      </button><button type="button" id="palette-purple" aria-label="紫色"
+        class="btn btn-sm w-100 palette" data-palette="purple">
+      </button><button type="button" id="palette-red" aria-label="紅色"
+        class="btn btn-sm w-100 palette" data-palette="red">
+      </button><button type="button" id="palette-teal" aria-label="藍綠色"
+        class="btn btn-sm w-100 palette" data-palette="teal">
+      </button><button type="button" id="palette-yellow" aria-label="黃色"
+        class="btn btn-sm w-100 palette" data-palette="yellow">
+      </button></div>
+</section>
+<section class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-go-back" href="javascript: window.history.back();">
+    <span class="action-icon"><i class="fas fa-2x fa-arrow-left"></i></span> 返回
+  </a>
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> 刷新
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> 複製連結
+  </a><a class="action action-social-share" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> 分享
+  </a></section>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
+      <form class="search-bar my-1" action="/search">
+  <div class="input-group input-group-sm">
+    <span class="btn btn-search disabled position-absolute left-0"><i class="fas fa-fw fa-search"></i></span>
+    <input class="form-control rounded-pill" name="q" type="search" aria-label="Search">
+  </div>
+</form>
+      <ul class="navbar-nav ms-auto"><li class="nav-item">
+          <a class="nav-link" href="/series/">
+            <i class="fas fa-fw fa-columns"></i>專欄
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>文章總覽
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/categories/">
+            <i class="fas fa-fw fa-folder"></i>分類
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/tags/">
+            <i class="fas fa-fw fa-tags"></i>標籤
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link" id="navbarDropdownSupport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-fw fa-chevron-circle-down"></i>更多
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownSupport"><li>
+              <a class="dropdown-item"
+                href="https://github.com/rerepopo/" target="_blank" rel="noopener noreferrer">
+                Repository
+              </a>
+            </li><li><hr class="dropdown-divider"></li><li>
+              <a class="dropdown-item"
+                href="/docs/get-involved/">
+                參與我們
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="/faq/">
+                常見問題
+              </a>
+            </li></ul>
+        </li></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active">Android App QRcodec</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper">
+  <div class="d-flex flex-column component rounded post-panel">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+
+    <a class="action btn-reward" role="button" data-bs-toggle="modal" data-bs-target="#rewardModal" title="打賞">
+  <i class="fas fa-fw fa-coffee"></i>
+</a>
+    <a class="action" href="#post-copyright" role="button" aria-label="Copyright" title="Copyright">
+  <i class="fas fa-fw fa-copyright"></i>
+</a>
+    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title">Android App QRcodec
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="創建於 2019-03-02 10:06:25 &#43;0800 CST。">
+    2019-03-02
+  </span><span class="post-reading-time">
+    4 分鐘閱讀
+  </span><span class="post-taxonomies"><a href="/categories/android/" class="badge post-taxonomy">Android</a></span>
+</div>
+<div class="post-content mb-3"><blockquote>
+<p>偽目標：</p>
+<ol>
+<li>製作QR code</li>
+<li>解析QR code
+(1). 來自相機
+(2). 來自網路</li>
+</ol>
+</blockquote>
+<p><img class="img-fluid" alt="" src="https://i.imgur.com/e0r6uyb.png?width=300px" loading="lazy"
+  
+  style="width: 300px; " />
+
+  <img class="img-fluid" alt="" src="https://i.imgur.com/x7SqpAb.png?width=300px" loading="lazy"
+  
+  style="width: 300px; " />
+
+</p>
+<p>在Android中想要使用QRcode
+應該都會套用<a href="https://github.com/zxing/zxing" target="_blank" rel="noopener noreferrer">ZXing</a>套件</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>    compile &#39;com.google.zxing:core:3.2.1&#39;
+<span class="ln">2</span>    compile &#39;com.journeyapps:zxing-android-embedded:3.2.0@aar&#39;
+</code></pre></div><h2 id="製作qr-code">製作QR code<a class="anchor ms-1" href="#製作qr-code"><i class="fas fa-link"></i></a></h2>
+<p>製作比較容易
+先從製作QR code開始說起</p>
+<h3 id="androidonclick">android:onClick<a class="anchor ms-1" href="#androidonclick"><i class="fas fa-link"></i></a></h3>
+<p>這邊套用了<code>android:onClick=&quot;genCodeByUserText&quot;</code>可以減少一些在<code>onCreate</code>的code
+接著&hellip;</p>
+<blockquote>
+<p>public void genCodeByUserText(==View view==)</p>
+</blockquote>
+<h3 id="unicode">Unicode<a class="anchor ms-1" href="#unicode"><i class="fas fa-link"></i></a></h3>
+<p>==\u27a5==是Unicode，用來表示<img class="img-fluid" alt="" src="https://s3.amazonaws.com/static.graphemica.com/glyphs/i500s/000/005/998/original/27A5-500x500.png?1275296322?width=30px" loading="lazy"
+  
+   />
+
+</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="ln">1</span><span class="nt">&lt;Button</span>
+<span class="ln">2</span>            <span class="na">android:id=</span><span class="s">&#34;@+id/btnGen&#34;</span>
+<span class="ln">3</span>            <span class="na">android:layout_width=</span><span class="s">&#34;0dp&#34;</span>
+<span class="ln">4</span>            <span class="na">android:layout_height=</span><span class="s">&#34;wrap_content&#34;</span>
+<span class="ln">5</span>            <span class="na">android:layout_marginLeft=</span><span class="s">&#34;8dp&#34;</span>
+<span class="ln">6</span>            <span class="na">android:layout_marginRight=</span><span class="s">&#34;8dp&#34;</span>
+<span class="ln">7</span>            <span class="na">android:layout_marginTop=</span><span class="s">&#34;8dp&#34;</span>
+<span class="ln">8</span>            <span class="na">android:onClick=</span><span class="s">&#34;genCodeByUserText&#34;</span>
+<span class="ln">9</span>            <span class="na">android:text=</span><span class="s">&#34;\u27a5產生 Code&#34;</span><span class="nt">/&gt;</span>
+</code></pre></div><h3 id="按下按鈕送出後關閉鍵盤">按下按鈕送出後，關閉鍵盤<a class="anchor ms-1" href="#按下按鈕送出後關閉鍵盤"><i class="fas fa-link"></i></a></h3>
+<p>這樣做可讓使用者操作變得流暢<a href="http://justimchung.blogspot.com/2017/10/android-qr-code.html" target="_blank" rel="noopener noreferrer">[ref]</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+<span class="ln">2</span>        if (imm != null) {
+<span class="ln">3</span>            imm.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), 0);
+<span class="ln">4</span>        }
+<span class="ln">5</span>    
+</code></pre></div><h3 id="barcodeencoder">BarcodeEncoder<a class="anchor ms-1" href="#barcodeencoder"><i class="fas fa-link"></i></a></h3>
+<p>透過<code>hints</code>可以設定自我修正程度與邊框大小
+BarcodeEncoder會<strong>return</strong> Bitmap
+這時候再放到ImageView即可</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>    public void updateImageAndContent(String text, BarcodeFormat barcodeFormat)
+<span class="ln"> 2</span>    {//ref: http://justimchung.blogspot.com/2017/10/android-qr-code.html
+<span class="ln"> 3</span>        ImageView ivCode = (ImageView) findViewById(R.id.ivCode);
+<span class="ln"> 4</span>        BarcodeEncoder encoder = new BarcodeEncoder();
+<span class="ln"> 5</span>        try {
+<span class="ln"> 6</span>            Map hints = new EnumMap(EncodeHintType.class);
+<span class="ln"> 7</span>            //hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
+<span class="ln"> 8</span>            hints.put(EncodeHintType.MARGIN, 2);
+<span class="ln"> 9</span>            Bitmap bit = encoder.encodeBitmap(text, barcodeFormat,
+<span class="ln">10</span>                    500, 500,hints);
+<span class="ln">11</span>            ivCode.setImageBitmap(bit);
+<span class="ln">12</span>            deCodeBitmapToContent(bit);// check answer
+<span class="ln">13</span>        } catch (WriterException e) {
+<span class="ln">14</span>            e.printStackTrace();
+<span class="ln">15</span>        }
+<span class="ln">16</span>    }
+</code></pre></div><h2 id="解析qr-code-下載網路圖片">解析QR code (下載網路圖片)<a class="anchor ms-1" href="#解析qr-code-下載網路圖片"><i class="fas fa-link"></i></a></h2>
+<h3 id="decodebitmaptocontent">deCodeBitmapToContent<a class="anchor ms-1" href="#decodebitmaptocontent"><i class="fas fa-link"></i></a></h3>
+<p>從網路照片解析的話
+需要使用<strong>deCodeBitmapToContent</strong>這個方法
+傳入==Bitmap==
+decode方法是<code>result = reader.decode(binaryBitmap);</code>
+文字結果會放在<code>String text = result.getText();</code>
+barcodeFormat會放在<code>BarcodeFormat barcodeFormat = result.getBarcodeFormat();</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>private void deCodeBitmapToContent(Bitmap generatedQRCode)
+<span class="ln"> 2</span>    {//ref: https://stackoverflow.com/questions/32120988/qr-code-decoding-images-using-zxing-android
+<span class="ln"> 3</span>        if (generatedQRCode==null)
+<span class="ln"> 4</span>        {Toast.makeText(this, &#34;At deCode, generatedQRCode==null&#34;, Toast.LENGTH_SHORT).show();
+<span class="ln"> 5</span>            return;
+<span class="ln"> 6</span>        }
+<span class="ln"> 7</span>        int width = generatedQRCode.getWidth();
+<span class="ln"> 8</span>        int height = generatedQRCode.getHeight();
+<span class="ln"> 9</span>        int[] pixels = new int[width * height];
+<span class="ln">10</span>        generatedQRCode.getPixels(pixels, 0, width, 0, 0, width, height);
+<span class="ln">11</span>
+<span class="ln">12</span>        RGBLuminanceSource source = new RGBLuminanceSource(width, height, pixels);
+<span class="ln">13</span>
+<span class="ln">14</span>        BinaryBitmap binaryBitmap = new BinaryBitmap(new HybridBinarizer(source));
+<span class="ln">15</span>
+<span class="ln">16</span>        Reader reader = new MultiFormatReader();
+<span class="ln">17</span>        Result result = null;
+<span class="ln">18</span>        try {
+<span class="ln">19</span>            result = reader.decode(binaryBitmap);
+<span class="ln">20</span>        } catch (NotFoundException e) {
+<span class="ln">21</span>            e.printStackTrace();
+<span class="ln">22</span>        } catch (ChecksumException e) {
+<span class="ln">23</span>            e.printStackTrace();
+<span class="ln">24</span>        } catch (FormatException e) {
+<span class="ln">25</span>            e.printStackTrace();
+<span class="ln">26</span>        }
+<span class="ln">27</span>        String text = result.getText();
+<span class="ln">28</span>        BarcodeFormat barcodeFormat = result.getBarcodeFormat();
+<span class="ln">29</span>        TextView textViewQRCode = (TextView) findViewById(R.id.decode_text);
+<span class="ln">30</span>        textViewQRCode.setText(&#34; barcodeFormat: &#34; +barcodeFormat.toString()+&#34;\n CONTENT: &#34; + text);
+<span class="ln">31</span>
+<span class="ln">32</span>    }
+</code></pre></div><h3 id="downloadimagetask">DownloadImageTask<a class="anchor ms-1" href="#downloadimagetask"><i class="fas fa-link"></i></a></h3>
+<p>把<strong>要更新的圖片位置</strong>與<strong>網址字串</strong>傳到<strong>DownloadImageTask</strong><a href="http://finalfrank.pixnet.net/blog/post/43369915-%5Bandroid-%E9%96%8B%E7%99%BC%5D-%E5%B0%87%E5%A4%96%E9%83%A8%E7%B6%B2%E5%9D%80%E9%A1%AF%E7%A4%BA%E6%96%BC-imageview-%E4%B8%AD" target="_blank" rel="noopener noreferrer">[ref]</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>                EditText url = (EditText)findViewById(R.id.internet_scan_edittext);
+<span class="ln">2</span>                String url_str = url.getText().toString();
+<span class="ln">3</span>                Log.d(&#34;dddd&#34;,url_str);
+<span class="ln">4</span>                new DownloadImageTask((ImageView) findViewById(R.id.ivCode)).execute(url_str);
+</code></pre></div><p>這是一個AsyncTask，可以在背景下載</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>private class DownloadImageTask extends AsyncTask&lt;String, Void, Bitmap&gt; {
+<span class="ln"> 2</span>        //ref: http://finalfrank.pixnet.net/blog/post/43369915-%5Bandroid-%E9%96%8B%E7%99%BC%5D-%E5%B0%87%E5%A4%96%E9%83%A8%E7%B6%B2%E5%9D%80%E9%A1%AF%E7%A4%BA%E6%96%BC-imageview-%E4%B8%AD
+<span class="ln"> 3</span>        ImageView bmImage;
+<span class="ln"> 4</span>
+<span class="ln"> 5</span>        public DownloadImageTask(ImageView bmImage) {
+<span class="ln"> 6</span>            this.bmImage = bmImage;
+<span class="ln"> 7</span>        }
+<span class="ln"> 8</span>
+<span class="ln"> 9</span>        protected Bitmap doInBackground(String... urls) {
+<span class="ln">10</span>            String urldisplay = urls[0];
+<span class="ln">11</span>            Bitmap mIcon11 = null;
+<span class="ln">12</span>            try {
+<span class="ln">13</span>                InputStream in = new java.net.URL(urldisplay).openStream();
+<span class="ln">14</span>                mIcon11 = BitmapFactory.decodeStream(in);
+<span class="ln">15</span>            } catch (Exception e) {
+<span class="ln">16</span>                Log.e(&#34;Error&#34;, e.getMessage());
+<span class="ln">17</span>                e.printStackTrace();
+<span class="ln">18</span>            }
+<span class="ln">19</span>            return mIcon11;
+<span class="ln">20</span>        }
+<span class="ln">21</span>
+<span class="ln">22</span>        protected void onPostExecute(Bitmap result) {
+<span class="ln">23</span>            bmImage.setImageBitmap(result);
+<span class="ln">24</span>            deCodeBitmapToContent(result);// check answer
+<span class="ln">25</span>        }
+<span class="ln">26</span>    }
+</code></pre></div><h2 id="解析qr-code-開啟相機">解析QR code (開啟相機)<a class="anchor ms-1" href="#解析qr-code-開啟相機"><i class="fas fa-link"></i></a></h2>
+<p>用一個<strong>按鈕</strong>發動相機
+加一個<strong>onActivityResult</strong>收來自相機的返回資訊
+結果放在
+<code>String text = result.getContents();</code>
+<code>String barcodeFormat_str = result.getFormatName();</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>        scan_btn = (Button)findViewById(R.id.scan_btn);
+<span class="ln"> 2</span>        final Activity activity = this;
+<span class="ln"> 3</span>        scan_btn.setOnClickListener(new View.OnClickListener()
+<span class="ln"> 4</span>        {//ref: http://dangerlover9403.pixnet.net/blog/post/200742339-%5B%E6%95%99%E5%AD%B8%5D-qrcode-scanner(android-version)
+<span class="ln"> 5</span>         //ref: http://oldgrayduck.blogspot.com/2018/01/android-studio-zxing-qrcode.html
+<span class="ln"> 6</span>            //自製掃描圖示教學ref: https://www.jianshu.com/p/ef2ef751bf5b
+<span class="ln"> 7</span>
+<span class="ln"> 8</span>            @Override
+<span class="ln"> 9</span>            public void onClick(View view)
+<span class="ln">10</span>            {
+<span class="ln">11</span>                IntentIntegrator integrator = new IntentIntegrator(activity);
+<span class="ln">12</span>                integrator.setPrompt(&#34;掃描中...&#34;);
+<span class="ln">13</span>                integrator.setCameraId(0);//0:後  1:前鏡頭
+<span class="ln">14</span>                integrator.setBeepEnabled(false);
+<span class="ln">15</span>                integrator.setBarcodeImageEnabled(false);//该方法用于设置“被扫描的二维码图片”可以保存在本地//result.getBarcodeImagePath()
+<span class="ln">16</span>                integrator.setOrientationLocked(false);//&lt;!--如果要直立螢幕 要加這段/ --&gt;调整手机方向时，扫描布局也会重新布置
+<span class="ln">17</span>                integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);//QR_CODE_TYPES
+<span class="ln">18</span>                integrator.initiateScan();
+<span class="ln">19</span>
+<span class="ln">20</span>                //按下按鈕後 取消鍵盤顯示 看起來順一點
+<span class="ln">21</span>                //ref: https://blog.csdn.net/ccpat/article/details/46717573
+<span class="ln">22</span>                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+<span class="ln">23</span>                if (imm != null) {
+<span class="ln">24</span>                    imm.hideSoftInputFromWindow(getWindow().getDecorView().getWindowToken(), 0);
+<span class="ln">25</span>                }
+<span class="ln">26</span>
+<span class="ln">27</span>            }
+<span class="ln">28</span>        });
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>    @Override
+<span class="ln"> 2</span>    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+<span class="ln"> 3</span>    {
+<span class="ln"> 4</span>        IntentResult result = IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
+<span class="ln"> 5</span>        if (result!= null)
+<span class="ln"> 6</span>        {
+<span class="ln"> 7</span>            if (result.getContents()==null)
+<span class="ln"> 8</span>            {
+<span class="ln"> 9</span>                Toast.makeText(this, &#34;You cancelled the scanning&#34;, Toast.LENGTH_SHORT).show();
+<span class="ln">10</span>            }
+<span class="ln">11</span>            else
+<span class="ln">12</span>            {
+<span class="ln">13</span>                Toast.makeText(this,&#34;CONTENT已經更新到 Text view&#34;,Toast.LENGTH_SHORT).show();
+<span class="ln">14</span>                String text = result.getContents();
+<span class="ln">15</span>                String barcodeFormat_str = result.getFormatName();
+<span class="ln">16</span>                TextView textViewQRCode = (TextView) findViewById(R.id.decode_text);
+<span class="ln">17</span>                textViewQRCode.setText(&#34; barcodeFormat: &#34; +barcodeFormat_str+&#34;\n CONTENT: &#34; + text);
+<span class="ln">18</span>/*不能開來用....
+<span class="ln">19</span>                BarcodeFormat barcodeFormat;
+<span class="ln">20</span>                try {
+<span class="ln">21</span>                    barcodeFormat = BarcodeFormat.valueOf(barcodeFormat_str);
+<span class="ln">22</span>                } catch (Exception e) {
+<span class="ln">23</span>                    Log.e(&#34;Error&#34;, e.getMessage()+&#34;: this enum type has no constant with the specified name&#34;);
+<span class="ln">24</span>                    Toast.makeText(this,&#34;this enum type has no constant with the specified name&#34;,Toast.LENGTH_SHORT).show();
+<span class="ln">25</span>                    e.printStackTrace();
+<span class="ln">26</span>                    barcodeFormat =BarcodeFormat.QR_CODE;
+<span class="ln">27</span>                }
+<span class="ln">28</span>*/
+<span class="ln">29</span>                EditText etContent = (EditText) findViewById(R.id.etContent);
+<span class="ln">30</span>                etContent.setText(text);
+<span class="ln">31</span>            }
+<span class="ln">32</span>        }
+<span class="ln">33</span>        else
+<span class="ln">34</span>        {
+<span class="ln">35</span>            super.onActivityResult(requestCode, resultCode, data);
+<span class="ln">36</span>        }
+<span class="ln">37</span>    }
+</code></pre></div><h3 id="為了讓相機保持直立">為了讓相機保持直立<a class="anchor ms-1" href="#為了讓相機保持直立"><i class="fas fa-link"></i></a></h3>
+<p>在AndroidManifest.xml加上</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>&lt;activity
+<span class="ln">2</span>            android:name=&#34;com.journeyapps.barcodescanner.CaptureActivity&#34;
+<span class="ln">3</span>            android:screenOrientation=&#34;portrait&#34;
+<span class="ln">4</span>            tools:replace=&#34;screenOrientation&#34; /&gt;
+</code></pre></div><p>在java加上</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>                integrator.setOrientationLocked(false);//&lt;!--如果要直立螢幕 要加這段/ --&gt;调整手机方向时，扫描布局也会重新布置
+</code></pre></div><p><img class="img-fluid" alt="" src="https://i.imgur.com/aTvLKTe.jpg?width=200px" loading="lazy"
+  
+  style="width: 200px; " />
+
+</p>
+<h2 id="強制直立螢幕顯示">強制直立螢幕顯示<a class="anchor ms-1" href="#強制直立螢幕顯示"><i class="fas fa-link"></i></a></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>&lt;activity
+<span class="ln">2</span>android:screenOrientation=&#34;portrait&#34;/&gt;
+</code></pre></div><h2 id="未來可增加">未來可增加<a class="anchor ms-1" href="#未來可增加"><i class="fas fa-link"></i></a></h2>
+<p><a href="https://www.youtube.com/watch?v=DivBp_9ZeK0" target="_blank" rel="noopener noreferrer">鍵盤改造 How to Change the Input Method Action</a>
+<img class="img-fluid" alt="" src="https://i.imgur.com/wY3hb5j.png?width=300px" loading="lazy"
+  
+  style="width: 300px; " />
+
+</p></div><div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content surface">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rewardModalLabel"><i class="fas fa-fw fa-coffee"></i>打賞</h5>
+        <a href="#" data-bs-dismiss="modal" class="btn btn-sm btn-outline-primary" aria-label="Close"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs mb-3" role="tablist"><li class="nav-item text-nowrap" role="presentation">
+            <a class="nav-link active" id="reward-alipay-tab" data-bs-toggle="tab" href="#reward-alipay" role="tab" aria-controls="reward-alipay" aria-selected="true">
+              <i class="fab fa-fw fa-alipay"></i>支付寶
+            </a>
+          </li><li class="nav-item text-nowrap" role="presentation">
+            <a class="nav-link" id="reward-wechat-tab" data-bs-toggle="tab" href="#reward-wechat" role="tab" aria-controls="reward-wechat" aria-selected="true">
+              <i class="fab fa-fw fa-weixin"></i>微信
+            </a>
+          </li></ul>
+        <div class="tab-content" id="rewardTabContent"><div class="tab-pane fade post-reward-content show active" id="reward-alipay" role="tabpanel" aria-labelledby="reward-alipay-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/alipay.png" loading="lazy" />
+          </div><div class="tab-pane fade post-reward-content show" id="reward-wechat" role="tabpanel" aria-labelledby="reward-wechat-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/wechat.png" loading="lazy" />
+          </div></div>
+      </div>
+    </div>
+  </div>
+</div></div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-prev">
+    <i class="fas fa-fw fa-chevron-left"></i>
+    <a href="/posts/android-app-travelerassistant201902/">TravelerAssistant201902
+</a>
+  </div><div class="post-nav post-next">
+    <a href="/posts/android-app-todolist/">Android App Todolist
+</a>
+    <i class="fas fa-fw fa-chevron-right"></i>
+  </div></div></div>
+</article><div class="post-copyright mb-3 row card component" id="post-copyright">
+    <div class="card-header">
+        <h2 class="card-title">版權</h2>
+    </div>
+    <div class="card-body"><a class="d-flex align-items-center flex-column" target="_blank" rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW">
+  <span><i class="fab fa-fw fa-2x fa-creative-commons"></i><i class="fab fa-fw fa-2x fa-creative-commons-by"></i><i class="fab fa-fw fa-2x fa-creative-commons-nc"></i><i class="fab fa-fw fa-2x fa-creative-commons-nd"></i></span>
+  CC BY-NC-ND 4.0 
+</a>
+
+
+    </div>
+</div><section class="related-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">相關文章</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="/posts/android-app-travelerassistant201902/">TravelerAssistant201902
+</a>
+          <span class="float-end post-date">2019-02-27
+</span>
+        </li><li>
+          <a href="/posts/my-first-markdown/">我的第一篇用Mark Down
+</a>
+          <span class="float-end post-date">2017-02-27
+</span>
+        </li><li>
+          <a href="/docs/level-1/level-2/level-3/level-4/">Level 4
+</a>
+          <span class="float-end post-date">0001-01-01
+</span>
+        </li></ul>
+    </div>
+  </section></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    <section class="card row text-center profile component">
+  <div class="card-body">
+    <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar" alt="匿名作家" src="https://img.icons8.com/ios/100/000000/backspace.png" loading="lazy"
+  
+   />
+</div>
+    <div class="col-12 profile-meta"><div class="profile-name">匿名作家</div><div class="profile-bio">記錄我的學習與心得，包含但不限於Android, Java, python, Html, Javascript, CSS, C/C&#43;&#43;, Qt, LineBot, 日本語。 希望透過多寫心得筆記，把學習紀錄留下來，未來就可以快速翻閱後就立刻上手</div><div class="profile-company"><i class="fas fa-fw fa-building"></i><a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a></div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i><a href='https://www.google.com/maps/search/Earth'>Earth</a></div><div class="profile-about"><i class="fas fa-fw fa-user"></i><a href="/about/">About</a></div><div class="profile-contact"><i class="fas fa-fw fa-question-circle"></i><a href="/contact/">聯繫我們</a></div><nav class="social-links nav justify-content-center"><a class="nav-link social-link" href="mailto:example@email.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://facebook.com/" title="Facebook" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-facebook-f"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://github.com/rerepopo" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/" title="Youtube" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a></nav>
+</div>
+  </div>
+</section>
+  <div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">目錄</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#製作qr-code">製作QR code</a>
+      <ul>
+        <li><a href="#androidonclick">android:onClick</a></li>
+        <li><a href="#unicode">Unicode</a></li>
+        <li><a href="#按下按鈕送出後關閉鍵盤">按下按鈕送出後，關閉鍵盤</a></li>
+        <li><a href="#barcodeencoder">BarcodeEncoder</a></li>
+      </ul>
+    </li>
+    <li><a href="#解析qr-code-下載網路圖片">解析QR code (下載網路圖片)</a>
+      <ul>
+        <li><a href="#decodebitmaptocontent">deCodeBitmapToContent</a></li>
+        <li><a href="#downloadimagetask">DownloadImageTask</a></li>
+      </ul>
+    </li>
+    <li><a href="#解析qr-code-開啟相機">解析QR code (開啟相機)</a>
+      <ul>
+        <li><a href="#為了讓相機保持直立">為了讓相機保持直立</a></li>
+      </ul>
+    </li>
+    <li><a href="#強制直立螢幕顯示">強制直立螢幕顯示</a></li>
+    <li><a href="#未來可增加">未來可增加</a></li>
+  </ul>
+</nav>
+  </div>
+</div><section class="featured-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">精選文章</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="/docs/look-and-feel/">觀感
+</a>
+        </li><li>
+          <a href="/docs/configuration/">配置
+</a>
+        </li><li>
+          <a href="/docs/getting-started/">快速入門
+</a>
+        </li><li>
+          <a href="/posts/reading-note-20220213/">2022/2 經紀人雜誌  筆記與反思
+</a>
+        </li><li>
+          <a href="/docs/custom-assets/">自定義資源
+</a>
+        </li></ul>
+    </div>
+  </section><section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">最近文章</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="/posts/reading-note-20220213/">2022/2 經紀人雜誌  筆記與反思
+</a>
+      </li><li>
+        <a href="/posts/diagram/">Diagram Guide
+</a>
+      </li><li>
+        <a href="/posts/markdown-syntax/">Markdown Syntax Guide
+</a>
+      </li><li>
+        <a href="/posts/python-app-regcodecdone/">Python App RegCodecDone 20200607
+</a>
+      </li><li>
+        <a href="/posts/android-app-try-sqlite-database/">如何改在Andriod Studio 編輯 Sqlite Database
+</a>
+      </li></ul>
+  </div>
+</section><section class="series-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/series">專欄</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/series/%E6%AA%94%E6%A1%88/" class="badge rounded post-taxonomy" title="檔案">
+            檔案<span class="badge badge-sm text-white bg-accent ms-1">18</span></a><a href="/series/docs/" class="badge rounded post-taxonomy" title="Docs">
+            Docs<span class="badge badge-sm text-white bg-accent ms-1">5</span></a><a href="/series/docs/" class="badge rounded post-taxonomy" title="Docs">
+            Docs<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section><section class="categories-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/categories">分類</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/categories/android/" class="badge rounded post-taxonomy" title="Android">
+            Android<span class="badge badge-sm text-white bg-accent ms-1">5</span></a><a href="/categories/shortcode/" class="badge rounded post-taxonomy" title="Shortcode">
+            Shortcode<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="/categories/%E5%B0%8F%E9%83%A8%E4%BB%B6/" class="badge rounded post-taxonomy" title="小部件">
+            小部件<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="/categories/markdown/" class="badge rounded post-taxonomy" title="Markdown">
+            Markdown<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/categories/faq/" class="badge rounded post-taxonomy" title="FAQ">
+            FAQ<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/mark-down/" class="badge rounded post-taxonomy" title="Mark Down">
+            Mark Down<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/pwa/" class="badge rounded post-taxonomy" title="PWA">
+            PWA<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/python/" class="badge rounded post-taxonomy" title="python">
+            python<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/%E5%BF%83%E5%BE%97%E7%AD%86%E8%A8%98/" class="badge rounded post-taxonomy" title="心得筆記">
+            心得筆記<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/%E6%90%9C%E7%B4%A2/" class="badge rounded post-taxonomy" title="搜索">
+            搜索<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section><section class="tags-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/tags">標籤</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/tags/css/" class="badge rounded post-taxonomy" title="CSS">
+            CSS<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/markdown/" class="badge rounded post-taxonomy" title="Markdown">
+            Markdown<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/alert/" class="badge rounded post-taxonomy" title="Alert">
+            Alert<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/bilibili/" class="badge rounded post-taxonomy" title="Bilibili">
+            Bilibili<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/codepen/" class="badge rounded post-taxonomy" title="CodePen">
+            CodePen<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/diagram/" class="badge rounded post-taxonomy" title="Diagram">
+            Diagram<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/disqus/" class="badge rounded post-taxonomy" title="Disqus">
+            Disqus<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/emoji/" class="badge rounded post-taxonomy" title="Emoji">
+            Emoji<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/getform/" class="badge rounded post-taxonomy" title="Getform">
+            Getform<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/html/" class="badge rounded post-taxonomy" title="HTML">
+            HTML<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><ul class="nav justify-content-between footer-memu mb-3"><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Support
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="https://github.com/rerepopo/" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github"></i>Repository
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/get-involved/">參與我們
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/faq/"><i class="fas fa-fw fa-question-circle"></i>常見問題
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/contact/"><i class="fas fa-fw fa-info-circle"></i>聯繫我們
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Docs
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="/docs/getting-started/">快速入門
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/configuration/">配置
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/look-and-feel/"><i class="fas fa-fw fa-palette"></i>觀感
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/posts/markdown-syntax/">Markdown Syntax Guide
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/custom-assets/">自定義資源
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/hooks/">鉤子
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/archives/"><i class="fas fa-fw fa-file-archive"></i>歸檔頁面
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Features
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/search/"><i class="fas fa-fw fa-search"></i>搜索頁面
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/image-processing/">圖像處理
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/pwa/">漸進式 web 應用程序
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/image-viewer/">圖片查看器
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/contact-form/"><i class="fas fa-fw fa-question-circle"></i>聯繫表單
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/widgets/reward/"><i class="fas fa-fw fa-coffee"></i>打賞小部件
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/widgets/comments/"><i class="fas fa-fw fa-comments"></i>評論小部件
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Demo
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="https://hbs.razonyang.com" target="_blank" rel="noopener noreferrer">Netlify
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="https://hbs-cn.razonyang.com" target="_blank" rel="noopener noreferrer">China
+</a>
+        </li></ul></li></ul><nav class="social-links nav justify-content-center mb-2"><a class="nav-link social-link" href="mailto:example@email.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://facebook.com/" title="Facebook" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-facebook-f"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://github.com/rerepopo" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.instagram.com/" title="Instagram" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-instagram"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://linkedin.com/" title="LinkedIn" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-linkedin-in"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/" title="Youtube" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a></nav>
+<div class="copyright mb-2">
+  Copyright © 2016-2022. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">Bootstrap</a> theme.
+</div><p>
+    <a href="https://icons8.com/icon/kq6DjqoInvPI/arrow">Arrow icon </a> and 
+    <a href="https://icons8.com/icon/20115/backspace">Backspace icon</a> by Icons8
+</p>
+<b>This blog records my life by diverse languages.  </b>
+</footer>
+<script src="/js/main.09726d71b0b09ee0cb06f5a4a858e99260a5a5d8894a5e306b6545fe1d68fb89.js" integrity="sha256-CXJtcbCwnuDLBvWkqFjpkmClpdiJSl4wa2VF/h1o&#43;4k=" crossorigin="anonymous" defer></script><script src="/js/icons.min.8ddcaafc364ff0296c2209c5495287f0de039b852da9b24847f94c198b7639b6.js" integrity="sha256-jdyq/DZP8ClsIgnFSVKH8N4Dm4UtqbJIR/lMGYt2ObY=" crossorigin="anonymous" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('\/service-worker.js').then(function(reg) {
+      console.log('Successfully registered service worker', reg);
+    }).catch(function(err) {
+      console.warn('Error whilst registering service worker', err);
+    });
+  });
+}
+</script><script src="/js/viewer.min.652118a9fbf3403cdfde4026209f97ace22f9e334f0b45a33431a221b3db46a8.js" integrity="sha256-ZSEYqfvzQDzf3kAmIJ&#43;XrOIvnjNPC0WjNDGiIbPbRqg=" crossorigin="anonymous" defer></script><script defer src="/js/mermaid.min.f7f85f37aecd926c1536d7d7a068bda61384696972268ebd5624343dc57768e1.js" integrity="sha256-9/hfN67NkmwVNtfXoGi9phOEaWlyJo69ViQ0PcV3aOE=" crossorigin="anonymous"></script>
+
+</body>
+</html>

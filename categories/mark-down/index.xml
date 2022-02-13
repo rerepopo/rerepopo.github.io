@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mark Down on 程式X語言X筆記X心得 - Find a way, Make a day </title>
+    <link>/categories/mark-down/</link>
+    <description>Recent content in Mark Down on 程式X語言X筆記X心得 - Find a way, Make a day </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year}. All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 27 Feb 2017 21:00:00 +0800</lastBuildDate><atom:link href="/categories/mark-down/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的第一篇用Mark down</title>
+      <link>/posts/my-first-markdown/</link>
+      <pubDate>Mon, 27 Feb 2017 21:00:00 +0800</pubDate>
+      
+      <guid>/posts/my-first-markdown/</guid>
+      <description>&lt;p&gt;我覺得自己練程式沒有寫些筆記
+最後可能都會忘光&lt;/p&gt;
+&lt;p&gt;為了給未來的自己
+==一些索引==&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

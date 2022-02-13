@@ -1,0 +1,899 @@
+<!doctype html><html lang="zh-tw" data-palette="teal"
+   data-mode="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TravelerAssistant201902 - 程式X語言X筆記X心得 - Find a way, Make a day </title><link rel="apple-touch-icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="180x180">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="keywords" content="" />
+<meta name="description" content="
+偽目標: 想要寫一個旅遊可能可以用到的東西
+想學的功能
+
+ BottomNavigationView
+ Fragment
+ GPS/測速 功能
+ 計步器
+ 建立通知
+
+
+" /><meta name="robots" content="index, follow" /><meta itemprop="name" content="TravelerAssistant201902">
+<meta itemprop="description" content="
+偽目標: 想要寫一個旅遊可能可以用到的東西
+想學的功能
+
+ BottomNavigationView
+ Fragment
+ GPS/測速 功能
+ 計步器
+ 建立通知
+
+
+"><meta itemprop="datePublished" content="2019-02-27T23:04:50+08:00" />
+<meta itemprop="dateModified" content="2019-02-27T23:04:50+08:00" />
+<meta itemprop="wordCount" content="2019">
+<meta itemprop="keywords" content="," /><meta property="og:title" content="TravelerAssistant201902" />
+<meta property="og:description" content="
+偽目標: 想要寫一個旅遊可能可以用到的東西
+想學的功能
+
+ BottomNavigationView
+ Fragment
+ GPS/測速 功能
+ 計步器
+ 建立通知
+
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/android-app-travelerassistant201902/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-02-27T23:04:50+08:00" />
+<meta property="article:modified_time" content="2019-02-27T23:04:50+08:00" /><meta property="og:site_name" content="程式X語言X筆記X心得 - Find a way, Make a day " />
+<meta property="og:see_also" content="/docs/layouts/docs/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TravelerAssistant201902"/>
+<meta name="twitter:description" content="
+偽目標: 想要寫一個旅遊可能可以用到的東西
+想學的功能
+
+ BottomNavigationView
+ Fragment
+ GPS/測速 功能
+ 計步器
+ 建立通知
+
+
+"/>
+<meta property="og:image" content="https://img.icons8.com/stickers/100/000000/arrow.png"/>
+  <meta name="twitter:image" content="https://img.icons8.com/stickers/100/000000/arrow.png"/><link rel="stylesheet" href="/css/main.min.507afbe6e4670fa3e961a0b35816b5daeb36029866fd6bd7b9d7871fcf88faa5.css" integrity="sha256-UHr75uRnD6PpYaCzWBa12us2Aphm/WvXudeHH8&#43;I&#43;qU=" crossorigin="anonymous"><link rel="stylesheet" href="/css/viewer.min.3d228794bcedbbfa0412beb8fbc1ec6973202945e42af7004f742a4d7bd620ab.css" integrity="sha256-PSKHlLztu/oEEr64&#43;8HsaXMgKUXkKvcAT3QqTXvWIKs=" crossorigin="anonymous"></head>
+  <body><script>const items=['mode','palette'];items.forEach(function(a){const b=localStorage.getItem('hbs-'+a);b&&document.body.parentElement.setAttribute('data-'+a,b)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="/"><img class="logo" alt="Logo" src="https://img.icons8.com/stickers/100/000000/arrow.png" loading="lazy"
+  
+   />
+ 程式X語言X筆記X心得
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=TravelerAssistant201902&url=%2fposts%2fandroid-app-travelerassistant201902%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=%2fposts%2fandroid-app-travelerassistant201902%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">設置</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+
+
+
+<section class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> 字體大小</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</section>
+
+
+<section class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> 配色</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <a id="btnPalette" class="btn btn-sm btn-outline-primary" role="button" aria-label="palettePicker">
+        <i class="fas fa-eye-dropper"></i>
+      </a>
+    </div>
+  </form>
+  <div class="mt-2 d-flex justify-content-between visually-hidden" id="palettePicker"><button type="button" id="palette-blue" aria-label="藍色"
+        class="btn btn-sm w-100 palette" data-palette="blue">
+      </button><button type="button" id="palette-blue-gray" aria-label="藍灰色"
+        class="btn btn-sm w-100 palette" data-palette="blue-gray">
+      </button><button type="button" id="palette-brown" aria-label="棕色"
+        class="btn btn-sm w-100 palette" data-palette="brown">
+      </button><button type="button" id="palette-cyan" aria-label="青色"
+        class="btn btn-sm w-100 palette" data-palette="cyan">
+      </button><button type="button" id="palette-green" aria-label="綠色"
+        class="btn btn-sm w-100 palette" data-palette="green">
+      </button><button type="button" id="palette-indigo" aria-label="靛青色"
+        class="btn btn-sm w-100 palette" data-palette="indigo">
+      </button><button type="button" id="palette-orange" aria-label="橙色"
+        class="btn btn-sm w-100 palette" data-palette="orange">
+      </button><button type="button" id="palette-pink" aria-label="粉色"
+        class="btn btn-sm w-100 palette" data-palette="pink">
+      </button><button type="button" id="palette-purple" aria-label="紫色"
+        class="btn btn-sm w-100 palette" data-palette="purple">
+      </button><button type="button" id="palette-red" aria-label="紅色"
+        class="btn btn-sm w-100 palette" data-palette="red">
+      </button><button type="button" id="palette-teal" aria-label="藍綠色"
+        class="btn btn-sm w-100 palette" data-palette="teal">
+      </button><button type="button" id="palette-yellow" aria-label="黃色"
+        class="btn btn-sm w-100 palette" data-palette="yellow">
+      </button></div>
+</section>
+<section class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-go-back" href="javascript: window.history.back();">
+    <span class="action-icon"><i class="fas fa-2x fa-arrow-left"></i></span> 返回
+  </a>
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> 刷新
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> 複製連結
+  </a><a class="action action-social-share" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> 分享
+  </a></section>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
+      <form class="search-bar my-1" action="/search">
+  <div class="input-group input-group-sm">
+    <span class="btn btn-search disabled position-absolute left-0"><i class="fas fa-fw fa-search"></i></span>
+    <input class="form-control rounded-pill" name="q" type="search" aria-label="Search">
+  </div>
+</form>
+      <ul class="navbar-nav ms-auto"><li class="nav-item">
+          <a class="nav-link" href="/series/">
+            <i class="fas fa-fw fa-columns"></i>專欄
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>文章總覽
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/categories/">
+            <i class="fas fa-fw fa-folder"></i>分類
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/tags/">
+            <i class="fas fa-fw fa-tags"></i>標籤
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link" id="navbarDropdownSupport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-fw fa-chevron-circle-down"></i>更多
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownSupport"><li>
+              <a class="dropdown-item"
+                href="https://github.com/rerepopo/" target="_blank" rel="noopener noreferrer">
+                Repository
+              </a>
+            </li><li><hr class="dropdown-divider"></li><li>
+              <a class="dropdown-item"
+                href="/docs/get-involved/">
+                參與我們
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="/faq/">
+                常見問題
+              </a>
+            </li></ul>
+        </li></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active">TravelerAssistant201902</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper">
+  <div class="d-flex flex-column component rounded post-panel">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+
+    
+    <a class="action" href="#post-copyright" role="button" aria-label="Copyright" title="Copyright">
+  <i class="fas fa-fw fa-copyright"></i>
+</a>
+    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title">TravelerAssistant201902
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="創建於 2019-02-27 23:04:50 &#43;0800 CST。">
+    2019-02-27
+  </span><span class="post-reading-time">
+    5 分鐘閱讀
+  </span><span class="post-taxonomies"><a href="/categories/android/" class="badge post-taxonomy">Android</a></span>
+</div>
+<div class="post-content mb-3"><ul>
+<li>偽目標: 想要寫一個旅遊可能可以用到的東西</li>
+<li>想學的功能
+<ul>
+<li><input checked="" disabled="" type="checkbox"> BottomNavigationView</li>
+<li><input checked="" disabled="" type="checkbox"> Fragment</li>
+<li><input checked="" disabled="" type="checkbox"> GPS/測速 功能</li>
+<li><input checked="" disabled="" type="checkbox"> 計步器</li>
+<li><input checked="" disabled="" type="checkbox"> 建立通知</li>
+</ul>
+</li>
+</ul>
+<h2 id="bottomnavigationview">BottomNavigationView<a class="anchor ms-1" href="#bottomnavigationview"><i class="fas fa-link"></i></a></h2>
+<p><img class="img-fluid" alt="" src="https://i.imgur.com/JGhMLto.png" loading="lazy"
+  
+   />
+
+
+他其實一般的menu
+但透過其他顯示方式
+並且附上圖示(可以由內建圖庫製作)
+==需要搭配Fragment==
+Fragment弄起來頗煩
+他只是Activity的附屬
+只提供view
+很多service 需要由Activity拿到</p>
+<p>採用new 的方式
+之後==再用.==</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>    @Override
+<span class="ln"> 2</span>    protected void onCreate(Bundle savedInstanceState) {
+<span class="ln"> 3</span>        super.onCreate(savedInstanceState);
+<span class="ln"> 4</span>        setContentView(R.layout.activity_traveler_assistant201902);
+<span class="ln"> 5</span>
+<span class="ln"> 6</span>        gpsFragment = new GPSFragment();
+<span class="ln"> 7</span>        pedometerFragment = new PedometerFragment();
+<span class="ln"> 8</span>        notificationFragment =new NotificationFragment();
+<span class="ln"> 9</span>        aboutFragment =new AboutFragment();
+<span class="ln">10</span>
+<span class="ln">11</span>        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+<span class="ln">12</span>        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+<span class="ln">13</span>        navigation.setSelectedItemId(R.id.navigation_pedometer);//set default
+<span class="ln">14</span>        setFagment(pedometerFragment);//set default
+<span class="ln">15</span>    }
+</code></pre></div><p>其中<code>//set default</code>
+是用來讓第一次落在非第一位</p>
+<h2 id="gps測速-功能">GPS/測速 功能<a class="anchor ms-1" href="#gps測速-功能"><i class="fas fa-link"></i></a></h2>
+<p><img class="img-fluid" alt="" src="https://i.imgur.com/svOZCyC.png?width=200px" loading="lazy"
+  
+  style="width: 200px; " />
+
+</p>
+<p>上圖是模擬器的結果
+很多感測器都是==虛構的==
+真實的手機不見得都有
+:::info
+有趣的是，可以去調模擬器的GPS
+還可以模擬通話
+改電量&hellip;&hellip;
+<img class="img-fluid" alt="" src="https://i.imgur.com/40hcLLr.png?width=500px" loading="lazy"
+  
+  style="width: 500px; " />
+
+</p>
+<p>:::</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span> @Override
+<span class="ln"> 2</span>    public void onLocationChanged(Location location) {
+<span class="ln"> 3</span>        // 讀取目前位置的經、緯度
+<span class="ln"> 4</span>        double latitude = location.getLatitude();
+<span class="ln"> 5</span>        double longitude = location.getLongitude();
+<span class="ln"> 6</span>        double now_time = location.getTime();
+<span class="ln"> 7</span>        float[] results = new float[1];
+<span class="ln"> 8</span>        Location.distanceBetween(last_latitude, last_longitude, latitude, longitude, results);
+<span class="ln"> 9</span>        double speedin_m_s = (results[0]/((now_time-last_time)/1000));
+<span class="ln">10</span>        last_time = now_time;
+<span class="ln">11</span>        last_latitude =latitude;
+<span class="ln">12</span>        last_longitude =longitude;
+<span class="ln">13</span>        // 設定經、緯度畫面元件
+<span class="ln">14</span>        gpsFragment.longitude_text.setText(String.format(&#34;%.6f&#34;, longitude));
+<span class="ln">15</span>        gpsFragment.latitude_text.setText(String.format(&#34;%.6f&#34;, latitude));
+<span class="ln">16</span>        gpsFragment.accuracy_text.setText(String.format(&#34;%.6f&#34;, location.getAccuracy()));
+<span class="ln">17</span>        gpsFragment.altitude_text.setText(String.format(&#34;%.6f&#34;, location.getAltitude()));
+<span class="ln">18</span>         gpsFragment.time_text.setText(String.format(&#34;%d&#34;, location.getTime()));// 	Return the UTC time of this fix, in milliseconds since January 1, 1970.
+<span class="ln">19</span>        gpsFragment.speed_text.setText(String.format(&#34;%.6f&#34;, location.getSpeed()));
+<span class="ln">20</span>        gpsFragment.bearing_text.setText(String.format(&#34;%.6f&#34;, location.getBearing()));
+<span class="ln">21</span>        gpsFragment.distance_text.setText(String.format(&#34;%.6f 公尺&#34;, results[0]));
+<span class="ln">22</span>        gpsFragment.speed_text1.setText(String.format(&#34;%f m/s &#34;,speedin_m_s));
+<span class="ln">23</span>        gpsFragment.speed_text2.setText(String.format(&#34;%f km/h&#34;, (speedin_m_s*3.6)));
+<span class="ln">24</span>
+<span class="ln">25</span>    }
+</code></pre></div><p>為了避免耗電
+切到其他Fragment時最好關掉GPS需求</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="ln">1</span><span class="c1">// 如果已經連線到 Google Play services 用戶端服務
+</span><span class="ln">2</span><span class="c1"></span>                    <span class="k">if</span> <span class="o">(</span><span class="n">googleApiClient</span><span class="o">.</span><span class="na">isConnected</span><span class="o">())</span> <span class="o">{</span>
+<span class="ln">3</span>                        <span class="c1">// 中斷 Google Play services 用戶端連線
+</span><span class="ln">4</span><span class="c1"></span>                        <span class="n">googleApiClient</span><span class="o">.</span><span class="na">disconnect</span><span class="o">();</span>
+<span class="ln">5</span>                    <span class="o">}</span>
+</code></pre></div><h2 id="計步器">計步器<a class="anchor ms-1" href="#計步器"><i class="fas fa-link"></i></a></h2>
+<p><img class="img-fluid" alt="" src="https://i.imgur.com/e1LN61c.png?width=200px" loading="lazy"
+  
+  style="width: 200px; " />
+
+</p>
+<h3 id="type_step_counter">TYPE_STEP_COUNTER<a class="anchor ms-1" href="#type_step_counter"><i class="fas fa-link"></i></a></h3>
+<p>原本看網路上說，要透過三個軸向的加速度峰值，算出腳步
+實測結果根本亂算，發狂的跳
+後來發現用內建==TYPE_STEP_COUNTER==的比較準確(目測準度99%)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span> @Override
+<span class="ln"> 2</span>    public void onSensorChanged(SensorEvent event) {
+<span class="ln"> 3</span>        double range = 1;   //设定一个精度范围
+<span class="ln"> 4</span>        float[] value = event.values;
+<span class="ln"> 5</span>        if (event.sensor.getType()==Sensor.TYPE_ACCELEROMETER)
+<span class="ln"> 6</span>        {
+<span class="ln"> 7</span>            curValue = magnitude(value[0], value[1], value[2]);   
+<span class="ln"> 8</span>            if (pedometerFragment.isVisible())
+<span class="ln"> 9</span>            {
+<span class="ln">10</span>                pedometerFragment.value0_text.setText(String.format(&#34;%f (m/s^2) &#34;,value[0]));    
+<span class="ln">11</span>                pedometerFragment.value1_text.setText(String.format(&#34;%f (m/s^2) &#34;,value[1]));    
+<span class="ln">12</span>                pedometerFragment.value2_text.setText(String.format(&#34;%f (m/s^2) &#34;,value[2]));    
+<span class="ln">13</span>            }
+<span class="ln">14</span>            
+<span class="ln">15</span>
+<span class="ln">16</span>        }
+<span class="ln">17</span>        else if (event.sensor.getType()==Sensor.TYPE_STEP_COUNTER)
+<span class="ln">18</span>        {
+<span class="ln">19</span>            if (pedometerFragment.isVisible())
+<span class="ln">20</span>            {
+<span class="ln">21</span>                pedometerFragment.step_text2.setText(value[0] +&#34;&#34;);
+<span class="ln">22</span>            }
+<span class="ln">23</span>            Log.d(&#34;event.sensor.getType()=&#34;, &#34;Sensor.TYPE_STEP_COUNTER&#34; +event.sensor.getType());
+<span class="ln">24</span>        }
+<span class="ln">25</span>        else if (event.sensor.getType()==Sensor.TYPE_LIGHT)
+<span class="ln">26</span>        {   if (pedometerFragment.isVisible())
+<span class="ln">27</span>            { pedometerFragment.light_text.setText(value[0]+&#34; lux&#34;);}
+<span class="ln">28</span>        }
+<span class="ln">29</span>        else if (event.sensor.getType()==Sensor.TYPE_PRESSURE)
+<span class="ln">30</span>        {   if (pedometerFragment.isVisible())
+<span class="ln">31</span>            { pedometerFragment.pressure_text.setText(value[0]+&#34; hPa&#34;);}
+<span class="ln">32</span>        }
+<span class="ln">33</span>        else if (event.sensor.getType()==Sensor.TYPE_PROXIMITY)
+<span class="ln">34</span>        {   if (pedometerFragment.isVisible())
+<span class="ln">35</span>            { pedometerFragment.proximity_text.setText(value[0]+&#34; cm&#34;);}
+<span class="ln">36</span>        }
+<span class="ln">37</span>        else if (event.sensor.getType()==Sensor.TYPE_RELATIVE_HUMIDITY)
+<span class="ln">38</span>        {   if (pedometerFragment.isVisible())
+<span class="ln">39</span>            { pedometerFragment.humidity_text.setText(value[0]+&#34; %&#34;);}
+<span class="ln">40</span>        }
+<span class="ln">41</span>        else if (event.sensor.getType()==Sensor.TYPE_AMBIENT_TEMPERATURE)
+<span class="ln">42</span>        {   if (pedometerFragment.isVisible())
+<span class="ln">43</span>            { pedometerFragment.temperature_text.setText(value[0]+&#34; degree Celsius&#34;);}
+<span class="ln">44</span>        }
+<span class="ln">45</span>        else
+<span class="ln">46</span>        {
+<span class="ln">47</span>            new AlertDialog.Builder(TravelerAssistant201902.this)
+<span class="ln">48</span>                    .setTitle(&#34;感應器未設定&#34;)
+<span class="ln">49</span>                    .setMessage(&#34;這是甚麼?&#34;)
+<span class="ln">50</span>                    .show();
+<span class="ln">51</span>        }
+<span class="ln">52</span>    }
+</code></pre></div><h2 id="建立通知">建立通知<a class="anchor ms-1" href="#建立通知"><i class="fas fa-link"></i></a></h2>
+<p><img class="img-fluid" alt="" src="https://i.imgur.com/JYZjgDA.png" loading="lazy"
+  
+   />
+
+
+如圖，為了弄出這個效果(head up )
+明明已經加了<code>.setPriority(Notification.PRIORITY_HIGH)</code>
+還是沒有反應
+查了好久，最後發現是==要刪除再裝才會有==</p>
+<h3 id="notification_service">NOTIFICATION_SERVICE<a class="anchor ms-1" href="#notification_service"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>set_notification_button.setOnClickListener(new Button.OnClickListener(){
+<span class="ln"> 2</span>            @Override
+<span class="ln"> 3</span>            public void onClick(View v) {
+<span class="ln"> 4</span>                //the getSystemService() method that provides access to system services comes from Context . An Activity extends Context , a Fragment does not. Hence, you first need to get a reference to the Activity in which the Fragment is contained and then magically retrieve the system service you want.
+<span class="ln"> 5</span>                NotificationManager mNotificationManager =
+<span class="ln"> 6</span>                        (NotificationManager) getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
+<span class="ln"> 7</span>
+<span class="ln"> 8</span>                // 建立與設定Notify channel
+<span class="ln"> 9</span>                // 加入裝置版本的判斷，應用程式就不用把最低版本設定為API level 26
+<span class="ln">10</span>                if (Build.VERSION.SDK_INT &lt; Build.VERSION_CODES.O) {
+<span class="ln">11</span>                }
+<span class="ln">12</span>                else
+<span class="ln">13</span>                {
+<span class="ln">14</span>                    // 建立channel物件，參數依序為channel代碼、名稱與等級
+<span class="ln">15</span>                    NotificationChannel nChannel = new NotificationChannel(
+<span class="ln">16</span>                            channelIdBasic, &#34;Basiccc&#34;, NotificationManager.IMPORTANCE_HIGH);
+<span class="ln">17</span>                    // 設定channel物件
+<span class="ln">18</span>                    mNotificationManager.createNotificationChannel(nChannel);
+<span class="ln">19</span>                }
+<span class="ln">20</span>
+<span class="ln">21</span>                // 建立NotificationCompat.Builder物件
+<span class="ln">22</span>                NotificationCompat.Builder builder = new NotificationCompat.Builder(getActivity(), channelIdBasic);
+<span class="ln">23</span>
+<span class="ln">24</span>                // 設定圖示、時間、標題、訊息和額外資訊
+<span class="ln">25</span>                builder.setContentTitle(&#34;Basic Notification&#34;)
+<span class="ln">26</span>                        .setWhen(Calendar.getInstance().getTimeInMillis()+60000 )
+<span class="ln">27</span>                        //.setWhen(System.currentTimeMillis())
+<span class="ln">28</span>                        //.setContentInfo(&#34;3&#34;)
+<span class="ln">29</span>                        //.setFullScreenIntent(pi, true)
+<span class="ln">30</span>                        //builder.setColor(Color.BLUE)
+<span class="ln">31</span>                        .setDefaults(Notification.DEFAULT_ALL) // must requires VIBRATE permission
+<span class="ln">32</span>                        .setPriority(Notification.PRIORITY_HIGH) //must give priority to High, Max which will considered as heads-up notification
+<span class="ln">33</span>                        .setSmallIcon(R.drawable.ic_smile)
+<span class="ln">34</span>                        .setContentIntent(PendingIntent.getActivity(getActivity(), 0, new Intent(), 0))  // 設置Intent
+<span class="ln">35</span>                        .setAutoCancel(true)    // 可以注意的是若要用setAutoCancel()的話，就算只是要點擊以後就讓Notification消失而不開啟任何Activity，還是要在setContentIntent()裡放一個PendingIntent喔，單單設置setAutoCancel()是沒有效用的，此時可將PendingIntent的第三個參數改成new Intent()，即不開啟任何Activiy
+<span class="ln">36</span>                        .setContentText(adding_id+&#34;: &#34;+info_edittext.getText().toString());
+<span class="ln">37</span>
+<span class="ln">38</span>                // 建立通知物件
+<span class="ln">39</span>                Notification notification = builder.build();
+<span class="ln">40</span>
+<span class="ln">41</span>                // 使用BASIC_ID為編號發出通知
+<span class="ln">42</span>                //如果ID一樣，可能導致head up notification 無法出現，必要時可以刪除app(或強制關閉)
+<span class="ln">43</span>                mNotificationManager.notify(adding_id++, notification); // 可用 Calendar.getInstance().getTimeInMillis()
+<span class="ln">44</span>            }
+<span class="ln">45</span>        });
+</code></pre></div><p>line:43 這邊的id是用來送編號，標號若一樣將會覆蓋，所以我用++</p>
+<h3 id="alarm_service">ALARM_SERVICE<a class="anchor ms-1" href="#alarm_service"><i class="fas fa-link"></i></a></h3>
+<p>設定時間按鈕點下去後會出現
+<img class="img-fluid" alt="" src="https://i.imgur.com/EFhRkZB.png" loading="lazy"
+  
+   />
+
+
+選完可以在預期時間發送
+<img class="img-fluid" alt="" src="https://i.imgur.com/GzbCOSm.png" loading="lazy"
+  
+   />
+
+</p>
+<p>原理是透過AlertReceiver.class中的==BroadcastReceiver==</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>public class AlertReceiver extends BroadcastReceiver {
+<span class="ln"> 2</span>    @Override
+<span class="ln"> 3</span>    public void onReceive(Context context, Intent intent) {
+<span class="ln"> 4</span>        if(intent.getAction().equals(&#34;Hello&#34;))
+<span class="ln"> 5</span>        {
+<span class="ln"> 6</span>            NotificationHelper notificationHelper = new NotificationHelper(context);
+<span class="ln"> 7</span>            NotificationCompat.Builder nb = notificationHelper.getChannelNotification(intent.getStringExtra(&#34;information&#34;));
+<span class="ln"> 8</span>            notificationHelper.getManager().notify(1, nb.build());
+<span class="ln"> 9</span>        }
+<span class="ln">10</span>    }
+<span class="ln">11</span>}
+</code></pre></div><blockquote>
+<p>[name=小記]需要到AndroidManifest.xml增加<!-- raw HTML omitted --></p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>&lt;manifest xmlns:android=&#34;http://schemas.android.com/apk/res/android&#34;
+<span class="ln"> 2</span>    package=&#34;com.example.user.travelerassistant201902&#34;&gt;
+<span class="ln"> 3</span>    &lt;!-- 讀取高精確度位置資訊授權 --&gt;
+<span class="ln"> 4</span>    &lt;uses-permission android:name=&#34;android.permission.ACCESS_COARSE_LOCATION&#34; /&gt;
+<span class="ln"> 5</span>    &lt;uses-permission android:name=&#34;android.permission.ACCESS_FINE_LOCATION&#34;/&gt;
+<span class="ln"> 6</span>    &lt;uses-permission android:name=&#34;android.permission.RECEIVE_BOOT_COMPLETED&#34; /&gt;
+<span class="ln"> 7</span>    &lt;uses-permission android:name=&#34;android.permission.VIBRATE&#34; /&gt;
+<span class="ln"> 8</span>    &lt;application
+<span class="ln"> 9</span>        android:allowBackup=&#34;true&#34;
+<span class="ln">10</span>        android:icon=&#34;@mipmap/ic_launcher&#34;
+<span class="ln">11</span>        android:label=&#34;@string/app_name&#34;
+<span class="ln">12</span>        android:roundIcon=&#34;@mipmap/ic_launcher_round&#34;
+<span class="ln">13</span>        android:supportsRtl=&#34;true&#34;
+<span class="ln">14</span>        android:theme=&#34;@style/AppTheme&#34;&gt;
+<span class="ln">15</span>        &lt;activity
+<span class="ln">16</span>            android:name=&#34;.TravelerAssistant201902&#34;
+<span class="ln">17</span>            android:label=&#34;@string/app_name&#34;&gt;
+<span class="ln">18</span>            &lt;intent-filter&gt;
+<span class="ln">19</span>                &lt;action android:name=&#34;android.intent.action.MAIN&#34; /&gt;
+<span class="ln">20</span>                &lt;category android:name=&#34;android.intent.category.LAUNCHER&#34; /&gt;
+<span class="ln">21</span>            &lt;/intent-filter&gt;
+<span class="ln">22</span>        &lt;/activity&gt;
+<span class="ln">23</span>        &lt;service android:name=&#34;.JobSchedulerService&#34;
+<span class="ln">24</span>            android:permission=&#34;android.permission.BIND_JOB_SERVICE&#34;/&gt;
+<span class="ln">25</span>        &lt;receiver android:name=&#34;.AlertReceiver&#34; /&gt;
+<span class="ln">26</span>    &lt;/application&gt;
+<span class="ln">27</span>&lt;/manifest&gt;
+</code></pre></div><p>以及NotificationHelper.class</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>public class NotificationHelper extends ContextWrapper {
+<span class="ln"> 2</span>    public static final String channelID = &#34;channelID&#34;;
+<span class="ln"> 3</span>    public static final String channelName = &#34;Channel Name&#34;;
+<span class="ln"> 4</span>
+<span class="ln"> 5</span>    private NotificationManager mManager;
+<span class="ln"> 6</span>
+<span class="ln"> 7</span>    public NotificationHelper(Context base) {
+<span class="ln"> 8</span>        super(base);
+<span class="ln"> 9</span>        if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.O) {
+<span class="ln">10</span>            createChannel();
+<span class="ln">11</span>        }
+<span class="ln">12</span>    }
+<span class="ln">13</span>
+<span class="ln">14</span>    @TargetApi(Build.VERSION_CODES.O)
+<span class="ln">15</span>    private void createChannel() {
+<span class="ln">16</span>        NotificationChannel channel = new NotificationChannel(channelID, channelName, NotificationManager.IMPORTANCE_HIGH);
+<span class="ln">17</span>
+<span class="ln">18</span>        getManager().createNotificationChannel(channel);
+<span class="ln">19</span>    }
+<span class="ln">20</span>
+<span class="ln">21</span>    public NotificationManager getManager() {
+<span class="ln">22</span>        if (mManager == null) {
+<span class="ln">23</span>            mManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+<span class="ln">24</span>        }
+<span class="ln">25</span>
+<span class="ln">26</span>        return mManager;
+<span class="ln">27</span>    }
+<span class="ln">28</span>
+<span class="ln">29</span>    public NotificationCompat.Builder getChannelNotification(String contentText) {
+<span class="ln">30</span>        return new NotificationCompat.Builder(getApplicationContext(), channelID)
+<span class="ln">31</span>                .setContentTitle(&#34;Alarm!&#34;)
+<span class="ln">32</span>                .setContentText(contentText)
+<span class="ln">33</span>                .setSmallIcon(R.drawable.ic_smile);
+<span class="ln">34</span>    }
+<span class="ln">35</span>}
+</code></pre></div><h2 id="參考">參考<a class="anchor ms-1" href="#參考"><i class="fas fa-link"></i></a></h2>
+<p>網路與Android App程式開發剖析 第三版（適用Android 8 Oreo與Android Studio 3）</p>
+<h2 id="後記">後記<a class="anchor ms-1" href="#後記"><i class="fas fa-link"></i></a></h2>
+<p>:::success
+本文寫於程式開發後兩周
+令我最在意的是==通知排程==
+不知道排下去會不會因為外力消失 🎉
+:::</p>
+<h3 id="abc">Abc<a class="anchor ms-1" href="#abc"><i class="fas fa-link"></i></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>X:1
+<span class="ln">2</span>T:Speed the Plough
+<span class="ln">3</span>M:9988/1000
+<span class="ln">4</span>C:Trad.
+<span class="ln">5</span>K:G
+<span class="ln">6</span>|:GABc dedB|dedB ddddddddd|eadB|c2ec B2dB|c2A2 A2BA|
+<span class="ln">7</span>GABc dedB|dedB dedB|c2ec B2dB|A2F2 G4:|
+<span class="ln">8</span>|:g2gf gdBd|g2f2 e2d2|c2ec B2dB|c2A2 A2df|
+<span class="ln">9</span>g2gf g2Bd|g2f2 e2d2|c2ec B2dB|A2F2 G4:|
+</code></pre></div></div></div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-prev">
+    <i class="fas fa-fw fa-chevron-left"></i>
+    <a href="/posts/my-first-markdown/">我的第一篇用Mark Down
+</a>
+  </div><div class="post-nav post-next">
+    <a href="/posts/android-app-qrcodec/">Android App QRcodec
+</a>
+    <i class="fas fa-fw fa-chevron-right"></i>
+  </div></div></div>
+</article><div class="post-copyright mb-3 row card component" id="post-copyright">
+    <div class="card-header">
+        <h2 class="card-title">版權</h2>
+    </div>
+    <div class="card-body"><a class="d-flex align-items-center flex-column" target="_blank" rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW">
+  <span><i class="fab fa-fw fa-2x fa-creative-commons"></i><i class="fab fa-fw fa-2x fa-creative-commons-by"></i><i class="fab fa-fw fa-2x fa-creative-commons-nc"></i><i class="fab fa-fw fa-2x fa-creative-commons-nd"></i></span>
+  CC BY-NC-ND 4.0 
+</a>
+
+
+    </div>
+</div><section class="related-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">相關文章</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="/posts/my-first-markdown/">我的第一篇用Mark Down
+</a>
+          <span class="float-end post-date">2017-02-27
+</span>
+        </li><li>
+          <a href="/docs/level-1/level-2/level-3/level-4/">Level 4
+</a>
+          <span class="float-end post-date">0001-01-01
+</span>
+        </li></ul>
+    </div>
+  </section></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    <section class="card row text-center profile component">
+  <div class="card-body">
+    <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar" alt="匿名作家" src="https://img.icons8.com/ios/100/000000/backspace.png" loading="lazy"
+  
+   />
+</div>
+    <div class="col-12 profile-meta"><div class="profile-name">匿名作家</div><div class="profile-bio">記錄我的學習與心得，包含但不限於Android, Java, python, Html, Javascript, CSS, C/C&#43;&#43;, Qt, LineBot, 日本語。 希望透過多寫心得筆記，把學習紀錄留下來，未來就可以快速翻閱後就立刻上手</div><div class="profile-company"><i class="fas fa-fw fa-building"></i><a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a></div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i><a href='https://www.google.com/maps/search/Earth'>Earth</a></div><div class="profile-about"><i class="fas fa-fw fa-user"></i><a href="/about/">About</a></div><div class="profile-contact"><i class="fas fa-fw fa-question-circle"></i><a href="/contact/">聯繫我們</a></div><nav class="social-links nav justify-content-center"><a class="nav-link social-link" href="mailto:example@email.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://facebook.com/" title="Facebook" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-facebook-f"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://github.com/rerepopo" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/" title="Youtube" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a></nav>
+</div>
+  </div>
+</section>
+  <div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">目錄</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#bottomnavigationview">BottomNavigationView</a></li>
+    <li><a href="#gps測速-功能">GPS/測速 功能</a></li>
+    <li><a href="#計步器">計步器</a>
+      <ul>
+        <li><a href="#type_step_counter">TYPE_STEP_COUNTER</a></li>
+      </ul>
+    </li>
+    <li><a href="#建立通知">建立通知</a>
+      <ul>
+        <li><a href="#notification_service">NOTIFICATION_SERVICE</a></li>
+        <li><a href="#alarm_service">ALARM_SERVICE</a></li>
+      </ul>
+    </li>
+    <li><a href="#參考">參考</a></li>
+    <li><a href="#後記">後記</a>
+      <ul>
+        <li><a href="#abc">Abc</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div><section class="featured-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">精選文章</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="/docs/look-and-feel/">觀感
+</a>
+        </li><li>
+          <a href="/docs/configuration/">配置
+</a>
+        </li><li>
+          <a href="/docs/getting-started/">快速入門
+</a>
+        </li><li>
+          <a href="/posts/reading-note-20220213/">2022/2 經紀人雜誌  筆記與反思
+</a>
+        </li><li>
+          <a href="/docs/custom-assets/">自定義資源
+</a>
+        </li></ul>
+    </div>
+  </section><section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">最近文章</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="/posts/reading-note-20220213/">2022/2 經紀人雜誌  筆記與反思
+</a>
+      </li><li>
+        <a href="/posts/diagram/">Diagram Guide
+</a>
+      </li><li>
+        <a href="/posts/markdown-syntax/">Markdown Syntax Guide
+</a>
+      </li><li>
+        <a href="/posts/python-app-regcodecdone/">Python App RegCodecDone 20200607
+</a>
+      </li><li>
+        <a href="/posts/android-app-try-sqlite-database/">如何改在Andriod Studio 編輯 Sqlite Database
+</a>
+      </li></ul>
+  </div>
+</section><section class="series-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/series">專欄</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/series/%E6%AA%94%E6%A1%88/" class="badge rounded post-taxonomy" title="檔案">
+            檔案<span class="badge badge-sm text-white bg-accent ms-1">18</span></a><a href="/series/docs/" class="badge rounded post-taxonomy" title="Docs">
+            Docs<span class="badge badge-sm text-white bg-accent ms-1">5</span></a><a href="/series/docs/" class="badge rounded post-taxonomy" title="Docs">
+            Docs<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section><section class="categories-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/categories">分類</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/categories/android/" class="badge rounded post-taxonomy" title="Android">
+            Android<span class="badge badge-sm text-white bg-accent ms-1">5</span></a><a href="/categories/shortcode/" class="badge rounded post-taxonomy" title="Shortcode">
+            Shortcode<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="/categories/%E5%B0%8F%E9%83%A8%E4%BB%B6/" class="badge rounded post-taxonomy" title="小部件">
+            小部件<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="/categories/markdown/" class="badge rounded post-taxonomy" title="Markdown">
+            Markdown<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/categories/faq/" class="badge rounded post-taxonomy" title="FAQ">
+            FAQ<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/mark-down/" class="badge rounded post-taxonomy" title="Mark Down">
+            Mark Down<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/pwa/" class="badge rounded post-taxonomy" title="PWA">
+            PWA<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/python/" class="badge rounded post-taxonomy" title="python">
+            python<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/%E5%BF%83%E5%BE%97%E7%AD%86%E8%A8%98/" class="badge rounded post-taxonomy" title="心得筆記">
+            心得筆記<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/%E6%90%9C%E7%B4%A2/" class="badge rounded post-taxonomy" title="搜索">
+            搜索<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section><section class="tags-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/tags">標籤</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/tags/css/" class="badge rounded post-taxonomy" title="CSS">
+            CSS<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/markdown/" class="badge rounded post-taxonomy" title="Markdown">
+            Markdown<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/alert/" class="badge rounded post-taxonomy" title="Alert">
+            Alert<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/bilibili/" class="badge rounded post-taxonomy" title="Bilibili">
+            Bilibili<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/codepen/" class="badge rounded post-taxonomy" title="CodePen">
+            CodePen<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/diagram/" class="badge rounded post-taxonomy" title="Diagram">
+            Diagram<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/disqus/" class="badge rounded post-taxonomy" title="Disqus">
+            Disqus<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/emoji/" class="badge rounded post-taxonomy" title="Emoji">
+            Emoji<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/getform/" class="badge rounded post-taxonomy" title="Getform">
+            Getform<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/html/" class="badge rounded post-taxonomy" title="HTML">
+            HTML<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><ul class="nav justify-content-between footer-memu mb-3"><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Support
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="https://github.com/rerepopo/" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github"></i>Repository
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/get-involved/">參與我們
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/faq/"><i class="fas fa-fw fa-question-circle"></i>常見問題
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/contact/"><i class="fas fa-fw fa-info-circle"></i>聯繫我們
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Docs
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="/docs/getting-started/">快速入門
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/configuration/">配置
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/look-and-feel/"><i class="fas fa-fw fa-palette"></i>觀感
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/posts/markdown-syntax/">Markdown Syntax Guide
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/custom-assets/">自定義資源
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/hooks/">鉤子
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/archives/"><i class="fas fa-fw fa-file-archive"></i>歸檔頁面
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Features
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/search/"><i class="fas fa-fw fa-search"></i>搜索頁面
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/image-processing/">圖像處理
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/pwa/">漸進式 web 應用程序
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/image-viewer/">圖片查看器
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/contact-form/"><i class="fas fa-fw fa-question-circle"></i>聯繫表單
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/widgets/reward/"><i class="fas fa-fw fa-coffee"></i>打賞小部件
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/widgets/comments/"><i class="fas fa-fw fa-comments"></i>評論小部件
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Demo
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="https://hbs.razonyang.com" target="_blank" rel="noopener noreferrer">Netlify
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="https://hbs-cn.razonyang.com" target="_blank" rel="noopener noreferrer">China
+</a>
+        </li></ul></li></ul><nav class="social-links nav justify-content-center mb-2"><a class="nav-link social-link" href="mailto:example@email.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://facebook.com/" title="Facebook" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-facebook-f"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://github.com/rerepopo" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.instagram.com/" title="Instagram" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-instagram"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://linkedin.com/" title="LinkedIn" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-linkedin-in"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/" title="Youtube" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a></nav>
+<div class="copyright mb-2">
+  Copyright © 2016-2022. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">Bootstrap</a> theme.
+</div><p>
+    <a href="https://icons8.com/icon/kq6DjqoInvPI/arrow">Arrow icon </a> and 
+    <a href="https://icons8.com/icon/20115/backspace">Backspace icon</a> by Icons8
+</p>
+<b>This blog records my life by diverse languages.  </b>
+</footer>
+<script src="/js/main.09726d71b0b09ee0cb06f5a4a858e99260a5a5d8894a5e306b6545fe1d68fb89.js" integrity="sha256-CXJtcbCwnuDLBvWkqFjpkmClpdiJSl4wa2VF/h1o&#43;4k=" crossorigin="anonymous" defer></script><script src="/js/icons.min.8ddcaafc364ff0296c2209c5495287f0de039b852da9b24847f94c198b7639b6.js" integrity="sha256-jdyq/DZP8ClsIgnFSVKH8N4Dm4UtqbJIR/lMGYt2ObY=" crossorigin="anonymous" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('\/service-worker.js').then(function(reg) {
+      console.log('Successfully registered service worker', reg);
+    }).catch(function(err) {
+      console.warn('Error whilst registering service worker', err);
+    });
+  });
+}
+</script><script src="/js/viewer.min.652118a9fbf3403cdfde4026209f97ace22f9e334f0b45a33431a221b3db46a8.js" integrity="sha256-ZSEYqfvzQDzf3kAmIJ&#43;XrOIvnjNPC0WjNDGiIbPbRqg=" crossorigin="anonymous" defer></script><script defer src="/js/mermaid.min.f7f85f37aecd926c1536d7d7a068bda61384696972268ebd5624343dc57768e1.js" integrity="sha256-9/hfN67NkmwVNtfXoGi9phOEaWlyJo69ViQ0PcV3aOE=" crossorigin="anonymous"></script>
+
+</body>
+</html>

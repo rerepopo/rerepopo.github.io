@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTML on 程式X語言X筆記X心得 - Find a way, Make a day </title>
+    <link>/tags/html/</link>
+    <description>Recent content in HTML on 程式X語言X筆記X心得 - Find a way, Make a day </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year}. All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 09 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>/posts/markdown-syntax/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

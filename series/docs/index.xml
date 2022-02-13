@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on 程式X語言X筆記X心得 - Find a way, Make a day </title>
+    <link>/series/docs/</link>
+    <description>Recent content in Docs on 程式X語言X筆記X心得 - Find a way, Make a day </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year}. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 12 Jan 2022 10:56:34 -0800</lastBuildDate><atom:link href="/series/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docs Layout</title>
+      <link>/docs/layouts/docs/</link>
+      <pubDate>Wed, 12 Jan 2022 10:56:34 -0800</pubDate>
+      
+      <guid>/docs/layouts/docs/</guid>
+      <description>&lt;p&gt;In this post we explore the &lt;code&gt;docs&lt;/code&gt; layout that can be used to publish project documentation, a Personal Knowledge Base (PKM), a &lt;a href=&#34;https://maggieappleton.com/garden-history&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Digital Garden&lt;/a&gt;, a &lt;a href=&#34;https://fortelabs.co/blog/basboverview/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Second Brain&lt;/a&gt;, a &lt;a href=&#34;https://zenkit.com/en/blog/a-beginners-guide-to-the-zettelkasten-method/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Zettelkasten&lt;/a&gt;, your notes, and more.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Diagram Guide</title>
+      <link>/posts/diagram/</link>
+      <pubDate>Wed, 01 Sep 2021 11:36:50 +0800</pubDate>
+      
+      <guid>/posts/diagram/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic diagram usage that can be used in Hugo content files.&lt;/p&gt;
+&lt;p&gt;Please see also &lt;a href=&#34;https://mermaid-js.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Mermaid&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>/posts/markdown-syntax/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Alert Shortcode</title>
+      <link>/docs/shortcodes/alert/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/shortcodes/alert/</guid>
+      <description>&lt;p&gt;This article shows how to use the &lt;code&gt;alert&lt;/code&gt; shortcode.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Media Shortcodes</title>
+      <link>/docs/shortcodes/media/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/shortcodes/media/</guid>
+      <description>&lt;p&gt;A detailed description of media shortcodes, such as Bilibili, Tencent, Youku, iQiyi and Netease Music.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Online IDE Shortcodes</title>
+      <link>/docs/shortcodes/online-ide/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/shortcodes/online-ide/</guid>
+      <description>&lt;p&gt;A detailed description of online IDE shortcodes, such as JSFiddle, CodePen, JSRun.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

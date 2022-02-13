@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Todolist on 程式X語言X筆記X心得 - Find a way, Make a day </title>
+    <link>/tags/todolist/</link>
+    <description>Recent content in Todolist on 程式X語言X筆記X心得 - Find a way, Make a day </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year}. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 03 Mar 2019 22:34:22 +0800</lastBuildDate><atom:link href="/tags/todolist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android App Todolist</title>
+      <link>/posts/android-app-todolist/</link>
+      <pubDate>Sun, 03 Mar 2019 22:34:22 +0800</pubDate>
+      
+      <guid>/posts/android-app-todolist/</guid>
+      <description>&lt;p&gt;tags: &lt;code&gt;List&lt;/code&gt; &lt;code&gt;RecyclerView&lt;/code&gt; &lt;code&gt;Firebase&lt;/code&gt; &lt;code&gt;AlertDialog&lt;/code&gt; &lt;code&gt;Snackbar&lt;/code&gt;
+&lt;img class=&#34;img-fluid&#34; alt=&#34;&#34; src=&#34;https://i.imgur.com/Oyy2ziK.gif?width=370px&#34; loading=&#34;lazy&#34;
+  
+  style=&#34;width: 370px; &#34; /&gt;
+
+&lt;/p&gt;
+&lt;p&gt;:::success
+功能:
+⭕可以新增
+⭕可以編輯
+⭕可以長按移動
+⭕可以滑動刪除
+⭕可以上傳雲端
+⭕可以下載至本地
+:::danger
+❌即時同步
+:::&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

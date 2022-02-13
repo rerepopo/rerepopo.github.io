@@ -1,0 +1,626 @@
+<!doctype html><html lang="zh-tw" data-palette="teal"
+   data-mode="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diagram Guide - 程式X語言X筆記X心得 - Find a way, Make a day </title><link rel="apple-touch-icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="180x180">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png" sizes="16x16" type="image/png">
+<link rel="icon" href="https://img.icons8.com/stickers/100/000000/arrow.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="keywords" content="" />
+<meta name="description" content="Guide to diagram usage in Markdown" /><meta name="robots" content="index, follow" /><meta itemprop="name" content="Diagram Guide">
+<meta itemprop="description" content="Guide to diagram usage in Markdown"><meta itemprop="datePublished" content="2021-09-01T11:36:50+08:00" />
+<meta itemprop="dateModified" content="2021-09-01T11:36:50+08:00" />
+<meta itemprop="wordCount" content="157">
+<meta itemprop="keywords" content="Diagram," /><meta property="og:title" content="Diagram Guide" />
+<meta property="og:description" content="Guide to diagram usage in Markdown" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/diagram/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-01T11:36:50+08:00" />
+<meta property="article:modified_time" content="2021-09-01T11:36:50+08:00" /><meta property="og:site_name" content="程式X語言X筆記X心得 - Find a way, Make a day " />
+<meta property="og:see_also" content="/posts/markdown-syntax/" /><meta property="og:see_also" content="/docs/shortcodes/alert/" /><meta property="og:see_also" content="/docs/shortcodes/media/" /><meta property="og:see_also" content="/docs/shortcodes/online-ide/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Diagram Guide"/>
+<meta name="twitter:description" content="Guide to diagram usage in Markdown"/>
+<meta property="og:image" content="https://img.icons8.com/stickers/100/000000/arrow.png"/>
+  <meta name="twitter:image" content="https://img.icons8.com/stickers/100/000000/arrow.png"/><link rel="stylesheet" href="/css/main.min.507afbe6e4670fa3e961a0b35816b5daeb36029866fd6bd7b9d7871fcf88faa5.css" integrity="sha256-UHr75uRnD6PpYaCzWBa12us2Aphm/WvXudeHH8&#43;I&#43;qU=" crossorigin="anonymous"><link rel="stylesheet" href="/css/viewer.min.3d228794bcedbbfa0412beb8fbc1ec6973202945e42af7004f742a4d7bd620ab.css" integrity="sha256-PSKHlLztu/oEEr64&#43;8HsaXMgKUXkKvcAT3QqTXvWIKs=" crossorigin="anonymous"></head>
+  <body><script>const items=['mode','palette'];items.forEach(function(a){const b=localStorage.getItem('hbs-'+a);b&&document.body.parentElement.setAttribute('data-'+a,b)})</script><header><nav class="navbar top-app-bar top-app-bar-expand-lg fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button><a class="navbar-brand flex-grow-1 flex-lg-grow-0 text-center text-lg-start mx-auto me-lg-3" href="/"><img class="logo" alt="Logo" src="https://img.icons8.com/stickers/100/000000/arrow.png" loading="lazy"
+  
+   />
+ 程式X語言X筆記X心得
+    </a>
+    <div class="offcanvas offcanvas-bottom surface" tabindex="-1" id="offcanvasSocialShare" aria-labelledby="offcanvasSocialShare">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">Share</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Twitter Share Button"
+      target="_blank" href="https://twitter.com/intent/tweet?title=Diagram%20Guide&url=%2fposts%2fdiagram%2f">
+      <i class="fab fa-fw fa-twitter"></i> Twitter
+    </a>
+    <a class="btn btn-sm btn-outline-primary social-share-button" rel="noopener noreferrer" aria-label="Facebook Share Button"
+      target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=%2fposts%2fdiagram%2f">
+      <i class="fab fa-fw fa-facebook-f"></i> Facebook
+    </a>
+  </div>
+</div>
+    <button class="navbar-settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSettings"
+  aria-controls="offcanvasSettings" aria-label="Toggle settings">
+  <i class="fas fa-ellipsis-v"></i>
+</button>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings" aria-labelledby="offcanvasSettings">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title">設置</h3>
+    <button type="button" class="btn btn-sm btn-outline-primary" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+
+
+
+<section class="setting">
+  <form class="font-size-switcher-form row">
+    <div class="col-auto">
+      <label for="fontSize" class="form-label"><i class="fas fa-fw fa-font"></i> 字體大小</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+    </div>
+  </form>
+</section>
+
+
+<section class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> 配色</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <a id="btnPalette" class="btn btn-sm btn-outline-primary" role="button" aria-label="palettePicker">
+        <i class="fas fa-eye-dropper"></i>
+      </a>
+    </div>
+  </form>
+  <div class="mt-2 d-flex justify-content-between visually-hidden" id="palettePicker"><button type="button" id="palette-blue" aria-label="藍色"
+        class="btn btn-sm w-100 palette" data-palette="blue">
+      </button><button type="button" id="palette-blue-gray" aria-label="藍灰色"
+        class="btn btn-sm w-100 palette" data-palette="blue-gray">
+      </button><button type="button" id="palette-brown" aria-label="棕色"
+        class="btn btn-sm w-100 palette" data-palette="brown">
+      </button><button type="button" id="palette-cyan" aria-label="青色"
+        class="btn btn-sm w-100 palette" data-palette="cyan">
+      </button><button type="button" id="palette-green" aria-label="綠色"
+        class="btn btn-sm w-100 palette" data-palette="green">
+      </button><button type="button" id="palette-indigo" aria-label="靛青色"
+        class="btn btn-sm w-100 palette" data-palette="indigo">
+      </button><button type="button" id="palette-orange" aria-label="橙色"
+        class="btn btn-sm w-100 palette" data-palette="orange">
+      </button><button type="button" id="palette-pink" aria-label="粉色"
+        class="btn btn-sm w-100 palette" data-palette="pink">
+      </button><button type="button" id="palette-purple" aria-label="紫色"
+        class="btn btn-sm w-100 palette" data-palette="purple">
+      </button><button type="button" id="palette-red" aria-label="紅色"
+        class="btn btn-sm w-100 palette" data-palette="red">
+      </button><button type="button" id="palette-teal" aria-label="藍綠色"
+        class="btn btn-sm w-100 palette" data-palette="teal">
+      </button><button type="button" id="palette-yellow" aria-label="黃色"
+        class="btn btn-sm w-100 palette" data-palette="yellow">
+      </button></div>
+</section>
+<section class="setting actions d-flex justify-content-around mt-auto overflow-auto">
+  <a role="button" class="action action-go-back" href="javascript: window.history.back();">
+    <span class="action-icon"><i class="fas fa-2x fa-arrow-left"></i></span> 返回
+  </a>
+  <a role="button" class="action action-reload-page">
+    <span class="action-icon"><i class="fas fa-2x fa-redo-alt"></i></span> 刷新
+  </a>
+  <a role="button" class="action action-copy-url">
+    <span class="action-icon"><i class="fas fa-2x fa-link"></i></span> 複製連結
+  </a><a class="action action-social-share" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSocialShare"
+    aria-controls="offcanvasSocialShare" aria-label="Toggle social share">
+    <span class="action-icon"><i class="fas fa-2x fa-share-alt"></i></span> 分享
+  </a></section>
+
+</div>
+</div>
+
+    <div class="collapse navbar-collapse" tabindex="-1" id="navbarSupportedContent" aria-labelledby="navbarSupportedContent">
+      <form class="search-bar my-1" action="/search">
+  <div class="input-group input-group-sm">
+    <span class="btn btn-search disabled position-absolute left-0"><i class="fas fa-fw fa-search"></i></span>
+    <input class="form-control rounded-pill" name="q" type="search" aria-label="Search">
+  </div>
+</form>
+      <ul class="navbar-nav ms-auto"><li class="nav-item">
+          <a class="nav-link" href="/series/">
+            <i class="fas fa-fw fa-columns"></i>專欄
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>文章總覽
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/categories/">
+            <i class="fas fa-fw fa-folder"></i>分類
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="/tags/">
+            <i class="fas fa-fw fa-tags"></i>標籤
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link" id="navbarDropdownSupport" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-fw fa-chevron-circle-down"></i>更多
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownSupport"><li>
+              <a class="dropdown-item"
+                href="https://github.com/rerepopo/" target="_blank" rel="noopener noreferrer">
+                Repository
+              </a>
+            </li><li><hr class="dropdown-divider"></li><li>
+              <a class="dropdown-item"
+                href="/docs/get-involved/">
+                參與我們
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="/faq/">
+                常見問題
+              </a>
+            </li></ul>
+        </li></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row card component" aria-label="breadcrumb">
+  <div class="card-body">
+    <ol class="breadcrumb "><li class="breadcrumb-item"><a href="/">主頁</a></li><li class="breadcrumb-item"><a href="/posts/">文章</a></li><li class="breadcrumb-item active">Diagram Guide</li></ol>
+  </div>
+</nav><div class="post-panel-wrapper">
+  <div class="d-flex flex-column component rounded post-panel">
+    
+    <a class="action action-panel-toggler" role="button" title="Panel toggler">
+      <i class="fas fa-fw fa-chevron-circle-down"></i>
+    </a>
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button" title="Sidebar toggler">
+  <i class="fas fa-fw fa-expand-alt" data-fa-transform="rotate-45"></i>
+</a>
+
+    
+
+    <a class="action btn-reward" role="button" data-bs-toggle="modal" data-bs-target="#rewardModal" title="打賞">
+  <i class="fas fa-fw fa-coffee"></i>
+</a>
+    <a class="action" href="#post-copyright" role="button" aria-label="Copyright" title="Copyright">
+  <i class="fas fa-fw fa-copyright"></i>
+</a>
+    
+    <a class="action" href="#postTOC" aria-controls="Table of contents" role="button" title="Table of contents">
+  <i class="fas fa-fw fa-list-alt"></i>
+</a>
+    
+  </div>
+</div>
+<article class="row card component mb-4 post">
+  <div class="card-header ">
+    <h1 class="card-title post-title">Diagram Guide
+</h1>
+  </div>
+  <div class="card-body"><div class="post-meta">
+  <span class="post-date" title="創建於 2021-09-01 11:36:50 &#43;0800 CST。">
+    2021-09-01
+  </span><span class="post-reading-time">
+    1 分鐘閱讀
+  </span><span class="post-taxonomies"><a href="/categories/markdown/" class="badge post-taxonomy">Markdown</a><a href="/series/docs/" class="badge post-taxonomy">Docs</a><a href="/tags/diagram/" class="badge post-taxonomy">Diagram</a></span>
+</div>
+<div class="post-content mb-3"><p>This article offers a sample of basic diagram usage that can be used in Hugo content files.</p>
+<p>Please see also <a href="https://mermaid-js.github.io" target="_blank" rel="noopener noreferrer">Mermaid</a>.</p>
+<h2 id="flow-chart">Flow Chart<a class="anchor ms-1" href="#flow-chart"><i class="fas fa-link"></i></a></h2>
+<div class="mermaid">
+graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+</div>
+
+<h2 id="sequence-diagram">Sequence Diagram<a class="anchor ms-1" href="#sequence-diagram"><i class="fas fa-link"></i></a></h2>
+<div class="mermaid">
+sequenceDiagram
+    Alice->>+John: Hello John, how are you?
+    Alice->>+John: John, can you hear me?
+    John-->>-Alice: Hi Alice, I can hear you!
+    John-->>-Alice: I feel great!
+</div>
+
+<h2 id="class-diagram">Class Diagram<a class="anchor ms-1" href="#class-diagram"><i class="fas fa-link"></i></a></h2>
+<div class="mermaid">
+classDiagram
+    Animal <|-- Duck
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+      +String beakColor
+      +swim()
+      +quack()
+    }
+    class Fish{
+      -int sizeInFeet
+      -canEat()
+    }
+    class Zebra{
+      +bool is_wild
+      +run()
+    }
+</div>
+
+<h2 id="user-flows">User flows<a class="anchor ms-1" href="#user-flows"><i class="fas fa-link"></i></a></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>Alice-&gt;Bob: Hello Bob, how are you?
+<span class="ln">2</span>Note right of Bob: Bob thinks
+<span class="ln">3</span>Bob--&gt;Alice: I am good thanks!
+<span class="ln">4</span>Note left of Alice: Alice responds
+<span class="ln">5</span>Alice-&gt;Bob: Where have you been?
+</code></pre></div><blockquote>
+<p>Read more about sequence-diagrams here: <a href="http://bramp.github.io/js-sequence-diagrams/" target="_blank" rel="noopener noreferrer">http://bramp.github.io/js-sequence-diagrams/</a></p>
+</blockquote>
+<h2 id="project-timeline">Project Timeline<a class="anchor ms-1" href="#project-timeline"><i class="fas fa-link"></i></a></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>gantt
+<span class="ln">2</span>    title A Gantt Diagram
+<span class="ln">3</span>
+<span class="ln">4</span>    section Section
+<span class="ln">5</span>    A task           :a1, 2014-01-01, 30d
+<span class="ln">6</span>    Another task     :after a1  , 20d
+<span class="ln">7</span>    section Another
+<span class="ln">8</span>    Task in sec      :2014-01-12  , 12d
+<span class="ln">9</span>    anther task      : 24d
+</code></pre></div><blockquote>
+<p>Read more about mermaid here: <a href="http://mermaid-js.github.io/mermaid/" target="_blank" rel="noopener noreferrer">http://mermaid-js.github.io/mermaid/</a></p>
+</blockquote></div><div class="modal fade" id="rewardModal" tabindex="-1" aria-labelledby="rewardModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content surface">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rewardModalLabel"><i class="fas fa-fw fa-coffee"></i>打賞</h5>
+        <a href="#" data-bs-dismiss="modal" class="btn btn-sm btn-outline-primary" aria-label="Close"><i class="fas fa-times"></i></a>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs mb-3" role="tablist"><li class="nav-item text-nowrap" role="presentation">
+            <a class="nav-link active" id="reward-alipay-tab" data-bs-toggle="tab" href="#reward-alipay" role="tab" aria-controls="reward-alipay" aria-selected="true">
+              <i class="fab fa-fw fa-alipay"></i>支付寶
+            </a>
+          </li><li class="nav-item text-nowrap" role="presentation">
+            <a class="nav-link" id="reward-wechat-tab" data-bs-toggle="tab" href="#reward-wechat" role="tab" aria-controls="reward-wechat" aria-selected="true">
+              <i class="fab fa-fw fa-weixin"></i>微信
+            </a>
+          </li></ul>
+        <div class="tab-content" id="rewardTabContent"><div class="tab-pane fade post-reward-content show active" id="reward-alipay" role="tabpanel" aria-labelledby="reward-alipay-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/alipay.png" loading="lazy" />
+          </div><div class="tab-pane fade post-reward-content show" id="reward-wechat" role="tabpanel" aria-labelledby="reward-wechat-tab">
+            <img class="img-fluid post-reward-img" src="/images/reward/wechat.png" loading="lazy" />
+          </div></div>
+      </div>
+    </div>
+  </div>
+</div></div>
+  <div class="card-footer"><div class="post-navs d-flex justify-content-evenly"><div class="post-nav post-prev">
+    <i class="fas fa-fw fa-chevron-left"></i>
+    <a href="/posts/markdown-syntax/">Markdown Syntax Guide
+</a>
+  </div><div class="post-nav post-next">
+    <a href="/posts/reading-note-20220213/">2022/2 經紀人雜誌  筆記與反思
+</a>
+    <i class="fas fa-fw fa-chevron-right"></i>
+  </div></div></div>
+</article><div class="post-copyright mb-3 row card component" id="post-copyright">
+    <div class="card-header">
+        <h2 class="card-title">版權</h2>
+    </div>
+    <div class="card-body"><a class="d-flex align-items-center flex-column" target="_blank" rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh_TW">
+  <span><i class="fab fa-fw fa-2x fa-creative-commons"></i><i class="fab fa-fw fa-2x fa-creative-commons-by"></i><i class="fab fa-fw fa-2x fa-creative-commons-nc"></i><i class="fab fa-fw fa-2x fa-creative-commons-nd"></i></span>
+  CC BY-NC-ND 4.0 
+</a>
+
+
+    </div>
+</div><section class="related-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">相關文章</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="/docs/image-processing/">圖像處理
+</a>
+          <span class="float-end post-date">2021-08-15
+</span>
+        </li><li>
+          <a href="/posts/markdown-syntax/">Markdown Syntax Guide
+</a>
+          <span class="float-end post-date">2020-11-09
+</span>
+        </li><li>
+          <a href="/docs/shortcodes/alert/">Alert Shortcode
+</a>
+          <span class="float-end post-date">2020-10-22
+</span>
+        </li><li>
+          <a href="/docs/shortcodes/media/">Media Shortcodes
+</a>
+          <span class="float-end post-date">2020-10-22
+</span>
+        </li><li>
+          <a href="/docs/shortcodes/online-ide/">Online IDE Shortcodes
+</a>
+          <span class="float-end post-date">2020-10-22
+</span>
+        </li></ul>
+    </div>
+  </section></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container d-flex flex-column">
+    
+    <section class="card row text-center profile component">
+  <div class="card-body">
+    <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar" alt="匿名作家" src="https://img.icons8.com/ios/100/000000/backspace.png" loading="lazy"
+  
+   />
+</div>
+    <div class="col-12 profile-meta"><div class="profile-name">匿名作家</div><div class="profile-bio">記錄我的學習與心得，包含但不限於Android, Java, python, Html, Javascript, CSS, C/C&#43;&#43;, Qt, LineBot, 日本語。 希望透過多寫心得筆記，把學習紀錄留下來，未來就可以快速翻閱後就立刻上手</div><div class="profile-company"><i class="fas fa-fw fa-building"></i><a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a></div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i><a href='https://www.google.com/maps/search/Earth'>Earth</a></div><div class="profile-about"><i class="fas fa-fw fa-user"></i><a href="/about/">About</a></div><div class="profile-contact"><i class="fas fa-fw fa-question-circle"></i><a href="/contact/">聯繫我們</a></div><nav class="social-links nav justify-content-center"><a class="nav-link social-link" href="mailto:example@email.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://facebook.com/" title="Facebook" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-facebook-f"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://github.com/rerepopo" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/" title="Youtube" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a></nav>
+</div>
+  </div>
+</section>
+  <div class="post-toc row mb-4 card component" id="postTOC">
+  <div class="card-header">
+    <h2 class="card-title">目錄</h2>
+  </div>
+  <div class="card-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#flow-chart">Flow Chart</a></li>
+    <li><a href="#sequence-diagram">Sequence Diagram</a></li>
+    <li><a href="#class-diagram">Class Diagram</a></li>
+    <li><a href="#user-flows">User flows</a></li>
+    <li><a href="#project-timeline">Project Timeline</a></li>
+  </ul>
+</nav>
+  </div>
+</div><section class="featured-posts row card component">
+    <div class="card-header">
+      <h2 class="card-title">精選文章</h2>
+    </div>
+    <div class="card-body">
+      <ul class="post-list"><li>
+          <a href="/docs/look-and-feel/">觀感
+</a>
+        </li><li>
+          <a href="/docs/configuration/">配置
+</a>
+        </li><li>
+          <a href="/docs/getting-started/">快速入門
+</a>
+        </li><li>
+          <a href="/posts/reading-note-20220213/">2022/2 經紀人雜誌  筆記與反思
+</a>
+        </li><li>
+          <a href="/docs/custom-assets/">自定義資源
+</a>
+        </li></ul>
+    </div>
+  </section><section class="recent-posts row card component">
+  <div class="card-header">
+    <h2 class="card-title">最近文章</h2>
+  </div>
+  <div class="card-body">
+    <ul class="post-list"><li>
+        <a href="/posts/reading-note-20220213/">2022/2 經紀人雜誌  筆記與反思
+</a>
+      </li><li>
+        <a href="/posts/diagram/">Diagram Guide
+</a>
+      </li><li>
+        <a href="/posts/markdown-syntax/">Markdown Syntax Guide
+</a>
+      </li><li>
+        <a href="/posts/python-app-regcodecdone/">Python App RegCodecDone 20200607
+</a>
+      </li><li>
+        <a href="/posts/android-app-try-sqlite-database/">如何改在Andriod Studio 編輯 Sqlite Database
+</a>
+      </li></ul>
+  </div>
+</section><section class="series-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/series">專欄</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/series/%E6%AA%94%E6%A1%88/" class="badge rounded post-taxonomy" title="檔案">
+            檔案<span class="badge badge-sm text-white bg-accent ms-1">18</span></a><a href="/series/docs/" class="badge rounded post-taxonomy" title="Docs">
+            Docs<span class="badge badge-sm text-white bg-accent ms-1">5</span></a><a href="/series/docs/" class="badge rounded post-taxonomy" title="Docs">
+            Docs<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section><section class="categories-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/categories">分類</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/categories/android/" class="badge rounded post-taxonomy" title="Android">
+            Android<span class="badge badge-sm text-white bg-accent ms-1">5</span></a><a href="/categories/shortcode/" class="badge rounded post-taxonomy" title="Shortcode">
+            Shortcode<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="/categories/%E5%B0%8F%E9%83%A8%E4%BB%B6/" class="badge rounded post-taxonomy" title="小部件">
+            小部件<span class="badge badge-sm text-white bg-accent ms-1">3</span></a><a href="/categories/markdown/" class="badge rounded post-taxonomy" title="Markdown">
+            Markdown<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/categories/faq/" class="badge rounded post-taxonomy" title="FAQ">
+            FAQ<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/mark-down/" class="badge rounded post-taxonomy" title="Mark Down">
+            Mark Down<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/pwa/" class="badge rounded post-taxonomy" title="PWA">
+            PWA<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/python/" class="badge rounded post-taxonomy" title="python">
+            python<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/%E5%BF%83%E5%BE%97%E7%AD%86%E8%A8%98/" class="badge rounded post-taxonomy" title="心得筆記">
+            心得筆記<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/categories/%E6%90%9C%E7%B4%A2/" class="badge rounded post-taxonomy" title="搜索">
+            搜索<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section><section class="tags-taxonomies row card component">
+      <div class="card-header">
+        <h2 class="card-title">
+          <a href="/tags">標籤</a>
+        </h2>
+      </div>
+      <div class="card-body">
+        <div class="py-2"><a href="/tags/css/" class="badge rounded post-taxonomy" title="CSS">
+            CSS<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/markdown/" class="badge rounded post-taxonomy" title="Markdown">
+            Markdown<span class="badge badge-sm text-white bg-accent ms-1">2</span></a><a href="/tags/alert/" class="badge rounded post-taxonomy" title="Alert">
+            Alert<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/bilibili/" class="badge rounded post-taxonomy" title="Bilibili">
+            Bilibili<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/codepen/" class="badge rounded post-taxonomy" title="CodePen">
+            CodePen<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/diagram/" class="badge rounded post-taxonomy" title="Diagram">
+            Diagram<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/disqus/" class="badge rounded post-taxonomy" title="Disqus">
+            Disqus<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/emoji/" class="badge rounded post-taxonomy" title="Emoji">
+            Emoji<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/getform/" class="badge rounded post-taxonomy" title="Getform">
+            Getform<span class="badge badge-sm text-white bg-accent ms-1">1</span></a><a href="/tags/html/" class="badge rounded post-taxonomy" title="HTML">
+            HTML<span class="badge badge-sm text-white bg-accent ms-1">1</span></a></div>
+      </div>
+    </section>
+    
+  </div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><ul class="nav justify-content-between footer-memu mb-3"><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Support
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="https://github.com/rerepopo/" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github"></i>Repository
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/get-involved/">參與我們
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/faq/"><i class="fas fa-fw fa-question-circle"></i>常見問題
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/contact/"><i class="fas fa-fw fa-info-circle"></i>聯繫我們
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Docs
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="/docs/getting-started/">快速入門
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/configuration/">配置
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/look-and-feel/"><i class="fas fa-fw fa-palette"></i>觀感
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/posts/markdown-syntax/">Markdown Syntax Guide
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/custom-assets/">自定義資源
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/hooks/">鉤子
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/archives/"><i class="fas fa-fw fa-file-archive"></i>歸檔頁面
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Features
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/search/"><i class="fas fa-fw fa-search"></i>搜索頁面
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/image-processing/">圖像處理
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/pwa/">漸進式 web 應用程序
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/image-viewer/">圖片查看器
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/layouts/contact-form/"><i class="fas fa-fw fa-question-circle"></i>聯繫表單
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/widgets/reward/"><i class="fas fa-fw fa-coffee"></i>打賞小部件
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="/docs/widgets/comments/"><i class="fas fa-fw fa-comments"></i>評論小部件
+</a>
+        </li></ul></li><li class="nav-item"><ul class="nav flex-column align-items-start">
+      <li class="nav-item">
+        <a class="nav-link fw-bold" target="_blank" rel="noopener noreferrer">Demo
+</a>
+      </li><li class="nav-item">
+            <a class="nav-link" href="https://hbs.razonyang.com" target="_blank" rel="noopener noreferrer">Netlify
+</a>
+        </li><li class="nav-item">
+            <a class="nav-link" href="https://hbs-cn.razonyang.com" target="_blank" rel="noopener noreferrer">China
+</a>
+        </li></ul></li></ul><nav class="social-links nav justify-content-center mb-2"><a class="nav-link social-link" href="mailto:example@email.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a><a class="nav-link social-link" target="_blank" href="https://facebook.com/" title="Facebook" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-facebook-f"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://github.com/rerepopo" title="GitHub" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.instagram.com/" title="Instagram" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-instagram"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://linkedin.com/" title="LinkedIn" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-linkedin-in"></i>
+      </a><a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/" title="Youtube" rel="noopener noreferrer">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a></nav>
+<div class="copyright mb-2">
+  Copyright © 2016-2022. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank" rel="noopener noreferrer">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank" rel="noopener noreferrer">Bootstrap</a> theme.
+</div><p>
+    <a href="https://icons8.com/icon/kq6DjqoInvPI/arrow">Arrow icon </a> and 
+    <a href="https://icons8.com/icon/20115/backspace">Backspace icon</a> by Icons8
+</p>
+<b>This blog records my life by diverse languages.  </b>
+</footer>
+<script src="/js/main.09726d71b0b09ee0cb06f5a4a858e99260a5a5d8894a5e306b6545fe1d68fb89.js" integrity="sha256-CXJtcbCwnuDLBvWkqFjpkmClpdiJSl4wa2VF/h1o&#43;4k=" crossorigin="anonymous" defer></script><script src="/js/icons.min.8ddcaafc364ff0296c2209c5495287f0de039b852da9b24847f94c198b7639b6.js" integrity="sha256-jdyq/DZP8ClsIgnFSVKH8N4Dm4UtqbJIR/lMGYt2ObY=" crossorigin="anonymous" defer></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('\/service-worker.js').then(function(reg) {
+      console.log('Successfully registered service worker', reg);
+    }).catch(function(err) {
+      console.warn('Error whilst registering service worker', err);
+    });
+  });
+}
+</script><script src="/js/viewer.min.652118a9fbf3403cdfde4026209f97ace22f9e334f0b45a33431a221b3db46a8.js" integrity="sha256-ZSEYqfvzQDzf3kAmIJ&#43;XrOIvnjNPC0WjNDGiIbPbRqg=" crossorigin="anonymous" defer></script><script defer src="/js/mermaid.min.f7f85f37aecd926c1536d7d7a068bda61384696972268ebd5624343dc57768e1.js" integrity="sha256-9/hfN67NkmwVNtfXoGi9phOEaWlyJo69ViQ0PcV3aOE=" crossorigin="anonymous"></script>
+
+</body>
+</html>

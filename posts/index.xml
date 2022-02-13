@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文章 on 程式X語言X筆記X心得 - Find a way, Make a day </title>
+    <link>/posts/</link>
+    <description>Recent content in 文章 on 程式X語言X筆記X心得 - Find a way, Make a day </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2016-{year}. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 13 Feb 2022 22:07:59 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022/2 經紀人雜誌  筆記與反思</title>
+      <link>/posts/reading-note-20220213/</link>
+      <pubDate>Sun, 13 Feb 2022 22:07:59 +0800</pubDate>
+      
+      <guid>/posts/reading-note-20220213/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Diagram Guide</title>
+      <link>/posts/diagram/</link>
+      <pubDate>Wed, 01 Sep 2021 11:36:50 +0800</pubDate>
+      
+      <guid>/posts/diagram/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic diagram usage that can be used in Hugo content files.&lt;/p&gt;
+&lt;p&gt;Please see also &lt;a href=&#34;https://mermaid-js.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Mermaid&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>/posts/markdown-syntax/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python App regCodecDone 20200607</title>
+      <link>/posts/python-app-regcodecdone/</link>
+      <pubDate>Sun, 07 Jun 2020 19:47:31 +0800</pubDate>
+      
+      <guid>/posts/python-app-regcodecdone/</guid>
+      <description>&lt;h2 id=&#34;pycharmprojectsregdecoder-20200607&#34;&gt;PycharmProjects\regDecoder 20200607&lt;a class=&#34;anchor ms-1&#34; href=&#34;#pycharmprojectsregdecoder-20200607&#34;&gt;&lt;i class=&#34;fas fa-link&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;pip install pyinstaller
+pyinstaller -Fw regCodec.py
+&lt;img class=&#34;img-fluid&#34; alt=&#34;&#34; src=&#34;https://i.imgur.com/ytT279x.png&#34; loading=&#34;lazy&#34;
+  
+   /&gt;
+
+&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/rerepopo/regCodecDone&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://github.com/rerepopo/regCodecDone&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何改在Andriod Studio 編輯 sqlite database</title>
+      <link>/posts/android-app-try-sqlite-database/</link>
+      <pubDate>Sat, 04 May 2019 16:01:28 +0800</pubDate>
+      
+      <guid>/posts/android-app-try-sqlite-database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>/posts/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>/posts/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>/posts/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Android App Note 20190228 與要學的 20190403</title>
+      <link>/posts/android-app-note20190228/</link>
+      <pubDate>Thu, 07 Mar 2019 23:25:57 +0800</pubDate>
+      
+      <guid>/posts/android-app-note20190228/</guid>
+      <description>&lt;p&gt;計畫&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 寫Qr code&lt;/li&gt;
+&lt;li&gt;寫recycle view
+&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 存入設定，下次開機要有
+&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 禁止轉向
+&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 編輯新增事項&lt;/li&gt;
+&lt;li&gt;試著用fire base?!&lt;/li&gt;
+&lt;li&gt;SHA-256
+&lt;a href=&#34;https://developer.android.com/reference/java/security/MessageDigest&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;MessageDigest&lt;/a&gt;
+SHA-256&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>/posts/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Android App Todolist</title>
+      <link>/posts/android-app-todolist/</link>
+      <pubDate>Sun, 03 Mar 2019 22:34:22 +0800</pubDate>
+      
+      <guid>/posts/android-app-todolist/</guid>
+      <description>&lt;p&gt;tags: &lt;code&gt;List&lt;/code&gt; &lt;code&gt;RecyclerView&lt;/code&gt; &lt;code&gt;Firebase&lt;/code&gt; &lt;code&gt;AlertDialog&lt;/code&gt; &lt;code&gt;Snackbar&lt;/code&gt;
+&lt;img class=&#34;img-fluid&#34; alt=&#34;&#34; src=&#34;https://i.imgur.com/Oyy2ziK.gif?width=370px&#34; loading=&#34;lazy&#34;
+  
+  style=&#34;width: 370px; &#34; /&gt;
+
+&lt;/p&gt;
+&lt;p&gt;:::success
+功能:
+⭕可以新增
+⭕可以編輯
+⭕可以長按移動
+⭕可以滑動刪除
+⭕可以上傳雲端
+⭕可以下載至本地
+:::danger
+❌即時同步
+:::&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Android App QRcodec</title>
+      <link>/posts/android-app-qrcodec/</link>
+      <pubDate>Sat, 02 Mar 2019 10:06:25 +0800</pubDate>
+      
+      <guid>/posts/android-app-qrcodec/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;偽目標：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;製作QR code&lt;/li&gt;
+&lt;li&gt;解析QR code
+(1). 來自相機
+(2). 來自網路&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>TravelerAssistant201902</title>
+      <link>/posts/android-app-travelerassistant201902/</link>
+      <pubDate>Wed, 27 Feb 2019 23:04:50 +0800</pubDate>
+      
+      <guid>/posts/android-app-travelerassistant201902/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;偽目標: 想要寫一個旅遊可能可以用到的東西&lt;/li&gt;
+&lt;li&gt;想學的功能
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; BottomNavigationView&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Fragment&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; GPS/測速 功能&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 計步器&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 建立通知&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>我的第一篇用Mark down</title>
+      <link>/posts/my-first-markdown/</link>
+      <pubDate>Mon, 27 Feb 2017 21:00:00 +0800</pubDate>
+      
+      <guid>/posts/my-first-markdown/</guid>
+      <description>&lt;p&gt;我覺得自己練程式沒有寫些筆記
+最後可能都會忘光&lt;/p&gt;
+&lt;p&gt;為了給未來的自己
+==一些索引==&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
