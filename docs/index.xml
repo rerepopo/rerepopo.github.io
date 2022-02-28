@@ -17,12 +17,13 @@
     </item>
     
     <item>
-      <title>配置</title>
-      <link>/docs/configuration/</link>
-      <pubDate>Sat, 27 Nov 2021 19:53:24 +0800</pubDate>
+      <title>菜單</title>
+      <link>/docs/menu/</link>
+      <pubDate>Thu, 16 Dec 2021 17:25:20 +0800</pubDate>
       
-      <guid>/docs/configuration/</guid>
-      <description>&lt;p&gt;如示例站點所示，我們使用 &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configuration-%e7%9b%ae%e9%8c%84&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Configuration Directory&lt;/a&gt; 為了維護更簡單的組織和特定於環境的設置，它在多語言站點上特別有用。&lt;/p&gt;</description>
+      <guid>/docs/menu/</guid>
+      <description>&lt;p&gt;我們預定義了兩種類型的菜單：&lt;code&gt;main&lt;/code&gt; 和 &lt;code&gt;footer&lt;/code&gt;，分別表示頂部的應用程序欄菜單和頁腳菜單。
+本文將簡要介紹如何使用菜單。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,16 +33,6 @@
       
       <guid>/docs/getting-started/</guid>
       <description>&lt;p&gt;本文將介紹如何安裝、升級本主題，以及書寫新的文章。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>菜單</title>
-      <link>/docs/menu/</link>
-      <pubDate>Thu, 16 Dec 2021 17:25:20 +0800</pubDate>
-      
-      <guid>/docs/menu/</guid>
-      <description>&lt;p&gt;我們預定義了兩種類型的菜單：&lt;code&gt;main&lt;/code&gt; 和 &lt;code&gt;footer&lt;/code&gt;，分別表示頂部的應用程序欄菜單和頁腳菜單。
-本文將簡要介紹如何使用菜單。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -90,6 +81,15 @@
       
       <guid>/docs/get-involved/</guid>
       <description>&lt;p&gt;我們很樂意傾聽你的意見和反饋，也歡迎你參與進來。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>配置</title>
+      <link>/docs/configuration/</link>
+      <pubDate>Sat, 27 Nov 2021 19:53:24 +0800</pubDate>
+      
+      <guid>/docs/configuration/</guid>
+      <description>&lt;p&gt;如示例站點所示，我們使用 &lt;a href=&#34;https://gohugo.io/getting-started/configuration/#configuration-%e7%9b%ae%e9%8c%84&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Configuration Directory&lt;/a&gt; 為了維護更簡單的組織和特定於環境的設置，它在多語言站點上特別有用。&lt;/p&gt;</description>
     </item>
     
     <item>
