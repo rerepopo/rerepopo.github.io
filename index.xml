@@ -6,7 +6,7 @@
     <description>Recent content on 程式X語言X筆記X心得 - Find a way, Make a day </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2016-{year}. All Rights Reserved.</copyright>
-    <lastBuildDate>Mon, 28 Feb 2022 22:19:13 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Mar 2022 21:54:30 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>觀感</title>
       <link>/docs/look-and-feel/</link>
@@ -14,6 +14,30 @@
       
       <guid>/docs/look-and-feel/</guid>
       <description>&lt;p&gt;默認情况下，使用此主題的網站具有預設字體、顏色和總體外觀。 但是，默認方案不可能滿足所有人的要求，但是不要擔心，你可以輕鬆地覆蓋主題預設值，例如調色板顏色、字體、語法高亮。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>20220319安排任務的盲點</title>
+      <link>/posts/reading-note-20220320/</link>
+      <pubDate>Sat, 19 Mar 2022 21:54:30 +0800</pubDate>
+      
+      <guid>/posts/reading-note-20220320/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;每當你一項任務切換到另一項任務時這就是所謂的多工處理)都應該意識到中斷任務帶來的成本。這個成本稱為轉換成本 (switching cost)。它會對你的工作效率帶來破壞性影響。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不要一心多用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;書名：一流自雇者的時間管理術&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>20220306拖延的原因與改善方式</title>
+      <link>/posts/reading-note-20220306/</link>
+      <pubDate>Sun, 06 Mar 2022 21:44:55 +0800</pubDate>
+      
+      <guid>/posts/reading-note-20220306/</guid>
+      <description>&lt;p&gt;這個週末偶然看到一本寫習慣與一本寫拖延的書，綜合心得如下。&lt;/p&gt;</description>
     </item>
     
     <item>
